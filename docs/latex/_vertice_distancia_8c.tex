@@ -1,0 +1,574 @@
+\doxysection{Vertice\+Distancia.\+c File Reference}
+\hypertarget{_vertice_distancia_8c}{}\label{_vertice_distancia_8c}\index{VerticeDistancia.c@{VerticeDistancia.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$malloc.\+h$>$}\newline
+{\ttfamily \#include "{}Header.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_vertice_distancia_8c_a93cb9acede2bc9d10b2ec436576ebe03}{Criar\+Vertice\+Distancia}} ()
+\begin{DoxyCompactList}\small\item\em Cria uma variavel do tipo vertice\+Distancias. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_vertice_distancia_8c_a35ac5c7079e437143fe12e1d00b37291}{Criar\+Vertices\+Distancia}} (int tamanho, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Cria uma lista de vertices distancia com um determinado tamanho. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_vertice_distancia_8c_a6edb1c05a7768978d361089aa8b9bd57}{Adicionar\+Dados\+Vertice\+Distancia}} (\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}vertice\+Distancia, int id, int distancia, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Adiciona dados a uma variavel do tipo vertice\+Distancias. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_vertice_distancia_8c_a449d4ca4ef1c5220c3a29a2ac0088062}{Adicionar\+Id\+Vertice\+Distancia}} (\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}vertice\+Distancia, int id, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Adiciona um id a uma variavel do tipo vertice\+Distancias. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_vertice_distancia_8c_ad0c67ef200525d7c22d05e7906736ea7}{Adicionar\+Distancia\+Vertice\+Distancia}} (\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}vertice\+Distancia, int distancia, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Adiciona uma distancia a uma variavel do tipo vertice\+Distancias. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_vertice_distancia_8c_a421a718c399878300104e584a2dfff72}{Adicionar\+Distancia\+Lista\+Vertice\+Distancia}} (\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}vertice\+Distancia, int id, int distancia, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Adiciona uma distancia a uma variavel do tipo vertice\+Distancias dentro de uma lista de vertice distancias. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_vertice_distancia_8c_a5cc285bc7588f437f6c294f15050a8f9}{Adicionar\+Todos\+Id\+Vertices\+Distancia}} (\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}vertice\+Distancias, int id, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Adiciona a todos os vertices presentes na lista vertices distancia um id. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_vertice_distancia_8c_a9690f87675b214cc1042b186bc851ff1}{Adicionar\+Todos\+Distancia\+Vertices\+Distancia}} (\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}vertice\+Distancias, int distancia, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Adiciona a todos os vertices presentes na lista vertices distancia uma distancia. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_vertice_distancia_8c_abbf0da3e26b5ca3311dd0714ef4ea625}{Adicionar\+Todos\+Vertices\+Id\+Vertices\+Distancia}} (\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}vertice\+Distancias, \mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}vertices, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Adiciona a cada vertice presente na lista vertices distancia o id do vertice correspondente a lista de vertices. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_vertice_distancia_8c_a32b4598ffb50167f091779b0b557951b}{Adicionar\+Vertice\+Distancia}} (\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}vertice\+Distancias, \mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}vertice\+Dist, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Adiciona um vertice distancia no fim da lista de vertice distancias. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_vertice_distancia_8c_af630bb67a575a4bf6e7eabca159b06fc}{Atribuir\+Vertice\+Distancia\+Anterior}} (\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}vertice\+Distancia, \mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}anterior, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Atribuir a um vertice distancia o seu anterior. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_vertice_distancia_8c_aeb509281a53b221eaa80f4d6830170fe}{Atribuir\+Lista\+Vertice\+Distancia\+Anterior}} (\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}vertice\+Distancias, \mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}anterior, int id, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Atribuir a um vertice distancia presente numa lista de vertices distancias o seu anterior. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_vertice_distancia_8c_a18c0bb50d8cefe2751bec3c54067cb93}{Remover\+Vertice\+Distacia}} (\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}vertice\+Distancias, int id, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Remove um vertice dentro de uma lista de vertice distancias. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_vertice_distancia_8c_a16917b140a1ba33842ea7d9ae25a6075}{Somar\+Distancias\+Vertice\+Distancia}} (\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}vertice\+Distancia, int valor, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Soma a uma distancia do "{}vertice distania"{} um valor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_vertice_distancia_8c_a8b1b5066e284ab4326db1852e660175b}{Somar\+Distancia\+Lista\+Vertice\+Distancia}} (\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}vertice\+Distancias, int id, int valor, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Soma a uma distancia de um id presente numa lista de vertices distania um valor. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_vertice_distancia_8c_aeccd9fba213ed231fcf972effee94460}{Somar\+Distancias\+Vertice\+Distancia2}} (\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}vertice\+Distancia, int valor, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Retorna a soma de uma distancia do "{}vertice distania"{} um valor. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_vertice_distancia_8c_ab9f935c0206515b653ce090ab7b30cd1}{Somar\+Distancia\+Lista\+Vertice\+Distancia2}} (\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}vertice\+Distancias, int id, int valor, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Retorna uma soma de uma distancia de um id presente numa lista de vertices distancia um valor. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_vertice_distancia_8c_a48e3dc136a09cd1d821fa7851a00f257}{Somar\+Todas\+Distancias\+Lista\+Vertice\+Distancia}} (\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}vertice\+Distancias)
+\begin{DoxyCompactList}\small\item\em Soma todas as distancias presentes na lista de vertices (caminho) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_vertice_distancia_8c_a9adfb9c1c644734b7208a06e0cc88cec}{Comparar\+Distancia\+Vertice\+Distancia}} (\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}vertice\+Distancia, int valor)
+\begin{DoxyCompactList}\small\item\em Compara as distancias de um vertice distancia e um valor. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_vertice_distancia_8c_a929bddde1c63f00fb707bf6d659e1494}{Compara\+Distancia\+Lista\+Vertice\+Distancia}} (\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}vertice\+Distancia, int id, int valor)
+\begin{DoxyCompactList}\small\item\em Compara as distancias de um vertice presente numa lista de vertices distancia e um valor. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_vertice_distancia_8c_acfc3fae4524666ac42bba85aad2aacbe}{Verificar\+Vertice\+Distancia}} (\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}vertice\+Distancias, int id)
+\begin{DoxyCompactList}\small\item\em Verificam se existe um vertice dentro de uma lista de vertice distancias. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_vertice_distancia_8c_adea90575efd3c8192c0cb407c2433cc4}{Encontrar\+Vertice\+Distancia}} (\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}vertice\+Distancias, int id, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Encontra um vertice distancias a partir do seu ID e retorna o mesmo. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_vertice_distancia_8c_a56ed64e97acd4c18fcc806570105631b}{Encontrar\+Id\+Anterior\+Vertice\+Distancia}} (\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}vertice\+Distancias, int id)
+\begin{DoxyCompactList}\small\item\em Encontra o id do vertice distancia anterior ao vertice distancia. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_vertice_distancia_8c_a895bd19519005098113b590a388562b1}{Processar\+Caminho}} (\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}vertice\+Distancas, int destino)
+\begin{DoxyCompactList}\small\item\em Mostra o caminho no terminal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_vertice_distancia_8c_a6edb1c05a7768978d361089aa8b9bd57}\label{_vertice_distancia_8c_a6edb1c05a7768978d361089aa8b9bd57} 
+\index{VerticeDistancia.c@{VerticeDistancia.c}!AdicionarDadosVerticeDistancia@{AdicionarDadosVerticeDistancia}}
+\index{AdicionarDadosVerticeDistancia@{AdicionarDadosVerticeDistancia}!VerticeDistancia.c@{VerticeDistancia.c}}
+\doxysubsubsection{\texorpdfstring{AdicionarDadosVerticeDistancia()}{AdicionarDadosVerticeDistancia()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} Adicionar\+Dados\+Vertice\+Distancia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}}]{vertice\+Distancia,  }\item[{int}]{id,  }\item[{int}]{distancia,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Adiciona dados a uma variavel do tipo vertice\+Distancias. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice\+Distancias} & \doxylink{struct_vertice}{Vertice} distancia\\
+\hline
+{\em id} & Id do vertice\\
+\hline
+{\em distancia} & Distancia\\
+\hline
+{\em res} & Retorna 0 e nao for adicionado os dados, retorna 1 se for adicionado os dados\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se o vertice distancia for nulo, retorna o vertice distancia se os dados forem adicionados
+\end{DoxyReturn}
+\Hypertarget{_vertice_distancia_8c_a421a718c399878300104e584a2dfff72}\label{_vertice_distancia_8c_a421a718c399878300104e584a2dfff72} 
+\index{VerticeDistancia.c@{VerticeDistancia.c}!AdicionarDistanciaListaVerticeDistancia@{AdicionarDistanciaListaVerticeDistancia}}
+\index{AdicionarDistanciaListaVerticeDistancia@{AdicionarDistanciaListaVerticeDistancia}!VerticeDistancia.c@{VerticeDistancia.c}}
+\doxysubsubsection{\texorpdfstring{AdicionarDistanciaListaVerticeDistancia()}{AdicionarDistanciaListaVerticeDistancia()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} Adicionar\+Distancia\+Lista\+Vertice\+Distancia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}}]{vertice\+Distancia,  }\item[{int}]{id,  }\item[{int}]{distancia,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Adiciona uma distancia a uma variavel do tipo vertice\+Distancias dentro de uma lista de vertice distancias. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice\+Distancia} & Lista de vertice distancias\\
+\hline
+{\em id} & Id do vertice\\
+\hline
+{\em distancia} & Distancia\\
+\hline
+{\em res} & Retorna 0 sea distancia nao for adicionada, retorna 1 se a distancia for adicionada\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se o vertice distancia for nulo, retorna a lista de vertices distancia sem a distancia adicionada se o vertice nao existir, retorna a lista de vertices distancia com a distancia adicionada ao vertice
+\end{DoxyReturn}
+\Hypertarget{_vertice_distancia_8c_ad0c67ef200525d7c22d05e7906736ea7}\label{_vertice_distancia_8c_ad0c67ef200525d7c22d05e7906736ea7} 
+\index{VerticeDistancia.c@{VerticeDistancia.c}!AdicionarDistanciaVerticeDistancia@{AdicionarDistanciaVerticeDistancia}}
+\index{AdicionarDistanciaVerticeDistancia@{AdicionarDistanciaVerticeDistancia}!VerticeDistancia.c@{VerticeDistancia.c}}
+\doxysubsubsection{\texorpdfstring{AdicionarDistanciaVerticeDistancia()}{AdicionarDistanciaVerticeDistancia()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} Adicionar\+Distancia\+Vertice\+Distancia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}}]{vertice\+Distancia,  }\item[{int}]{distancia,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Adiciona uma distancia a uma variavel do tipo vertice\+Distancias. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice\+Distancias} & \doxylink{struct_vertice}{Vertice} distancia\\
+\hline
+{\em distancia} & Distancia\\
+\hline
+{\em res} & Retorna 0 e nao for adicionado a distancia, retorna 1 se for adicionado a distancia\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se o vertice distancia for nulo, retorna o vertice distancia se o id for adicionado
+\end{DoxyReturn}
+\Hypertarget{_vertice_distancia_8c_a449d4ca4ef1c5220c3a29a2ac0088062}\label{_vertice_distancia_8c_a449d4ca4ef1c5220c3a29a2ac0088062} 
+\index{VerticeDistancia.c@{VerticeDistancia.c}!AdicionarIdVerticeDistancia@{AdicionarIdVerticeDistancia}}
+\index{AdicionarIdVerticeDistancia@{AdicionarIdVerticeDistancia}!VerticeDistancia.c@{VerticeDistancia.c}}
+\doxysubsubsection{\texorpdfstring{AdicionarIdVerticeDistancia()}{AdicionarIdVerticeDistancia()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} Adicionar\+Id\+Vertice\+Distancia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}}]{vertice\+Distancia,  }\item[{int}]{id,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Adiciona um id a uma variavel do tipo vertice\+Distancias. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice\+Distancias} & \doxylink{struct_vertice}{Vertice} distancia\\
+\hline
+{\em id} & Id do vertice\\
+\hline
+{\em res} & Retorna 0 e nao for adicionado o id, retorna 1 se for adicionado o id\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se o vertice distancia for nulo, retorna o vertice distancia se o id for adicionado
+\end{DoxyReturn}
+\Hypertarget{_vertice_distancia_8c_a9690f87675b214cc1042b186bc851ff1}\label{_vertice_distancia_8c_a9690f87675b214cc1042b186bc851ff1} 
+\index{VerticeDistancia.c@{VerticeDistancia.c}!AdicionarTodosDistanciaVerticesDistancia@{AdicionarTodosDistanciaVerticesDistancia}}
+\index{AdicionarTodosDistanciaVerticesDistancia@{AdicionarTodosDistanciaVerticesDistancia}!VerticeDistancia.c@{VerticeDistancia.c}}
+\doxysubsubsection{\texorpdfstring{AdicionarTodosDistanciaVerticesDistancia()}{AdicionarTodosDistanciaVerticesDistancia()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} Adicionar\+Todos\+Distancia\+Vertices\+Distancia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}}]{vertice\+Distancias,  }\item[{int}]{distancia,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Adiciona a todos os vertices presentes na lista vertices distancia uma distancia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice\+Distancias} & Lista vertices distancia\\
+\hline
+{\em distancia} & distancia\\
+\hline
+{\em res} & Retorna 0 se nao for adicionado a distancia aos vertices, retorna 1 se for adicionado a distancia aos vertices\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se a lista de vertices distancias for nula, retorna a lista de vertice distancias com a distancia dos vertices adicionados
+\end{DoxyReturn}
+\Hypertarget{_vertice_distancia_8c_a5cc285bc7588f437f6c294f15050a8f9}\label{_vertice_distancia_8c_a5cc285bc7588f437f6c294f15050a8f9} 
+\index{VerticeDistancia.c@{VerticeDistancia.c}!AdicionarTodosIdVerticesDistancia@{AdicionarTodosIdVerticesDistancia}}
+\index{AdicionarTodosIdVerticesDistancia@{AdicionarTodosIdVerticesDistancia}!VerticeDistancia.c@{VerticeDistancia.c}}
+\doxysubsubsection{\texorpdfstring{AdicionarTodosIdVerticesDistancia()}{AdicionarTodosIdVerticesDistancia()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} Adicionar\+Todos\+Id\+Vertices\+Distancia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}}]{vertice\+Distancias,  }\item[{int}]{id,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Adiciona a todos os vertices presentes na lista vertices distancia um id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice\+Distancias} & Lista vertices distancia\\
+\hline
+{\em id} & Id\\
+\hline
+{\em res} & Retorna 0 se nao for adicionado os ids aos vertices, retorna 1 se for adicionado os ids aos vertices\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se a lista de vertices distancias for nula, retorna a lista de vertice distancias com os ids dos vertices adicionados
+\end{DoxyReturn}
+\Hypertarget{_vertice_distancia_8c_abbf0da3e26b5ca3311dd0714ef4ea625}\label{_vertice_distancia_8c_abbf0da3e26b5ca3311dd0714ef4ea625} 
+\index{VerticeDistancia.c@{VerticeDistancia.c}!AdicionarTodosVerticesIdVerticesDistancia@{AdicionarTodosVerticesIdVerticesDistancia}}
+\index{AdicionarTodosVerticesIdVerticesDistancia@{AdicionarTodosVerticesIdVerticesDistancia}!VerticeDistancia.c@{VerticeDistancia.c}}
+\doxysubsubsection{\texorpdfstring{AdicionarTodosVerticesIdVerticesDistancia()}{AdicionarTodosVerticesIdVerticesDistancia()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} Adicionar\+Todos\+Vertices\+Id\+Vertices\+Distancia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}}]{vertice\+Distancias,  }\item[{\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{vertices,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Adiciona a cada vertice presente na lista vertices distancia o id do vertice correspondente a lista de vertices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice\+Distancias} & Lista vertices distancia\\
+\hline
+{\em vertices} & Lista de vertices\\
+\hline
+{\em res} & Retorna 0 se nao for adicionado os ids aos vertices, retorna 1 se for adicionado os ids aos vertices\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se a lista de vertice distancias ou vertices for nulo, retorna a lista de vertices distancias com os ids adicionados
+\end{DoxyReturn}
+\Hypertarget{_vertice_distancia_8c_a32b4598ffb50167f091779b0b557951b}\label{_vertice_distancia_8c_a32b4598ffb50167f091779b0b557951b} 
+\index{VerticeDistancia.c@{VerticeDistancia.c}!AdicionarVerticeDistancia@{AdicionarVerticeDistancia}}
+\index{AdicionarVerticeDistancia@{AdicionarVerticeDistancia}!VerticeDistancia.c@{VerticeDistancia.c}}
+\doxysubsubsection{\texorpdfstring{AdicionarVerticeDistancia()}{AdicionarVerticeDistancia()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} Adicionar\+Vertice\+Distancia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}}]{vertice\+Distancias,  }\item[{\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}}]{vertice\+Dist,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Adiciona um vertice distancia no fim da lista de vertice distancias. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice\+Distancias} & Lista de vertice distancias\\
+\hline
+{\em vertice\+Dist} & \doxylink{struct_vertice}{Vertice} distancia\\
+\hline
+{\em res} & Retorna 0 se nao for adicionado, retorna 1 se for adicionado\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se a lista de vertice distancias for nulo, retorna a lista de vertice distancias se for adicionado o vertice distancia a lista
+\end{DoxyReturn}
+\Hypertarget{_vertice_distancia_8c_aeb509281a53b221eaa80f4d6830170fe}\label{_vertice_distancia_8c_aeb509281a53b221eaa80f4d6830170fe} 
+\index{VerticeDistancia.c@{VerticeDistancia.c}!AtribuirListaVerticeDistanciaAnterior@{AtribuirListaVerticeDistanciaAnterior}}
+\index{AtribuirListaVerticeDistanciaAnterior@{AtribuirListaVerticeDistanciaAnterior}!VerticeDistancia.c@{VerticeDistancia.c}}
+\doxysubsubsection{\texorpdfstring{AtribuirListaVerticeDistanciaAnterior()}{AtribuirListaVerticeDistanciaAnterior()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} Atribuir\+Lista\+Vertice\+Distancia\+Anterior (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}}]{vertice\+Distancias,  }\item[{\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}}]{anterior,  }\item[{int}]{id,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Atribuir a um vertice distancia presente numa lista de vertices distancias o seu anterior. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice\+Distancias} & Lista de vertices distacias\\
+\hline
+{\em anterior} & Anterior\\
+\hline
+{\em id} & Id do vertice\\
+\hline
+{\em res} & Retorna 0 se o anterior nao for adicionado, retorna 1 se o seu anterior for adicionado\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se a lista de vertice distancia for nulo, retorna a lista de vertice distancia com o vertice distancia com o seu anterior atribuido
+\end{DoxyReturn}
+\Hypertarget{_vertice_distancia_8c_af630bb67a575a4bf6e7eabca159b06fc}\label{_vertice_distancia_8c_af630bb67a575a4bf6e7eabca159b06fc} 
+\index{VerticeDistancia.c@{VerticeDistancia.c}!AtribuirVerticeDistanciaAnterior@{AtribuirVerticeDistanciaAnterior}}
+\index{AtribuirVerticeDistanciaAnterior@{AtribuirVerticeDistanciaAnterior}!VerticeDistancia.c@{VerticeDistancia.c}}
+\doxysubsubsection{\texorpdfstring{AtribuirVerticeDistanciaAnterior()}{AtribuirVerticeDistanciaAnterior()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} Atribuir\+Vertice\+Distancia\+Anterior (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}}]{vertice\+Distancia,  }\item[{\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}}]{anterior,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Atribuir a um vertice distancia o seu anterior. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice\+Distancia} & \doxylink{struct_vertice}{Vertice} distancia\\
+\hline
+{\em anterior} & \doxylink{struct_vertice}{Vertice} distancia anterior\\
+\hline
+{\em res} & Retorna 0 se o anterior nao for adicionado, retorna 1 se o seu anterior for adicionado\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se o vertice distancia for nulo, retorna o vertice distancia com o seu anterior atribuido
+\end{DoxyReturn}
+\Hypertarget{_vertice_distancia_8c_a929bddde1c63f00fb707bf6d659e1494}\label{_vertice_distancia_8c_a929bddde1c63f00fb707bf6d659e1494} 
+\index{VerticeDistancia.c@{VerticeDistancia.c}!ComparaDistanciaListaVerticeDistancia@{ComparaDistanciaListaVerticeDistancia}}
+\index{ComparaDistanciaListaVerticeDistancia@{ComparaDistanciaListaVerticeDistancia}!VerticeDistancia.c@{VerticeDistancia.c}}
+\doxysubsubsection{\texorpdfstring{ComparaDistanciaListaVerticeDistancia()}{ComparaDistanciaListaVerticeDistancia()}}
+{\footnotesize\ttfamily int Compara\+Distancia\+Lista\+Vertice\+Distancia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}}]{vertice\+Distancia,  }\item[{int}]{id,  }\item[{int}]{valor }\end{DoxyParamCaption})}
+
+
+
+Compara as distancias de um vertice presente numa lista de vertices distancia e um valor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice\+Distancia} & \doxylink{struct_vertice}{Vertice} distancia\\
+\hline
+{\em id} & Id\\
+\hline
+{\em valor} & Valor\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna -\/1 se o vertice distancia for nulo, retorna 0 se a distacia do vertice distancia for menor que o valor, retorna 1 se a distancia do vertice distancia for maior, retorna 2 se as distancias forem iguais
+\end{DoxyReturn}
+\Hypertarget{_vertice_distancia_8c_a9adfb9c1c644734b7208a06e0cc88cec}\label{_vertice_distancia_8c_a9adfb9c1c644734b7208a06e0cc88cec} 
+\index{VerticeDistancia.c@{VerticeDistancia.c}!CompararDistanciaVerticeDistancia@{CompararDistanciaVerticeDistancia}}
+\index{CompararDistanciaVerticeDistancia@{CompararDistanciaVerticeDistancia}!VerticeDistancia.c@{VerticeDistancia.c}}
+\doxysubsubsection{\texorpdfstring{CompararDistanciaVerticeDistancia()}{CompararDistanciaVerticeDistancia()}}
+{\footnotesize\ttfamily int Comparar\+Distancia\+Vertice\+Distancia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}}]{vertice\+Distancia,  }\item[{int}]{valor }\end{DoxyParamCaption})}
+
+
+
+Compara as distancias de um vertice distancia e um valor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice\+Distancia} & \doxylink{struct_vertice}{Vertice} distancia\\
+\hline
+{\em valor} & Valor\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna -\/1 se o vertice distancia for nulo, retorna 0 se a distacia do vertice distancia for menor que o valor, retorna 1 se a distancia do vertice distancia for maior, retorna 2 se as distancias forem iguais
+\end{DoxyReturn}
+\Hypertarget{_vertice_distancia_8c_a93cb9acede2bc9d10b2ec436576ebe03}\label{_vertice_distancia_8c_a93cb9acede2bc9d10b2ec436576ebe03} 
+\index{VerticeDistancia.c@{VerticeDistancia.c}!CriarVerticeDistancia@{CriarVerticeDistancia}}
+\index{CriarVerticeDistancia@{CriarVerticeDistancia}!VerticeDistancia.c@{VerticeDistancia.c}}
+\doxysubsubsection{\texorpdfstring{CriarVerticeDistancia()}{CriarVerticeDistancia()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} Criar\+Vertice\+Distancia (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Cria uma variavel do tipo vertice\+Distancias. 
+
+\begin{DoxyReturn}{Returns}
+Retorna o Dijkstra
+\end{DoxyReturn}
+\Hypertarget{_vertice_distancia_8c_a35ac5c7079e437143fe12e1d00b37291}\label{_vertice_distancia_8c_a35ac5c7079e437143fe12e1d00b37291} 
+\index{VerticeDistancia.c@{VerticeDistancia.c}!CriarVerticesDistancia@{CriarVerticesDistancia}}
+\index{CriarVerticesDistancia@{CriarVerticesDistancia}!VerticeDistancia.c@{VerticeDistancia.c}}
+\doxysubsubsection{\texorpdfstring{CriarVerticesDistancia()}{CriarVerticesDistancia()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} Criar\+Vertices\+Distancia (\begin{DoxyParamCaption}\item[{int}]{tamanho,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Cria uma lista de vertices distancia com um determinado tamanho. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & Tamanho da lista de vertices distancias\\
+\hline
+{\em res} & Retorna 0 se nao for criado a lista, retorna a lista se a mesma for criada\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se o tamanho for igual a 0, retorna lista se a mesma for criada
+\end{DoxyReturn}
+\Hypertarget{_vertice_distancia_8c_a56ed64e97acd4c18fcc806570105631b}\label{_vertice_distancia_8c_a56ed64e97acd4c18fcc806570105631b} 
+\index{VerticeDistancia.c@{VerticeDistancia.c}!EncontrarIdAnteriorVerticeDistancia@{EncontrarIdAnteriorVerticeDistancia}}
+\index{EncontrarIdAnteriorVerticeDistancia@{EncontrarIdAnteriorVerticeDistancia}!VerticeDistancia.c@{VerticeDistancia.c}}
+\doxysubsubsection{\texorpdfstring{EncontrarIdAnteriorVerticeDistancia()}{EncontrarIdAnteriorVerticeDistancia()}}
+{\footnotesize\ttfamily int Encontrar\+Id\+Anterior\+Vertice\+Distancia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}}]{vertice\+Distancias,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Encontra o id do vertice distancia anterior ao vertice distancia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice\+Distancias} & Lista de vertice distancia\\
+\hline
+{\em id} & Id\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna -\/1 se a lista de vertice\+Distancias for nulo ou se o vertice lista nao existir, retorna o id do vertice distancia anterior 
+\end{DoxyReturn}
+\Hypertarget{_vertice_distancia_8c_adea90575efd3c8192c0cb407c2433cc4}\label{_vertice_distancia_8c_adea90575efd3c8192c0cb407c2433cc4} 
+\index{VerticeDistancia.c@{VerticeDistancia.c}!EncontrarVerticeDistancia@{EncontrarVerticeDistancia}}
+\index{EncontrarVerticeDistancia@{EncontrarVerticeDistancia}!VerticeDistancia.c@{VerticeDistancia.c}}
+\doxysubsubsection{\texorpdfstring{EncontrarVerticeDistancia()}{EncontrarVerticeDistancia()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} Encontrar\+Vertice\+Distancia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}}]{vertice\+Distancias,  }\item[{int}]{id,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Encontra um vertice distancias a partir do seu ID e retorna o mesmo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice\+Distancias} & Lista de vertice distancias\\
+\hline
+{\em id} & Id\\
+\hline
+{\em res} & Retorna 0 se nao for encontrado, retorna 1 se for encontrado\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se a lista de vertice distancias for nulo, retorna o vertice distancia se o mesmo existir
+\end{DoxyReturn}
+\Hypertarget{_vertice_distancia_8c_a895bd19519005098113b590a388562b1}\label{_vertice_distancia_8c_a895bd19519005098113b590a388562b1} 
+\index{VerticeDistancia.c@{VerticeDistancia.c}!ProcessarCaminho@{ProcessarCaminho}}
+\index{ProcessarCaminho@{ProcessarCaminho}!VerticeDistancia.c@{VerticeDistancia.c}}
+\doxysubsubsection{\texorpdfstring{ProcessarCaminho()}{ProcessarCaminho()}}
+{\footnotesize\ttfamily int Processar\+Caminho (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}}]{vertice\+Distancas,  }\item[{int}]{destino }\end{DoxyParamCaption})}
+
+
+
+Mostra o caminho no terminal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice\+Distancas} & Lista de vertice distancas\\
+\hline
+{\em destino} & ID do destino\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{_vertice_distancia_8c_a18c0bb50d8cefe2751bec3c54067cb93}\label{_vertice_distancia_8c_a18c0bb50d8cefe2751bec3c54067cb93} 
+\index{VerticeDistancia.c@{VerticeDistancia.c}!RemoverVerticeDistacia@{RemoverVerticeDistacia}}
+\index{RemoverVerticeDistacia@{RemoverVerticeDistacia}!VerticeDistancia.c@{VerticeDistancia.c}}
+\doxysubsubsection{\texorpdfstring{RemoverVerticeDistacia()}{RemoverVerticeDistacia()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} Remover\+Vertice\+Distacia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}}]{vertice\+Distancias,  }\item[{int}]{id,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Remove um vertice dentro de uma lista de vertice distancias. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice\+Distancias} & Lista de vertice distancias\\
+\hline
+{\em id} & Id do vertice\\
+\hline
+{\em res} & Retorna 0 se nao for removido, retorna 1 se for removido\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se a lista de vertice distancias for nula, retorna a lista de vertice distancias sem o vertice removido se o mesmo nao existir e retorn lista de vertices distancias com o vertice removido
+\end{DoxyReturn}
+\Hypertarget{_vertice_distancia_8c_a8b1b5066e284ab4326db1852e660175b}\label{_vertice_distancia_8c_a8b1b5066e284ab4326db1852e660175b} 
+\index{VerticeDistancia.c@{VerticeDistancia.c}!SomarDistanciaListaVerticeDistancia@{SomarDistanciaListaVerticeDistancia}}
+\index{SomarDistanciaListaVerticeDistancia@{SomarDistanciaListaVerticeDistancia}!VerticeDistancia.c@{VerticeDistancia.c}}
+\doxysubsubsection{\texorpdfstring{SomarDistanciaListaVerticeDistancia()}{SomarDistanciaListaVerticeDistancia()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} Somar\+Distancia\+Lista\+Vertice\+Distancia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}}]{vertice\+Distancias,  }\item[{int}]{id,  }\item[{int}]{valor,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Soma a uma distancia de um id presente numa lista de vertices distania um valor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice\+Distancia} & Lista de \doxylink{struct_vertice}{Vertice} distancia\\
+\hline
+{\em id} & Id\\
+\hline
+{\em valor} & Valor\\
+\hline
+{\em res} & Retorna 0 se nao for somado, retorna 1 se for somado\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo e o vertice distancia for nulo, retorna o vertice distancia se for feita a soma
+\end{DoxyReturn}
+\Hypertarget{_vertice_distancia_8c_ab9f935c0206515b653ce090ab7b30cd1}\label{_vertice_distancia_8c_ab9f935c0206515b653ce090ab7b30cd1} 
+\index{VerticeDistancia.c@{VerticeDistancia.c}!SomarDistanciaListaVerticeDistancia2@{SomarDistanciaListaVerticeDistancia2}}
+\index{SomarDistanciaListaVerticeDistancia2@{SomarDistanciaListaVerticeDistancia2}!VerticeDistancia.c@{VerticeDistancia.c}}
+\doxysubsubsection{\texorpdfstring{SomarDistanciaListaVerticeDistancia2()}{SomarDistanciaListaVerticeDistancia2()}}
+{\footnotesize\ttfamily int Somar\+Distancia\+Lista\+Vertice\+Distancia2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}}]{vertice\+Distancias,  }\item[{int}]{id,  }\item[{int}]{valor,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Retorna uma soma de uma distancia de um id presente numa lista de vertices distancia um valor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice\+Distancia} & Lista de \doxylink{struct_vertice}{Vertice} distancia\\
+\hline
+{\em id} & Id\\
+\hline
+{\em valor} & Valor\\
+\hline
+{\em res} & Retorna 0 se nao for somado, retorna 1 se for somado\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo e o vertice distancia for nulo, retorna o vertice distancia se for feita a soma
+\end{DoxyReturn}
+\Hypertarget{_vertice_distancia_8c_a16917b140a1ba33842ea7d9ae25a6075}\label{_vertice_distancia_8c_a16917b140a1ba33842ea7d9ae25a6075} 
+\index{VerticeDistancia.c@{VerticeDistancia.c}!SomarDistanciasVerticeDistancia@{SomarDistanciasVerticeDistancia}}
+\index{SomarDistanciasVerticeDistancia@{SomarDistanciasVerticeDistancia}!VerticeDistancia.c@{VerticeDistancia.c}}
+\doxysubsubsection{\texorpdfstring{SomarDistanciasVerticeDistancia()}{SomarDistanciasVerticeDistancia()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} Somar\+Distancias\+Vertice\+Distancia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}}]{vertice\+Distancia,  }\item[{int}]{valor,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Soma a uma distancia do "{}vertice distania"{} um valor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice\+Distancia} & \doxylink{struct_vertice}{Vertice} distancia\\
+\hline
+{\em valor} & Valor\\
+\hline
+{\em res} & Retorna 0 se nao for somado, retorna 1 se for somado\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo e o vertice distancia for nulo, retorna o vertice distancia se for feita a soma
+\end{DoxyReturn}
+\Hypertarget{_vertice_distancia_8c_aeccd9fba213ed231fcf972effee94460}\label{_vertice_distancia_8c_aeccd9fba213ed231fcf972effee94460} 
+\index{VerticeDistancia.c@{VerticeDistancia.c}!SomarDistanciasVerticeDistancia2@{SomarDistanciasVerticeDistancia2}}
+\index{SomarDistanciasVerticeDistancia2@{SomarDistanciasVerticeDistancia2}!VerticeDistancia.c@{VerticeDistancia.c}}
+\doxysubsubsection{\texorpdfstring{SomarDistanciasVerticeDistancia2()}{SomarDistanciasVerticeDistancia2()}}
+{\footnotesize\ttfamily int Somar\+Distancias\+Vertice\+Distancia2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}}]{vertice\+Distancia,  }\item[{int}]{valor,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Retorna a soma de uma distancia do "{}vertice distania"{} um valor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice\+Distancia} & \doxylink{struct_vertice}{Vertice} distancia\\
+\hline
+{\em valor} & Valor\\
+\hline
+{\em res} & Retorna 0 se nao for somado, retorna 1 se for somado\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo e o vertice distancia for nulo, retorna o vertice distancia se for feita a soma
+\end{DoxyReturn}
+\Hypertarget{_vertice_distancia_8c_a48e3dc136a09cd1d821fa7851a00f257}\label{_vertice_distancia_8c_a48e3dc136a09cd1d821fa7851a00f257} 
+\index{VerticeDistancia.c@{VerticeDistancia.c}!SomarTodasDistanciasListaVerticeDistancia@{SomarTodasDistanciasListaVerticeDistancia}}
+\index{SomarTodasDistanciasListaVerticeDistancia@{SomarTodasDistanciasListaVerticeDistancia}!VerticeDistancia.c@{VerticeDistancia.c}}
+\doxysubsubsection{\texorpdfstring{SomarTodasDistanciasListaVerticeDistancia()}{SomarTodasDistanciasListaVerticeDistancia()}}
+{\footnotesize\ttfamily int Somar\+Todas\+Distancias\+Lista\+Vertice\+Distancia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{vertice\+Distancias }\end{DoxyParamCaption})}
+
+
+
+Soma todas as distancias presentes na lista de vertices (caminho) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice\+Distancias} & Lista de vertice distancias\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna -\/1 se a lista for nula, retorna a soma
+\end{DoxyReturn}
+\Hypertarget{_vertice_distancia_8c_acfc3fae4524666ac42bba85aad2aacbe}\label{_vertice_distancia_8c_acfc3fae4524666ac42bba85aad2aacbe} 
+\index{VerticeDistancia.c@{VerticeDistancia.c}!VerificarVerticeDistancia@{VerificarVerticeDistancia}}
+\index{VerificarVerticeDistancia@{VerificarVerticeDistancia}!VerticeDistancia.c@{VerticeDistancia.c}}
+\doxysubsubsection{\texorpdfstring{VerificarVerticeDistancia()}{VerificarVerticeDistancia()}}
+{\footnotesize\ttfamily int Verificar\+Vertice\+Distancia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}}]{vertice\+Distancias,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Verificam se existe um vertice dentro de uma lista de vertice distancias. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice\+Distancias} & Lista de vertice distancias\\
+\hline
+{\em id} & Id do vertice\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna 0 se nao existir, retorna 1 se existir
+\end{DoxyReturn}

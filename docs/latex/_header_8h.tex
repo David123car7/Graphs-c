@@ -1,0 +1,2077 @@
+\doxysection{Header.\+h File Reference}
+\hypertarget{_header_8h}{}\label{_header_8h}\index{Header.h@{Header.h}}
+
+
+~\newline
+  
+
+
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+\doxysubsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_grafo}{Grafo}}
+\begin{DoxyCompactList}\small\item\em Estrutura do grafo. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_vertice}{Vertice}}
+\begin{DoxyCompactList}\small\item\em Estrutura do vertice. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_adjacente}{Adjacente}}
+\begin{DoxyCompactList}\small\item\em Estrutura dos vertices adjacentes. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}}
+\begin{DoxyCompactList}\small\item\em Estrutura da lista de inteiros. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}}
+\begin{DoxyCompactList}\small\item\em Estrutura dos vertices distancia. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_header_8h_af076440f216f5a40a11563e489f04932}{INFINITO}}~9999
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct_grafo}{Grafo}} \mbox{\hyperlink{_header_8h_adab04f64457aac52a13e71e40915bd43}{Grafo}}
+\begin{DoxyCompactList}\small\item\em Estrutura do grafo. \end{DoxyCompactList}\item 
+typedef struct \mbox{\hyperlink{struct_vertice}{Vertice}} \mbox{\hyperlink{_header_8h_a901d403606dfb55e6d42b899c05d3347}{Vertice}}
+\begin{DoxyCompactList}\small\item\em Estrutura do vertice. \end{DoxyCompactList}\item 
+typedef struct \mbox{\hyperlink{struct_adjacente}{Adjacente}} \mbox{\hyperlink{_header_8h_aaf8d838b51951d29be56e29a7721ee83}{Adjacente}}
+\begin{DoxyCompactList}\small\item\em Estrutura dos vertices adjacentes. \end{DoxyCompactList}\item 
+typedef struct \mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \mbox{\hyperlink{_header_8h_abc4b99295b0641dd9aa7eae3e01eb5f6}{Lista\+Inteiros}}
+\begin{DoxyCompactList}\small\item\em Estrutura da lista de inteiros. \end{DoxyCompactList}\item 
+typedef struct \mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \mbox{\hyperlink{_header_8h_abbbb60631085bd392806ea2adf1c966c}{Vertice\+Distancia}}
+\begin{DoxyCompactList}\small\item\em Estrutura dos vertices distancia. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_aab4c09ffb2140be8dbe1c41041b43fa9}{Criar\+Vertice}} ()
+\begin{DoxyCompactList}\small\item\em Cria um vertice. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_acef0486f7e66738e6c33a3331bde81a3}{Adicionar\+Dados\+Vertice}} (\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}vertice, int id, bool visitado, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Adiciona dados a um vertice. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_a13a1716f777b56764a4f81c306420e86}{Adicionar\+Vertice}} (\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}vertices, \mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}vertice, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Adiciona um vertice a uma lista de vertices. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_af1ca00def62c8ae45f0322af7f3bfed4}{Adicionar\+Adjacencia\+Vertices}} (\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}vertices, int origem, \mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}adjacente, int verificar, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Adiciona uma adjacencia dentro de uma lista de adjacentes. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_af1ebd076c6f6ba11456e28ba4e4e39b1}{Alterar\+Estado\+Vertice\+Visitado}} (\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}vertice, bool estado, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Altera o estado da variabel boleana visitado de um vertice. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_a8a1f69d319d73ccd1f9e68afb7a7e49b}{Alterar\+Estado\+Vertice\+Visitado\+Vertices}} (\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}vertices, int id, bool estado, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Altera o estado da variavel boleana visitado de um vertice dentro de uma lista de vertices. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_a0cfa0b78b791ca5db934f1a789c1c2ab}{Alterar\+Estado\+Visitado\+Todos\+Vertices}} (\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}vertices, bool estado, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Altera o estado da variabel boleana visitado de todos os vertices dentro de uma lista de vertices. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_a992255c3a3c99bad823be217cfd844a2}{Remover\+Vertice}} (\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}vertices, int id, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Remove um vertice de uma lista de vertices. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_aff21cd7fafb39764e710417465cbe5c5}{Remove\+Adjacente\+Vertices}} (\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}vertices, int vertice, int adjacente, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Remove o vertice adjacente de um vertice presente na lista de vertices. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_a4b9cda27dd2c44fcba89d0ef81263f06}{Remover\+Adjacente\+Todos\+Vertices}} (\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}vertices, int id, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Remove o vertice adjacente de todos vertices presentes na lista de vertices. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_a08b87e4f4f8dbecaf278e6efb1acd003}{Remover\+Todos\+Adjacentes\+Vertice}} (\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}vertices, int id, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Remove todos os vertices adjacentes de um vertice dentro de uma lista de vertice. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_header_8h_a1d9a6830167ffb1240b89c1bfa111fbb}{Verificar\+Vertice}} (\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}vertices, int id)
+\begin{DoxyCompactList}\small\item\em Verifica a existencia de um vertice numa lista de vertices. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_header_8h_a1bcdf61dab5e992b5a1bf30ee3a6e6a3}{Verificar\+Vertice\+Grafo}} (\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*}grafo, int id)
+\begin{DoxyCompactList}\small\item\em Verifica a existencia de um vertice num grafo. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_header_8h_a1d39203b843667dba1a9230712d6e1cb}{Verificar\+Adjacencia}} (\mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}adjacentes, int id)
+\begin{DoxyCompactList}\small\item\em Verifica se existe o adjacente dentro de uma lista de adjacencias. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_header_8h_a7049e0d5b9b0a5579bab56648e163116}{Verificar\+Adjacencia\+Vertice}} (\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}vertices, int id)
+\begin{DoxyCompactList}\small\item\em Verifica se existe alguem vertice adjacente dentro de uma lista de vertices. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_header_8h_a6124ddf5ef08b1d4d1d69c970e3a5cf8}{Verificar\+Adjacencia\+Vertice\+Grafo}} (\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*}grafo, int vertice, int adjacente)
+\begin{DoxyCompactList}\small\item\em Verifica se existe alguem vertice adjacente a um vertice dentro de um grafo. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_header_8h_a3a65d34ba6ee54fd4df6c87fee07eddf}{Verificar\+Vertice\+Visitado}} (\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}vertices, int id)
+\begin{DoxyCompactList}\small\item\em Verifica se o vertice foi visitado. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_a3202effc47cc0a7faa6aed75184c1967}{Encontrar\+Vertice\+Grafo}} (\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*}grafo, int id, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Encontra um vertice dentro de um grafo e retorna o mesmo. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_a39bcaf46dca003e5b2b9efc53f6b5cb3}{Encontrar\+Vertice}} (\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}vertices, int id, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Encontra um vertice dentro de uma lista de vertices e retorna o mesmo. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_header_8h_af0dc10c4e18eb2df229f0845ceaa21a1}{Processar\+Vertice}} (\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}vertice)
+\begin{DoxyCompactList}\small\item\em Processa o vertice mostrando o no terminal. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_a5d0cd34874cd459c0bc8fd377300bb4b}{Criar\+Adjacente}} ()
+\begin{DoxyCompactList}\small\item\em Cria um vertice adjacente. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_a9a71bd022b9fb88c96beaaba8e29f2a9}{Adicionar\+Dados\+Adjacente}} (\mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}adjacente, int id, int peso, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Cria um vertice adjacente. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_a7097e1a4ac98918f2080583aaafb6e49}{Adicionar\+Adjacencia}} (\mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}adjacentes, \mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}adjacente, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Adiciona uma adjacencia dentro de uma lista de adjacentes. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_a879ece945ea7e4f0b41e413ee0ed37b3}{Remover\+Adjacente}} (\mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}adjacentes, int id, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Remove um adjacente de uma lista de adjacentes. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_header_8h_a4cfb04584deeb018191c28ccbbb07b6e}{Remover\+Todos\+Adjacentes}} (\mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}adjacentes)
+\begin{DoxyCompactList}\small\item\em Remove todas as adjacencias de uma lista de adjacencias. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_header_8h_a3c61fa7902c59b8cd882c90f7d2bc9c7}{Verificar\+Vertices\+Adjacentes\+Visitados}} (\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}vertices, \mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}adjacentes)
+\begin{DoxyCompactList}\small\item\em Verifica se os vertices adjacentes de uma lista de adjacentes foram visitados. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_header_8h_a28f410d57a7e96abccb17f1aba5d073b}{Comparar\+Pesos\+Adjacente}} (\mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}adjacente, int valor)
+\begin{DoxyCompactList}\small\item\em Compara o peso de um adjacente e um valor. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_header_8h_a34a37374c175d1fa153385684fac84e0}{Encontrar\+Id\+Menor\+Adjacente}} (\mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}adjacentes)
+\begin{DoxyCompactList}\small\item\em Encontra o id do adjacente que possui o menor peso. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_header_8h_a076107910642e50c1353c7dcc09ea1d5}{Encontrar\+Id\+Menor\+Adjacente\+Nao\+Visitado}} (\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}vertices, \mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}adjacentes, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Encontra o id do adjacente que possui o menor peso e nao foi visitado. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_ae9280ded3460e9db71c42aaa245cf2fa}{Criar\+Grafo}} ()
+\begin{DoxyCompactList}\small\item\em Cria um grafo. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_a5b565440538303c3076f4852ef56449e}{Adicionar\+Vertice\+Grafo}} (\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*}grafo, \mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}vertice, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Adiciona um vertice no grafo no fim do grafo. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_a16687bbebe0a30de6d6a724bc6a3d558}{Adicionar\+Adjacencia\+Grafo}} (\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*}grafo, int origem, \mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}adjacente, int verificar, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Cria uma adjacencia entre um vertice origem e destino. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_ae146441213bbe2fb8c358359d9c4250d}{Remover\+Todos\+Adjacentes\+Grafo}} (\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*}grafo, int id, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Remove todos os vertices adjacentes de um vertice dentro de um grafo. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_aa49f53c6832be0ee95bd6188604927dc}{Remover\+Adjacente\+Todos\+Vertices\+Grafo}} (\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*}grafo, int id, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Remove o vertice adjacente de todas adjacencias presentes no grafo. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_a89ea1556fcd555eb406da321ef01a84c}{Remover\+Adjacente\+Grafo}} (\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*}grafo, int vertice, int adjacente, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Remove o vertice adjacente de um vertice presente no grafo. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_a2625232d8972e6e03e72813d12375244}{Remover\+Vertice\+Grafo}} (\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*}grafo, int id, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Remove um vertice de um grafo. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_header_8h_ae212458d99f53f19ea448570986e0019}{Depth\+First\+Traversal}} (\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*}grafo, int inicio\+Id)
+\begin{DoxyCompactList}\small\item\em Depth\+First\+Traversal\+: Percorre todo o grafo em profundidade. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_header_8h_a67debeee34a18d668f0dc32d4388503e}{Breadth\+First\+Traversal}} (\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*}grafo, int inicio\+Id)
+\begin{DoxyCompactList}\small\item\em Breadth First Search. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_header_8h_a6856097da15234c0a7fbdff345c06432}{Determinar\+Maior\+Caminho\+Grafo}} (\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*}grafo, int inicio\+Id, int destino\+Id, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Determina o maior caminho. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_header_8h_a85c02d54509e115f15a2a83d31afc47a}{Mostrar\+Grafo}} (\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*}grafo)
+\begin{DoxyCompactList}\small\item\em Mostra o grafo no terminal. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_a9092f87bf7d6e248caac2438d3ce2559}{Grafo\+Para\+Lista\+Inteiros}} (\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*}grafo, \mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*}lista, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Carrega os dados do grafo para uma lista de inteiros. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_a833797293559178703ce16d116d45f9f}{Carregar\+Grafo}} (\mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*}lista, int \texorpdfstring{$\ast$}{*}vertices, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Carrega um grafo para o programa a partir de uma lista de inteiros. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_aece7db61a47b49b72c1e8ced6629638d}{Ler\+Grafo\+Txt}} (char ficheiro\mbox{[}$\,$\mbox{]}, int \texorpdfstring{$\ast$}{*}num\+Vertices, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Lê um grafo (matriz de adjacencias) presente num ficheiro.\+txt para uma lista de inteiros. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_a6d25564c9d73a7997b49780ee7ad27ba}{Ler\+Grafo\+Bin}} (\mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*}lista, char ficheiro\mbox{[}$\,$\mbox{]}, int \texorpdfstring{$\ast$}{*}vertices, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Carrega os dados de um grafo presentes num ficheiro binario para uma lista de inteiros. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_header_8h_a9f8d0c6b299e4eb729eae63b32db81df}{Guardar\+Grafo\+Bin}} (\mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*}lista, char ficheiro\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Guarda os dados do grafo carregados na lista de inteiros. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_aeb31f5ad664aa3dce7bacdb34fb4c8ce}{Arrancar\+Programa}} (char ficheiro\+Txt\mbox{[}$\,$\mbox{]}, char ficheiro\+Bin\mbox{[}$\,$\mbox{]}, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Arranca o programa. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_ab4913222b05a54317e78eb99f1b5064e}{Criar\+Lista\+Inteiros}} ()
+\begin{DoxyCompactList}\small\item\em Cria uma lista de inteiros. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_a8e808cde29ae47adccc1f557d739e8a6}{Criar\+Listas\+Inteiros}} (int tam, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Cria uma lista de inteiros de um determinado tamanho. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_aeecc341e2f0c453e7ca90bc9c8e74a66}{Adiconar\+Dados\+Lista\+Inteiros}} (\mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*}lista, int num, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Adiciona dados a uma lista de inteiros. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_a4c242d3082397755f972df3f05e1c579}{Adicionar\+Numero\+Lista\+Inteiros\+Inicio}} (\mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*}lista, \mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*}numero, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Adicona um numero a uma lista de inteiros no inicio da lista de inteiros. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_aa6324a708e2c6f09de47b8db9bef0773}{Adicionar\+Numero\+Lista\+Inteiros\+Fim}} (\mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*}lista, \mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*}numero, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Adicona um numero a uma lista de inteiros no final da lista de inteiros. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_a47aa2a2a6cb075867fa53848da214316}{Adicionar\+Vertice\+Id\+Lista\+Inteiros}} (\mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*}lista, \mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}vertices, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Adiciona a uma lista de inteiros todos os ids dos vertices presentes numa lista de vertices. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_a8b3835c0d404104b0fce8423cdb67fe2}{Criar\+Adicionar\+Numero\+Lista\+Inteiros\+Inicio}} (\mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*}lista, int num, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Cria e adiciona um numero a uma lista de inteiros no inicio, retornando como parametro o numero na posicao mais alta da lista. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_a156a8089f99e425aee2ce3e1719598ca}{Criar\+Adicionar\+Numero\+Lista\+Inteiros\+Fim}} (\mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*}lista, int num, int \texorpdfstring{$\ast$}{*}top, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Cria e adiciona um numero a uma lista de inteiros no fim, retornando como parametro o numero na posicao mais alta da lista. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_a14323251264c0a1566e5ed3e4c84d7db}{Criar\+Adicionar\+Numero\+Lista\+Inteiros\+Fim2}} (\mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*}lista, int num, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Cria e adiciona um numero a uma lista de inteiros no fim. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_header_8h_a9adfb9c1c644734b7208a06e0cc88cec}{Comparar\+Distancia\+Vertice\+Distancia}} (\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}vertice\+Distancia, int valor)
+\begin{DoxyCompactList}\small\item\em Compara as distancias de um vertice distancia e um valor. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_header_8h_a929bddde1c63f00fb707bf6d659e1494}{Compara\+Distancia\+Lista\+Vertice\+Distancia}} (\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}vertice\+Distancia, int id, int valor)
+\begin{DoxyCompactList}\small\item\em Compara as distancias de um vertice presente numa lista de vertices distancia e um valor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_ad59a697826a68970fa554303cff0679f}{Remover\+Numero\+Lista\+Inteiros}} (\mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*}lista, int num, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Remove um numero de uma lista de inteiros. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_a602e0d16186ec375b614f618cdda90e7}{Remover\+Numero\+Lista\+Inteiros\+Com\+Top}} (\mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*}lista, int num, int \texorpdfstring{$\ast$}{*}top, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Remove um numero de uma lista de inteiros, retornando com um parametro o numero que esta a cima da lista. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_header_8h_a24da3d2538fcf84684aae2a9408bf1e2}{Verificar\+Lista\+Inteiros\+Vazia}} (\mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*}lista)
+\begin{DoxyCompactList}\small\item\em Vertifica se existe algum numero dentro da lista de numeros. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_header_8h_ab9d2a560a88b34d7e3ae93ff85ff9d87}{Verificar\+Numero\+Lista\+Inteiros}} (\mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*}lista, int num)
+\begin{DoxyCompactList}\small\item\em Verifica se existe o numero na lista de inteiros. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_header_8h_ac75f7b702fcbf9cf8a5b3a310f08d73e}{Encontrar\+Ultimo\+Numero\+Lista\+Inteiros}} (\mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*}lista)
+\begin{DoxyCompactList}\small\item\em Encontra o ultimo numero (Encontrar o top da stack) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_a95fc53f9ac5310a7846cc63580faee21}{Encontrar\+Numero\+Lista\+Inteiros}} (\mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*}lista, int num, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Encontra um numero dentro de uma lista de inteiros e retorna esse mesmo numero da lista de inteiros. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_a93cb9acede2bc9d10b2ec436576ebe03}{Criar\+Vertice\+Distancia}} ()
+\begin{DoxyCompactList}\small\item\em Cria uma variavel do tipo vertice\+Distancias. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_a35ac5c7079e437143fe12e1d00b37291}{Criar\+Vertices\+Distancia}} (int tamanho, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Cria uma lista de vertices distancia com um determinado tamanho. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_a6edb1c05a7768978d361089aa8b9bd57}{Adicionar\+Dados\+Vertice\+Distancia}} (\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}vertice\+Distancia, int id, int distancia, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Adiciona dados a uma variavel do tipo vertice\+Distancias. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_a449d4ca4ef1c5220c3a29a2ac0088062}{Adicionar\+Id\+Vertice\+Distancia}} (\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}vertice\+Distancia, int id, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Adiciona um id a uma variavel do tipo vertice\+Distancias. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_ad0c67ef200525d7c22d05e7906736ea7}{Adicionar\+Distancia\+Vertice\+Distancia}} (\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}vertice\+Distancia, int distancia, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Adiciona uma distancia a uma variavel do tipo vertice\+Distancias. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_a421a718c399878300104e584a2dfff72}{Adicionar\+Distancia\+Lista\+Vertice\+Distancia}} (\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}vertice\+Distancia, int id, int distancia, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Adiciona uma distancia a uma variavel do tipo vertice\+Distancias dentro de uma lista de vertice distancias. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_a5cc285bc7588f437f6c294f15050a8f9}{Adicionar\+Todos\+Id\+Vertices\+Distancia}} (\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}vertice\+Distancias, int id, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Adiciona a todos os vertices presentes na lista vertices distancia um id. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_abbf0da3e26b5ca3311dd0714ef4ea625}{Adicionar\+Todos\+Vertices\+Id\+Vertices\+Distancia}} (\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}vertice\+Distancias, \mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}vertices, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Adiciona a cada vertice presente na lista vertices distancia o id do vertice correspondente a lista de vertices. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_a9690f87675b214cc1042b186bc851ff1}{Adicionar\+Todos\+Distancia\+Vertices\+Distancia}} (\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}vertice\+Distancias, int distancia, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Adiciona a todos os vertices presentes na lista vertices distancia uma distancia. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_a32b4598ffb50167f091779b0b557951b}{Adicionar\+Vertice\+Distancia}} (\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}vertice\+Distancias, \mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}vertice\+Dist, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Adiciona um vertice distancia no fim da lista de vertice distancias. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_af630bb67a575a4bf6e7eabca159b06fc}{Atribuir\+Vertice\+Distancia\+Anterior}} (\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}vertice\+Distancia, \mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}anterior, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Atribuir a um vertice distancia o seu anterior. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_aeb509281a53b221eaa80f4d6830170fe}{Atribuir\+Lista\+Vertice\+Distancia\+Anterior}} (\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}vertice\+Distancias, \mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}anterior, int id, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Atribuir a um vertice distancia presente numa lista de vertices distancias o seu anterior. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_a18c0bb50d8cefe2751bec3c54067cb93}{Remover\+Vertice\+Distacia}} (\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}vertice\+Distancias, int id, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Remove um vertice dentro de uma lista de vertice distancias. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_a16917b140a1ba33842ea7d9ae25a6075}{Somar\+Distancias\+Vertice\+Distancia}} (\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}vertice\+Distancia, int valor, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Soma a uma distancia do "{}vertice distania"{} um valor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_a8b1b5066e284ab4326db1852e660175b}{Somar\+Distancia\+Lista\+Vertice\+Distancia}} (\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}vertice\+Distancias, int id, int valor, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Soma a uma distancia de um id presente numa lista de vertices distania um valor. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_header_8h_aeccd9fba213ed231fcf972effee94460}{Somar\+Distancias\+Vertice\+Distancia2}} (\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}vertice\+Distancia, int valor, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Retorna a soma de uma distancia do "{}vertice distania"{} um valor. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_header_8h_ab9f935c0206515b653ce090ab7b30cd1}{Somar\+Distancia\+Lista\+Vertice\+Distancia2}} (\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}vertice\+Distancias, int id, int valor, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Retorna uma soma de uma distancia de um id presente numa lista de vertices distancia um valor. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_header_8h_a48e3dc136a09cd1d821fa7851a00f257}{Somar\+Todas\+Distancias\+Lista\+Vertice\+Distancia}} (\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}vertice\+Distancias)
+\begin{DoxyCompactList}\small\item\em Soma todas as distancias presentes na lista de vertices (caminho) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_header_8h_acfc3fae4524666ac42bba85aad2aacbe}{Verificar\+Vertice\+Distancia}} (\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}vertice\+Distancias, int id)
+\begin{DoxyCompactList}\small\item\em Verificam se existe um vertice dentro de uma lista de vertice distancias. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_header_8h_adea90575efd3c8192c0cb407c2433cc4}{Encontrar\+Vertice\+Distancia}} (\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}vertice\+Distancias, int id, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Encontra um vertice distancias a partir do seu ID e retorna o mesmo. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_header_8h_a56ed64e97acd4c18fcc806570105631b}{Encontrar\+Id\+Anterior\+Vertice\+Distancia}} (\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}vertice\+Distancias, int id)
+\begin{DoxyCompactList}\small\item\em Encontra o id do vertice distancia anterior ao vertice distancia. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_header_8h_a895bd19519005098113b590a388562b1}{Processar\+Caminho}} (\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}vertice\+Distancas, int destino)
+\begin{DoxyCompactList}\small\item\em Mostra o caminho no terminal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+~\newline
+ 
+
+\begin{DoxyAuthor}{Author}
+David Carvalho 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+April 2024 
+\end{DoxyDate}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_header_8h_af076440f216f5a40a11563e489f04932}\label{_header_8h_af076440f216f5a40a11563e489f04932} 
+\index{Header.h@{Header.h}!INFINITO@{INFINITO}}
+\index{INFINITO@{INFINITO}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{INFINITO}{INFINITO}}
+{\footnotesize\ttfamily \#define INFINITO~9999}
+
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{_header_8h_aaf8d838b51951d29be56e29a7721ee83}\label{_header_8h_aaf8d838b51951d29be56e29a7721ee83} 
+\index{Header.h@{Header.h}!Adjacente@{Adjacente}}
+\index{Adjacente@{Adjacente}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{Adjacente}{Adjacente}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_adjacente}{Adjacente}} \mbox{\hyperlink{struct_adjacente}{Adjacente}}}
+
+
+
+Estrutura dos vertices adjacentes. 
+
+\Hypertarget{_header_8h_adab04f64457aac52a13e71e40915bd43}\label{_header_8h_adab04f64457aac52a13e71e40915bd43} 
+\index{Header.h@{Header.h}!Grafo@{Grafo}}
+\index{Grafo@{Grafo}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{Grafo}{Grafo}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_grafo}{Grafo}} \mbox{\hyperlink{struct_grafo}{Grafo}}}
+
+
+
+Estrutura do grafo. 
+
+\Hypertarget{_header_8h_abc4b99295b0641dd9aa7eae3e01eb5f6}\label{_header_8h_abc4b99295b0641dd9aa7eae3e01eb5f6} 
+\index{Header.h@{Header.h}!ListaInteiros@{ListaInteiros}}
+\index{ListaInteiros@{ListaInteiros}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{ListaInteiros}{ListaInteiros}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}}}
+
+
+
+Estrutura da lista de inteiros. 
+
+\Hypertarget{_header_8h_a901d403606dfb55e6d42b899c05d3347}\label{_header_8h_a901d403606dfb55e6d42b899c05d3347} 
+\index{Header.h@{Header.h}!Vertice@{Vertice}}
+\index{Vertice@{Vertice}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{Vertice}{Vertice}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_vertice}{Vertice}} \mbox{\hyperlink{struct_vertice}{Vertice}}}
+
+
+
+Estrutura do vertice. 
+
+\Hypertarget{_header_8h_abbbb60631085bd392806ea2adf1c966c}\label{_header_8h_abbbb60631085bd392806ea2adf1c966c} 
+\index{Header.h@{Header.h}!VerticeDistancia@{VerticeDistancia}}
+\index{VerticeDistancia@{VerticeDistancia}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{VerticeDistancia}{VerticeDistancia}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}}}
+
+
+
+Estrutura dos vertices distancia. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_header_8h_a7097e1a4ac98918f2080583aaafb6e49}\label{_header_8h_a7097e1a4ac98918f2080583aaafb6e49} 
+\index{Header.h@{Header.h}!AdicionarAdjacencia@{AdicionarAdjacencia}}
+\index{AdicionarAdjacencia@{AdicionarAdjacencia}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{AdicionarAdjacencia()}{AdicionarAdjacencia()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*} Adicionar\+Adjacencia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}}]{adjacentes,  }\item[{\mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}}]{adjacente,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Adiciona uma adjacencia dentro de uma lista de adjacentes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em adjacentes} & Lista de adjacentes\\
+\hline
+{\em adjacente} & \doxylink{struct_adjacente}{Adjacente}\\
+\hline
+\end{DoxyParams}
+\texorpdfstring{$<$}{<}param name="{}res"{}Retorna 0 se o adjacente nao for adicionado, retorna 1 se o adjacente for adicionado ou se a adjacencia ja existe
+
+\begin{DoxyReturn}{Returns}
+Retorna nulo se se a lista de adjacentes for nula, retorna a lista de adjacentes sem o adjacente adicionado se o mesmo for nulo, e retorna a lista de adjacentes com o adjacente adicionado se o mesmo for adicionado
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a16687bbebe0a30de6d6a724bc6a3d558}\label{_header_8h_a16687bbebe0a30de6d6a724bc6a3d558} 
+\index{Header.h@{Header.h}!AdicionarAdjacenciaGrafo@{AdicionarAdjacenciaGrafo}}
+\index{AdicionarAdjacenciaGrafo@{AdicionarAdjacenciaGrafo}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{AdicionarAdjacenciaGrafo()}{AdicionarAdjacenciaGrafo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*} Adicionar\+Adjacencia\+Grafo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{grafo,  }\item[{int}]{origem,  }\item[{\mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}}]{adjacente,  }\item[{int}]{verificar,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Cria uma adjacencia entre um vertice origem e destino. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grafo} & \doxylink{struct_grafo}{Grafo}\\
+\hline
+{\em origem} & Id do vertice origem\\
+\hline
+{\em adjacente} & \doxylink{struct_adjacente}{Adjacente}\\
+\hline
+{\em verificar} & Colocar 0 para nao verificar vertice, colocar 1 para verificar vertice\\
+\hline
+{\em res} & Retorna 0 se a adjacencia nao for adicionada, retorna 1 se a adjacencia for adicionada\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se o grafo é nulo, se nao retorna o grafo com a aresta criada
+\end{DoxyReturn}
+\Hypertarget{_header_8h_af1ca00def62c8ae45f0322af7f3bfed4}\label{_header_8h_af1ca00def62c8ae45f0322af7f3bfed4} 
+\index{Header.h@{Header.h}!AdicionarAdjacenciaVertices@{AdicionarAdjacenciaVertices}}
+\index{AdicionarAdjacenciaVertices@{AdicionarAdjacenciaVertices}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{AdicionarAdjacenciaVertices()}{AdicionarAdjacenciaVertices()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} Adicionar\+Adjacencia\+Vertices (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{vertices,  }\item[{int}]{origem,  }\item[{\mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}}]{adjacente,  }\item[{int}]{verificar,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Adiciona uma adjacencia dentro de uma lista de adjacentes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em adjacentes} & Lista de adjacentes\\
+\hline
+{\em adjacente} & \doxylink{struct_adjacente}{Adjacente}\\
+\hline
+{\em verificar} & Colocar 0 para nao verificar vertice, colocar 1 para verificar vertice\\
+\hline
+{\em res} & Retorna 0 se o adjacente nao for adicionado, retorna 1 se o adjacente for adicionado\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se a lista de vertices for nula, retorna a lista de vertices sem o adjacente adicionado se o mesmo for nulo, e retorna a lista de vertices com o adjacente adicionado se o mesmo for adicionado
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a9a71bd022b9fb88c96beaaba8e29f2a9}\label{_header_8h_a9a71bd022b9fb88c96beaaba8e29f2a9} 
+\index{Header.h@{Header.h}!AdicionarDadosAdjacente@{AdicionarDadosAdjacente}}
+\index{AdicionarDadosAdjacente@{AdicionarDadosAdjacente}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{AdicionarDadosAdjacente()}{AdicionarDadosAdjacente()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*} Adicionar\+Dados\+Adjacente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}}]{adjacente,  }\item[{int}]{id,  }\item[{int}]{peso,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Cria um vertice adjacente. 
+
+\begin{DoxyReturn}{Returns}
+Retorna vertice adjacente criado
+\end{DoxyReturn}
+\Hypertarget{_header_8h_acef0486f7e66738e6c33a3331bde81a3}\label{_header_8h_acef0486f7e66738e6c33a3331bde81a3} 
+\index{Header.h@{Header.h}!AdicionarDadosVertice@{AdicionarDadosVertice}}
+\index{AdicionarDadosVertice@{AdicionarDadosVertice}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{AdicionarDadosVertice()}{AdicionarDadosVertice()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} Adicionar\+Dados\+Vertice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{vertice,  }\item[{int}]{id,  }\item[{bool}]{visitado,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Adiciona dados a um vertice. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice} & \doxylink{struct_vertice}{Vertice} a serem adicionados os dados\\
+\hline
+{\em id} & Id do vertice\\
+\hline
+{\em num} & Numero do vertice\\
+\hline
+{\em visitado} & Bool visitado ou nao\\
+\hline
+{\em res} & retorna 0 se nao forem adicionados os dados ao vertice, retorna 1 se forem adicionados os dados ao vertice\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se o vertice for nulo, retorna o vertice se os dados forem adicionados ao vertice
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a6edb1c05a7768978d361089aa8b9bd57}\label{_header_8h_a6edb1c05a7768978d361089aa8b9bd57} 
+\index{Header.h@{Header.h}!AdicionarDadosVerticeDistancia@{AdicionarDadosVerticeDistancia}}
+\index{AdicionarDadosVerticeDistancia@{AdicionarDadosVerticeDistancia}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{AdicionarDadosVerticeDistancia()}{AdicionarDadosVerticeDistancia()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} Adicionar\+Dados\+Vertice\+Distancia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}}]{vertice\+Distancia,  }\item[{int}]{id,  }\item[{int}]{distancia,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Adiciona dados a uma variavel do tipo vertice\+Distancias. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice\+Distancias} & \doxylink{struct_vertice}{Vertice} distancia\\
+\hline
+{\em id} & Id do vertice\\
+\hline
+{\em distancia} & Distancia\\
+\hline
+{\em res} & Retorna 0 e nao for adicionado os dados, retorna 1 se for adicionado os dados\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se o vertice distancia for nulo, retorna o vertice distancia se os dados forem adicionados
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a421a718c399878300104e584a2dfff72}\label{_header_8h_a421a718c399878300104e584a2dfff72} 
+\index{Header.h@{Header.h}!AdicionarDistanciaListaVerticeDistancia@{AdicionarDistanciaListaVerticeDistancia}}
+\index{AdicionarDistanciaListaVerticeDistancia@{AdicionarDistanciaListaVerticeDistancia}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{AdicionarDistanciaListaVerticeDistancia()}{AdicionarDistanciaListaVerticeDistancia()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} Adicionar\+Distancia\+Lista\+Vertice\+Distancia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}}]{vertice\+Distancia,  }\item[{int}]{id,  }\item[{int}]{distancia,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Adiciona uma distancia a uma variavel do tipo vertice\+Distancias dentro de uma lista de vertice distancias. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice\+Distancia} & Lista de vertice distancias\\
+\hline
+{\em id} & Id do vertice\\
+\hline
+{\em distancia} & Distancia\\
+\hline
+{\em res} & Retorna 0 sea distancia nao for adicionada, retorna 1 se a distancia for adicionada\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se o vertice distancia for nulo, retorna a lista de vertices distancia sem a distancia adicionada se o vertice nao existir, retorna a lista de vertices distancia com a distancia adicionada ao vertice
+\end{DoxyReturn}
+\Hypertarget{_header_8h_ad0c67ef200525d7c22d05e7906736ea7}\label{_header_8h_ad0c67ef200525d7c22d05e7906736ea7} 
+\index{Header.h@{Header.h}!AdicionarDistanciaVerticeDistancia@{AdicionarDistanciaVerticeDistancia}}
+\index{AdicionarDistanciaVerticeDistancia@{AdicionarDistanciaVerticeDistancia}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{AdicionarDistanciaVerticeDistancia()}{AdicionarDistanciaVerticeDistancia()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} Adicionar\+Distancia\+Vertice\+Distancia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}}]{vertice\+Distancia,  }\item[{int}]{distancia,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Adiciona uma distancia a uma variavel do tipo vertice\+Distancias. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice\+Distancias} & \doxylink{struct_vertice}{Vertice} distancia\\
+\hline
+{\em distancia} & Distancia\\
+\hline
+{\em res} & Retorna 0 e nao for adicionado a distancia, retorna 1 se for adicionado a distancia\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se o vertice distancia for nulo, retorna o vertice distancia se o id for adicionado
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a449d4ca4ef1c5220c3a29a2ac0088062}\label{_header_8h_a449d4ca4ef1c5220c3a29a2ac0088062} 
+\index{Header.h@{Header.h}!AdicionarIdVerticeDistancia@{AdicionarIdVerticeDistancia}}
+\index{AdicionarIdVerticeDistancia@{AdicionarIdVerticeDistancia}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{AdicionarIdVerticeDistancia()}{AdicionarIdVerticeDistancia()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} Adicionar\+Id\+Vertice\+Distancia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}}]{vertice\+Distancia,  }\item[{int}]{id,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Adiciona um id a uma variavel do tipo vertice\+Distancias. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice\+Distancias} & \doxylink{struct_vertice}{Vertice} distancia\\
+\hline
+{\em id} & Id do vertice\\
+\hline
+{\em res} & Retorna 0 e nao for adicionado o id, retorna 1 se for adicionado o id\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se o vertice distancia for nulo, retorna o vertice distancia se o id for adicionado
+\end{DoxyReturn}
+\Hypertarget{_header_8h_aa6324a708e2c6f09de47b8db9bef0773}\label{_header_8h_aa6324a708e2c6f09de47b8db9bef0773} 
+\index{Header.h@{Header.h}!AdicionarNumeroListaInteirosFim@{AdicionarNumeroListaInteirosFim}}
+\index{AdicionarNumeroListaInteirosFim@{AdicionarNumeroListaInteirosFim}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{AdicionarNumeroListaInteirosFim()}{AdicionarNumeroListaInteirosFim()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*} Adicionar\+Numero\+Lista\+Inteiros\+Fim (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*}}]{lista,  }\item[{\mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*}}]{numero,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Adicona um numero a uma lista de inteiros no final da lista de inteiros. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista} & Lista de inteiros\\
+\hline
+{\em numero} & Numero do tipo lista de inteiros\\
+\hline
+{\em res} & Retorna 0 se nao for adicionado, retorna 1 se for adicionado\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se a lista for nula, retorna a lista sem o numero adicionado se o numero for nulo, retorna a lista com o numero adicionado se for adicionado
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a4c242d3082397755f972df3f05e1c579}\label{_header_8h_a4c242d3082397755f972df3f05e1c579} 
+\index{Header.h@{Header.h}!AdicionarNumeroListaInteirosInicio@{AdicionarNumeroListaInteirosInicio}}
+\index{AdicionarNumeroListaInteirosInicio@{AdicionarNumeroListaInteirosInicio}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{AdicionarNumeroListaInteirosInicio()}{AdicionarNumeroListaInteirosInicio()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*} Adicionar\+Numero\+Lista\+Inteiros\+Inicio (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*}}]{lista,  }\item[{\mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*}}]{numero,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Adicona um numero a uma lista de inteiros no inicio da lista de inteiros. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista} & Lista de inteiros\\
+\hline
+{\em numero} & Numero do tipo lista de inteiros\\
+\hline
+{\em res} & Retorna 0 se nao for adicionado, retorna 1 se for adicionado\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se a lista for nula, retorna a lista sem o numero adicionado se o numero for nulo, retorna a lista com o numero adicionado se for adicionado
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a9690f87675b214cc1042b186bc851ff1}\label{_header_8h_a9690f87675b214cc1042b186bc851ff1} 
+\index{Header.h@{Header.h}!AdicionarTodosDistanciaVerticesDistancia@{AdicionarTodosDistanciaVerticesDistancia}}
+\index{AdicionarTodosDistanciaVerticesDistancia@{AdicionarTodosDistanciaVerticesDistancia}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{AdicionarTodosDistanciaVerticesDistancia()}{AdicionarTodosDistanciaVerticesDistancia()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} Adicionar\+Todos\+Distancia\+Vertices\+Distancia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}}]{vertice\+Distancias,  }\item[{int}]{distancia,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Adiciona a todos os vertices presentes na lista vertices distancia uma distancia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice\+Distancias} & Lista vertices distancia\\
+\hline
+{\em distancia} & distancia\\
+\hline
+{\em res} & Retorna 0 se nao for adicionado a distancia aos vertices, retorna 1 se for adicionado a distancia aos vertices\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se a lista de vertices distancias for nula, retorna a lista de vertice distancias com a distancia dos vertices adicionados
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a5cc285bc7588f437f6c294f15050a8f9}\label{_header_8h_a5cc285bc7588f437f6c294f15050a8f9} 
+\index{Header.h@{Header.h}!AdicionarTodosIdVerticesDistancia@{AdicionarTodosIdVerticesDistancia}}
+\index{AdicionarTodosIdVerticesDistancia@{AdicionarTodosIdVerticesDistancia}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{AdicionarTodosIdVerticesDistancia()}{AdicionarTodosIdVerticesDistancia()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} Adicionar\+Todos\+Id\+Vertices\+Distancia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}}]{vertice\+Distancias,  }\item[{int}]{id,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Adiciona a todos os vertices presentes na lista vertices distancia um id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice\+Distancias} & Lista vertices distancia\\
+\hline
+{\em id} & Id\\
+\hline
+{\em res} & Retorna 0 se nao for adicionado os ids aos vertices, retorna 1 se for adicionado os ids aos vertices\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se a lista de vertices distancias for nula, retorna a lista de vertice distancias com os ids dos vertices adicionados
+\end{DoxyReturn}
+\Hypertarget{_header_8h_abbf0da3e26b5ca3311dd0714ef4ea625}\label{_header_8h_abbf0da3e26b5ca3311dd0714ef4ea625} 
+\index{Header.h@{Header.h}!AdicionarTodosVerticesIdVerticesDistancia@{AdicionarTodosVerticesIdVerticesDistancia}}
+\index{AdicionarTodosVerticesIdVerticesDistancia@{AdicionarTodosVerticesIdVerticesDistancia}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{AdicionarTodosVerticesIdVerticesDistancia()}{AdicionarTodosVerticesIdVerticesDistancia()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} Adicionar\+Todos\+Vertices\+Id\+Vertices\+Distancia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}}]{vertice\+Distancias,  }\item[{\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{vertices,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Adiciona a cada vertice presente na lista vertices distancia o id do vertice correspondente a lista de vertices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice\+Distancias} & Lista vertices distancia\\
+\hline
+{\em vertices} & Lista de vertices\\
+\hline
+{\em res} & Retorna 0 se nao for adicionado os ids aos vertices, retorna 1 se for adicionado os ids aos vertices\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se a lista de vertice distancias ou vertices for nulo, retorna a lista de vertices distancias com os ids adicionados
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a13a1716f777b56764a4f81c306420e86}\label{_header_8h_a13a1716f777b56764a4f81c306420e86} 
+\index{Header.h@{Header.h}!AdicionarVertice@{AdicionarVertice}}
+\index{AdicionarVertice@{AdicionarVertice}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{AdicionarVertice()}{AdicionarVertice()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} Adicionar\+Vertice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{vertices,  }\item[{\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{vertice,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Adiciona um vertice a uma lista de vertices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertices} & Lista de vertices\\
+\hline
+{\em vertice} & \doxylink{struct_vertice}{Vertice} a ser adicionado\\
+\hline
+{\em res} & Retorna 0 se o vertice nao for adicionado, retorna 1 se o vertice foi adicionado\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se a lista de vertices for nula, retorna a lista de vertices sem o vertice adicionado se o mesmo for nulo e retorna a lista de vertices se o vertice for adicionado
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a32b4598ffb50167f091779b0b557951b}\label{_header_8h_a32b4598ffb50167f091779b0b557951b} 
+\index{Header.h@{Header.h}!AdicionarVerticeDistancia@{AdicionarVerticeDistancia}}
+\index{AdicionarVerticeDistancia@{AdicionarVerticeDistancia}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{AdicionarVerticeDistancia()}{AdicionarVerticeDistancia()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} Adicionar\+Vertice\+Distancia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}}]{vertice\+Distancias,  }\item[{\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}}]{vertice\+Dist,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Adiciona um vertice distancia no fim da lista de vertice distancias. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice\+Distancias} & Lista de vertice distancias\\
+\hline
+{\em vertice\+Dist} & \doxylink{struct_vertice}{Vertice} distancia\\
+\hline
+{\em res} & Retorna 0 se nao for adicionado, retorna 1 se for adicionado\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se a lista de vertice distancias for nulo, retorna a lista de vertice distancias se for adicionado o vertice distancia a lista
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a5b565440538303c3076f4852ef56449e}\label{_header_8h_a5b565440538303c3076f4852ef56449e} 
+\index{Header.h@{Header.h}!AdicionarVerticeGrafo@{AdicionarVerticeGrafo}}
+\index{AdicionarVerticeGrafo@{AdicionarVerticeGrafo}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{AdicionarVerticeGrafo()}{AdicionarVerticeGrafo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*} Adicionar\+Vertice\+Grafo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{grafo,  }\item[{\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{vertice,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Adiciona um vertice no grafo no fim do grafo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grafo} & \doxylink{struct_grafo}{Grafo}\\
+\hline
+{\em vertice} & \doxylink{struct_vertice}{Vertice} a ser adicionado\\
+\hline
+{\em res} & Retorna 0 se o vertice nao for adicionado, retorna 1 se o vertice foi adicionado\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna null se nao for adicionado o vertice ao grafo e retorna o grafo se o vertice foi adicionado com exito
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a47aa2a2a6cb075867fa53848da214316}\label{_header_8h_a47aa2a2a6cb075867fa53848da214316} 
+\index{Header.h@{Header.h}!AdicionarVerticeIdListaInteiros@{AdicionarVerticeIdListaInteiros}}
+\index{AdicionarVerticeIdListaInteiros@{AdicionarVerticeIdListaInteiros}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{AdicionarVerticeIdListaInteiros()}{AdicionarVerticeIdListaInteiros()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*} Adicionar\+Vertice\+Id\+Lista\+Inteiros (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*}}]{lista,  }\item[{\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{vertices,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Adiciona a uma lista de inteiros todos os ids dos vertices presentes numa lista de vertices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista} & Lista de inteiros\\
+\hline
+{\em vertices} & Lista de vertices\\
+\hline
+{\em res} & Retorna 0 se nao for adicionado, retorna 1 se for adicionado\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se a lista de inteiros ou a lista de vertices for nula, retorna a lista de inteiros com os ids dos vertices
+\end{DoxyReturn}
+\Hypertarget{_header_8h_aeecc341e2f0c453e7ca90bc9c8e74a66}\label{_header_8h_aeecc341e2f0c453e7ca90bc9c8e74a66} 
+\index{Header.h@{Header.h}!AdiconarDadosListaInteiros@{AdiconarDadosListaInteiros}}
+\index{AdiconarDadosListaInteiros@{AdiconarDadosListaInteiros}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{AdiconarDadosListaInteiros()}{AdiconarDadosListaInteiros()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*} Adiconar\+Dados\+Lista\+Inteiros (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*}}]{lista,  }\item[{int}]{num,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Adiciona dados a uma lista de inteiros. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista} & Lista\\
+\hline
+{\em num} & Numero\\
+\hline
+{\em res} & Retorna 0 se os dados nao forem adicionados, retorna 1 se os dados forem adicionados\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se a lista for nula, retorna a lista com os dados adicionados se os mesmos forem adicionados
+\end{DoxyReturn}
+\Hypertarget{_header_8h_af1ebd076c6f6ba11456e28ba4e4e39b1}\label{_header_8h_af1ebd076c6f6ba11456e28ba4e4e39b1} 
+\index{Header.h@{Header.h}!AlterarEstadoVerticeVisitado@{AlterarEstadoVerticeVisitado}}
+\index{AlterarEstadoVerticeVisitado@{AlterarEstadoVerticeVisitado}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{AlterarEstadoVerticeVisitado()}{AlterarEstadoVerticeVisitado()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} Alterar\+Estado\+Vertice\+Visitado (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{vertice,  }\item[{bool}]{estado,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Altera o estado da variabel boleana visitado de um vertice. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice} & \doxylink{struct_vertice}{Vertice}\\
+\hline
+{\em estado} & Estado da variavel boleana\\
+\hline
+{\em res} & Retorna 0 se o vertice for nulo, retorna o vertice com a variavel alterada\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se o vertice for nulo, retorna o vertice com a variavel alterada
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a8a1f69d319d73ccd1f9e68afb7a7e49b}\label{_header_8h_a8a1f69d319d73ccd1f9e68afb7a7e49b} 
+\index{Header.h@{Header.h}!AlterarEstadoVerticeVisitadoVertices@{AlterarEstadoVerticeVisitadoVertices}}
+\index{AlterarEstadoVerticeVisitadoVertices@{AlterarEstadoVerticeVisitadoVertices}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{AlterarEstadoVerticeVisitadoVertices()}{AlterarEstadoVerticeVisitadoVertices()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} Alterar\+Estado\+Vertice\+Visitado\+Vertices (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{vertices,  }\item[{int}]{id,  }\item[{bool}]{estado,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Altera o estado da variavel boleana visitado de um vertice dentro de uma lista de vertices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertices} & Lista de vertices\\
+\hline
+{\em id} & Id do vertice\\
+\hline
+{\em estado} & Estado da variavel\\
+\hline
+{\em res} & Retorna 0 se o estado nao for modificado, retorna 1 se o estado for modificado\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se a lista de vertices for nula, retorna a lista de vertices sem ser feita a alteracao se o vertice nao existir retorna a lista de vertices com a alteracao feita se a mesma for feita
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a0cfa0b78b791ca5db934f1a789c1c2ab}\label{_header_8h_a0cfa0b78b791ca5db934f1a789c1c2ab} 
+\index{Header.h@{Header.h}!AlterarEstadoVisitadoTodosVertices@{AlterarEstadoVisitadoTodosVertices}}
+\index{AlterarEstadoVisitadoTodosVertices@{AlterarEstadoVisitadoTodosVertices}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{AlterarEstadoVisitadoTodosVertices()}{AlterarEstadoVisitadoTodosVertices()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} Alterar\+Estado\+Visitado\+Todos\+Vertices (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{vertices,  }\item[{bool}]{estado,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Altera o estado da variabel boleana visitado de todos os vertices dentro de uma lista de vertices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertices} & Lista de vertices\\
+\hline
+{\em estado} & Estado\\
+\hline
+{\em res} & Retorna 0 se a alteracao nao for feita, retorna 1 se a alteracao for feita\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se a lista de vertices for nula, retorna a lista de vertices com a alteracao feita se a mesma for feita
+\end{DoxyReturn}
+\Hypertarget{_header_8h_aeb31f5ad664aa3dce7bacdb34fb4c8ce}\label{_header_8h_aeb31f5ad664aa3dce7bacdb34fb4c8ce} 
+\index{Header.h@{Header.h}!ArrancarPrograma@{ArrancarPrograma}}
+\index{ArrancarPrograma@{ArrancarPrograma}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{ArrancarPrograma()}{ArrancarPrograma()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*} Arrancar\+Programa (\begin{DoxyParamCaption}\item[{char}]{ficheiro\+Txt\mbox{[}$\,$\mbox{]},  }\item[{char}]{ficheiro\+Bin\mbox{[}$\,$\mbox{]},  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Arranca o programa. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ficheiro\+Txt} & \\
+\hline
+{\em ficheiro\+Bin} & \\
+\hline
+{\em res} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{_header_8h_aeb509281a53b221eaa80f4d6830170fe}\label{_header_8h_aeb509281a53b221eaa80f4d6830170fe} 
+\index{Header.h@{Header.h}!AtribuirListaVerticeDistanciaAnterior@{AtribuirListaVerticeDistanciaAnterior}}
+\index{AtribuirListaVerticeDistanciaAnterior@{AtribuirListaVerticeDistanciaAnterior}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{AtribuirListaVerticeDistanciaAnterior()}{AtribuirListaVerticeDistanciaAnterior()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} Atribuir\+Lista\+Vertice\+Distancia\+Anterior (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}}]{vertice\+Distancias,  }\item[{\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}}]{anterior,  }\item[{int}]{id,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Atribuir a um vertice distancia presente numa lista de vertices distancias o seu anterior. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice\+Distancias} & Lista de vertices distacias\\
+\hline
+{\em anterior} & Anterior\\
+\hline
+{\em id} & Id do vertice\\
+\hline
+{\em res} & Retorna 0 se o anterior nao for adicionado, retorna 1 se o seu anterior for adicionado\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se a lista de vertice distancia for nulo, retorna a lista de vertice distancia com o vertice distancia com o seu anterior atribuido
+\end{DoxyReturn}
+\Hypertarget{_header_8h_af630bb67a575a4bf6e7eabca159b06fc}\label{_header_8h_af630bb67a575a4bf6e7eabca159b06fc} 
+\index{Header.h@{Header.h}!AtribuirVerticeDistanciaAnterior@{AtribuirVerticeDistanciaAnterior}}
+\index{AtribuirVerticeDistanciaAnterior@{AtribuirVerticeDistanciaAnterior}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{AtribuirVerticeDistanciaAnterior()}{AtribuirVerticeDistanciaAnterior()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} Atribuir\+Vertice\+Distancia\+Anterior (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}}]{vertice\+Distancia,  }\item[{\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}}]{anterior,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Atribuir a um vertice distancia o seu anterior. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice\+Distancia} & \doxylink{struct_vertice}{Vertice} distancia\\
+\hline
+{\em anterior} & \doxylink{struct_vertice}{Vertice} distancia anterior\\
+\hline
+{\em res} & Retorna 0 se o anterior nao for adicionado, retorna 1 se o seu anterior for adicionado\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se o vertice distancia for nulo, retorna o vertice distancia com o seu anterior atribuido
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a67debeee34a18d668f0dc32d4388503e}\label{_header_8h_a67debeee34a18d668f0dc32d4388503e} 
+\index{Header.h@{Header.h}!BreadthFirstTraversal@{BreadthFirstTraversal}}
+\index{BreadthFirstTraversal@{BreadthFirstTraversal}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{BreadthFirstTraversal()}{BreadthFirstTraversal()}}
+{\footnotesize\ttfamily int Breadth\+First\+Traversal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{grafo,  }\item[{int}]{inicio\+Id }\end{DoxyParamCaption})}
+
+
+
+Breadth First Search. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grafo} & \doxylink{struct_grafo}{Grafo}\\
+\hline
+{\em inicio\+Id} & Id do vertice inicio\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna 0 se o grafo nao for percorrido, retorna 1 se o grafo for percorrido
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a833797293559178703ce16d116d45f9f}\label{_header_8h_a833797293559178703ce16d116d45f9f} 
+\index{Header.h@{Header.h}!CarregarGrafo@{CarregarGrafo}}
+\index{CarregarGrafo@{CarregarGrafo}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{CarregarGrafo()}{CarregarGrafo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*} Carregar\+Grafo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*}}]{lista\+Char,  }\item[{int \texorpdfstring{$\ast$}{*}}]{vertices,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Carrega um grafo para o programa a partir de uma lista de inteiros. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ficheiro} & Nome do ficheiro\\
+\hline
+{\em res} & Retorna 0 se o grafo for carregado, retorna 1 o\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se a lista de inteiros for nula ou se nao existir vertices, retorna o grafo se o mesmo for carregado para o programa
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a929bddde1c63f00fb707bf6d659e1494}\label{_header_8h_a929bddde1c63f00fb707bf6d659e1494} 
+\index{Header.h@{Header.h}!ComparaDistanciaListaVerticeDistancia@{ComparaDistanciaListaVerticeDistancia}}
+\index{ComparaDistanciaListaVerticeDistancia@{ComparaDistanciaListaVerticeDistancia}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{ComparaDistanciaListaVerticeDistancia()}{ComparaDistanciaListaVerticeDistancia()}}
+{\footnotesize\ttfamily int Compara\+Distancia\+Lista\+Vertice\+Distancia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}}]{vertice\+Distancia,  }\item[{int}]{id,  }\item[{int}]{valor }\end{DoxyParamCaption})}
+
+
+
+Compara as distancias de um vertice presente numa lista de vertices distancia e um valor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice\+Distancia} & \doxylink{struct_vertice}{Vertice} distancia\\
+\hline
+{\em id} & Id\\
+\hline
+{\em valor} & Valor\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna -\/1 se o vertice distancia for nulo, retorna 0 se a distacia do vertice distancia for menor que o valor, retorna 1 se a distancia do vertice distancia for maior, retorna 2 se as distancias forem iguais
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a9adfb9c1c644734b7208a06e0cc88cec}\label{_header_8h_a9adfb9c1c644734b7208a06e0cc88cec} 
+\index{Header.h@{Header.h}!CompararDistanciaVerticeDistancia@{CompararDistanciaVerticeDistancia}}
+\index{CompararDistanciaVerticeDistancia@{CompararDistanciaVerticeDistancia}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{CompararDistanciaVerticeDistancia()}{CompararDistanciaVerticeDistancia()}}
+{\footnotesize\ttfamily int Comparar\+Distancia\+Vertice\+Distancia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}}]{vertice\+Distancia,  }\item[{int}]{valor }\end{DoxyParamCaption})}
+
+
+
+Compara as distancias de um vertice distancia e um valor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice\+Distancia} & \doxylink{struct_vertice}{Vertice} distancia\\
+\hline
+{\em valor} & Valor\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna -\/1 se o vertice distancia for nulo, retorna 0 se a distacia do vertice distancia for menor que o valor, retorna 1 se a distancia do vertice distancia for maior, retorna 2 se as distancias forem iguais
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a28f410d57a7e96abccb17f1aba5d073b}\label{_header_8h_a28f410d57a7e96abccb17f1aba5d073b} 
+\index{Header.h@{Header.h}!CompararPesosAdjacente@{CompararPesosAdjacente}}
+\index{CompararPesosAdjacente@{CompararPesosAdjacente}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{CompararPesosAdjacente()}{CompararPesosAdjacente()}}
+{\footnotesize\ttfamily int Comparar\+Pesos\+Adjacente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}}]{adjacente,  }\item[{int}]{valor }\end{DoxyParamCaption})}
+
+
+
+Compara o peso de um adjacente e um valor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em adjacente} & \\
+\hline
+{\em valor} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna -\/1 se o adjacente for nulo, retorna 0 se o peso for maior que o valor, retorna 1 se o peso for menor que o falor, retorna 2 se for igual
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a156a8089f99e425aee2ce3e1719598ca}\label{_header_8h_a156a8089f99e425aee2ce3e1719598ca} 
+\index{Header.h@{Header.h}!CriarAdicionarNumeroListaInteirosFim@{CriarAdicionarNumeroListaInteirosFim}}
+\index{CriarAdicionarNumeroListaInteirosFim@{CriarAdicionarNumeroListaInteirosFim}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{CriarAdicionarNumeroListaInteirosFim()}{CriarAdicionarNumeroListaInteirosFim()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*} Criar\+Adicionar\+Numero\+Lista\+Inteiros\+Fim (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*}}]{lista,  }\item[{int}]{num,  }\item[{int \texorpdfstring{$\ast$}{*}}]{top,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Cria e adiciona um numero a uma lista de inteiros no fim, retornando como parametro o numero na posicao mais alta da lista. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista} & Lista de inteiros\\
+\hline
+{\em num} & Numero\\
+\hline
+{\em top} & Posicao do ultimo numero da lista\\
+\hline
+{\em res} & Retorna 0 se nao for adicionado, retorna 1 se for adicionado\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna o numero que esta na ultima posicao da lista de inteiros se o numero for adicionado, se nao for adicionado retorna o top
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a14323251264c0a1566e5ed3e4c84d7db}\label{_header_8h_a14323251264c0a1566e5ed3e4c84d7db} 
+\index{Header.h@{Header.h}!CriarAdicionarNumeroListaInteirosFim2@{CriarAdicionarNumeroListaInteirosFim2}}
+\index{CriarAdicionarNumeroListaInteirosFim2@{CriarAdicionarNumeroListaInteirosFim2}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{CriarAdicionarNumeroListaInteirosFim2()}{CriarAdicionarNumeroListaInteirosFim2()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*} Criar\+Adicionar\+Numero\+Lista\+Inteiros\+Fim2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*}}]{lista,  }\item[{int}]{num,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Cria e adiciona um numero a uma lista de inteiros no fim. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista} & Lista de inteiros\\
+\hline
+{\em num} & Numero\\
+\hline
+{\em res} & Retorna 0 se nao for adicionado, retorna 1 se for adicionado\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna o numero que esta na ultima posicao da lista de inteiros se o numero for adicionado, se nao for adicionado retorna o top
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a8b3835c0d404104b0fce8423cdb67fe2}\label{_header_8h_a8b3835c0d404104b0fce8423cdb67fe2} 
+\index{Header.h@{Header.h}!CriarAdicionarNumeroListaInteirosInicio@{CriarAdicionarNumeroListaInteirosInicio}}
+\index{CriarAdicionarNumeroListaInteirosInicio@{CriarAdicionarNumeroListaInteirosInicio}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{CriarAdicionarNumeroListaInteirosInicio()}{CriarAdicionarNumeroListaInteirosInicio()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*} Criar\+Adicionar\+Numero\+Lista\+Inteiros\+Inicio (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*}}]{lista,  }\item[{int}]{num,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Cria e adiciona um numero a uma lista de inteiros no inicio, retornando como parametro o numero na posicao mais alta da lista. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista} & Lista de inteiros\\
+\hline
+{\em num} & Numero\\
+\hline
+{\em res} & Retorna 0 se nao for adicionado, retorna 1 se for adicionado\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna o numero que esta na ultima posicao da lista de inteiros se o numero for adicionado, se nao for adicionado retorna o rear
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a5d0cd34874cd459c0bc8fd377300bb4b}\label{_header_8h_a5d0cd34874cd459c0bc8fd377300bb4b} 
+\index{Header.h@{Header.h}!CriarAdjacente@{CriarAdjacente}}
+\index{CriarAdjacente@{CriarAdjacente}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{CriarAdjacente()}{CriarAdjacente()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*} Criar\+Adjacente (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Cria um vertice adjacente. 
+
+\begin{DoxyReturn}{Returns}
+Retorna vertice adjacente criado
+\end{DoxyReturn}
+\Hypertarget{_header_8h_ae9280ded3460e9db71c42aaa245cf2fa}\label{_header_8h_ae9280ded3460e9db71c42aaa245cf2fa} 
+\index{Header.h@{Header.h}!CriarGrafo@{CriarGrafo}}
+\index{CriarGrafo@{CriarGrafo}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{CriarGrafo()}{CriarGrafo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*} Criar\+Grafo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Cria um grafo. 
+
+\begin{DoxyReturn}{Returns}
+Retorna o grafo criado
+\end{DoxyReturn}
+\Hypertarget{_header_8h_ab4913222b05a54317e78eb99f1b5064e}\label{_header_8h_ab4913222b05a54317e78eb99f1b5064e} 
+\index{Header.h@{Header.h}!CriarListaInteiros@{CriarListaInteiros}}
+\index{CriarListaInteiros@{CriarListaInteiros}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{CriarListaInteiros()}{CriarListaInteiros()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*} Criar\+Lista\+Inteiros (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Cria uma lista de inteiros. 
+
+\begin{DoxyReturn}{Returns}
+Retorna a lista de caracteres
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a8e808cde29ae47adccc1f557d739e8a6}\label{_header_8h_a8e808cde29ae47adccc1f557d739e8a6} 
+\index{Header.h@{Header.h}!CriarListasInteiros@{CriarListasInteiros}}
+\index{CriarListasInteiros@{CriarListasInteiros}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{CriarListasInteiros()}{CriarListasInteiros()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*} Criar\+Listas\+Inteiros (\begin{DoxyParamCaption}\item[{int}]{tam,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Cria uma lista de inteiros de um determinado tamanho. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tam} & Tamanho da lista\\
+\hline
+{\em res} & Retorna 0 se a lista nao for criada, retorna 1 se a lista for criada\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se o tamanho for 0, retorna a lista de a mesma for criada
+\end{DoxyReturn}
+\Hypertarget{_header_8h_aab4c09ffb2140be8dbe1c41041b43fa9}\label{_header_8h_aab4c09ffb2140be8dbe1c41041b43fa9} 
+\index{Header.h@{Header.h}!CriarVertice@{CriarVertice}}
+\index{CriarVertice@{CriarVertice}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{CriarVertice()}{CriarVertice()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} Criar\+Vertice (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Cria um vertice. 
+
+\begin{DoxyReturn}{Returns}
+Retorna o vertice criado
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a93cb9acede2bc9d10b2ec436576ebe03}\label{_header_8h_a93cb9acede2bc9d10b2ec436576ebe03} 
+\index{Header.h@{Header.h}!CriarVerticeDistancia@{CriarVerticeDistancia}}
+\index{CriarVerticeDistancia@{CriarVerticeDistancia}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{CriarVerticeDistancia()}{CriarVerticeDistancia()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} Criar\+Vertice\+Distancia (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Cria uma variavel do tipo vertice\+Distancias. 
+
+\begin{DoxyReturn}{Returns}
+Retorna o Dijkstra
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a35ac5c7079e437143fe12e1d00b37291}\label{_header_8h_a35ac5c7079e437143fe12e1d00b37291} 
+\index{Header.h@{Header.h}!CriarVerticesDistancia@{CriarVerticesDistancia}}
+\index{CriarVerticesDistancia@{CriarVerticesDistancia}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{CriarVerticesDistancia()}{CriarVerticesDistancia()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} Criar\+Vertices\+Distancia (\begin{DoxyParamCaption}\item[{int}]{tamanho,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Cria uma lista de vertices distancia com um determinado tamanho. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & Tamanho da lista de vertices distancias\\
+\hline
+{\em res} & Retorna 0 se nao for criado a lista, retorna a lista se a mesma for criada\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se o tamanho for igual a 0, retorna lista se a mesma for criada
+\end{DoxyReturn}
+\Hypertarget{_header_8h_ae212458d99f53f19ea448570986e0019}\label{_header_8h_ae212458d99f53f19ea448570986e0019} 
+\index{Header.h@{Header.h}!DepthFirstTraversal@{DepthFirstTraversal}}
+\index{DepthFirstTraversal@{DepthFirstTraversal}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{DepthFirstTraversal()}{DepthFirstTraversal()}}
+{\footnotesize\ttfamily int Depth\+First\+Traversal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{grafo,  }\item[{int}]{inicio\+Id }\end{DoxyParamCaption})}
+
+
+
+Depth\+First\+Traversal\+: Percorre todo o grafo em profundidade. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grafo} & \doxylink{struct_grafo}{Grafo}\\
+\hline
+{\em inicio\+Id} & Id do vertice inicio\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna 0 se o grafo nao for percorrido, retorna 1 se o grafo for percorrido
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a6856097da15234c0a7fbdff345c06432}\label{_header_8h_a6856097da15234c0a7fbdff345c06432} 
+\index{Header.h@{Header.h}!DeterminarMaiorCaminhoGrafo@{DeterminarMaiorCaminhoGrafo}}
+\index{DeterminarMaiorCaminhoGrafo@{DeterminarMaiorCaminhoGrafo}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{DeterminarMaiorCaminhoGrafo()}{DeterminarMaiorCaminhoGrafo()}}
+{\footnotesize\ttfamily int Determinar\+Maior\+Caminho\+Grafo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{grafo,  }\item[{int}]{inicio\+Id,  }\item[{int}]{destino\+Id,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Determina o maior caminho. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grafo} & \doxylink{struct_grafo}{Grafo}\\
+\hline
+{\em inicio\+Id} & Inicio\\
+\hline
+{\em destino\+Id} & Destino\\
+\hline
+{\em res} & Retorna -\/1 se o grafo for nulo, se o inicio ou o destino nao pertencerem ao grafo, retorna a soma do maior caminho\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna a soma do caminho maximo
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a56ed64e97acd4c18fcc806570105631b}\label{_header_8h_a56ed64e97acd4c18fcc806570105631b} 
+\index{Header.h@{Header.h}!EncontrarIdAnteriorVerticeDistancia@{EncontrarIdAnteriorVerticeDistancia}}
+\index{EncontrarIdAnteriorVerticeDistancia@{EncontrarIdAnteriorVerticeDistancia}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{EncontrarIdAnteriorVerticeDistancia()}{EncontrarIdAnteriorVerticeDistancia()}}
+{\footnotesize\ttfamily int Encontrar\+Id\+Anterior\+Vertice\+Distancia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}}]{vertice\+Distancias,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Encontra o id do vertice distancia anterior ao vertice distancia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice\+Distancias} & Lista de vertice distancia\\
+\hline
+{\em id} & Id\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna -\/1 se a lista de vertice\+Distancias for nulo ou se o vertice lista nao existir, retorna o id do vertice distancia anterior 
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a34a37374c175d1fa153385684fac84e0}\label{_header_8h_a34a37374c175d1fa153385684fac84e0} 
+\index{Header.h@{Header.h}!EncontrarIdMenorAdjacente@{EncontrarIdMenorAdjacente}}
+\index{EncontrarIdMenorAdjacente@{EncontrarIdMenorAdjacente}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{EncontrarIdMenorAdjacente()}{EncontrarIdMenorAdjacente()}}
+{\footnotesize\ttfamily int Encontrar\+Id\+Menor\+Adjacente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}}]{adjacentes }\end{DoxyParamCaption})}
+
+
+
+Encontra o id do adjacente que possui o menor peso. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em adjacentes} & Lista de adjacentes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna -\/1 se a lista de adjacentes for nula, retorna o menor adjacente
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a076107910642e50c1353c7dcc09ea1d5}\label{_header_8h_a076107910642e50c1353c7dcc09ea1d5} 
+\index{Header.h@{Header.h}!EncontrarIdMenorAdjacenteNaoVisitado@{EncontrarIdMenorAdjacenteNaoVisitado}}
+\index{EncontrarIdMenorAdjacenteNaoVisitado@{EncontrarIdMenorAdjacenteNaoVisitado}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{EncontrarIdMenorAdjacenteNaoVisitado()}{EncontrarIdMenorAdjacenteNaoVisitado()}}
+{\footnotesize\ttfamily int Encontrar\+Id\+Menor\+Adjacente\+Nao\+Visitado (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{vertices,  }\item[{\mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}}]{adjacentes,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Encontra o id do adjacente que possui o menor peso e nao foi visitado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em adjacentes} & Lista de adjacentes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna -\/1 se a lista de adjacentes for nula, retorna o menor adjacente ou retorna -\/2 se nao exitir nenhum adjacente sem estar por visitar
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a95fc53f9ac5310a7846cc63580faee21}\label{_header_8h_a95fc53f9ac5310a7846cc63580faee21} 
+\index{Header.h@{Header.h}!EncontrarNumeroListaInteiros@{EncontrarNumeroListaInteiros}}
+\index{EncontrarNumeroListaInteiros@{EncontrarNumeroListaInteiros}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{EncontrarNumeroListaInteiros()}{EncontrarNumeroListaInteiros()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*} Encontrar\+Numero\+Lista\+Inteiros (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*}}]{lista,  }\item[{int}]{num,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Encontra um numero dentro de uma lista de inteiros e retorna esse mesmo numero da lista de inteiros. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista} & Lista de inteiros\\
+\hline
+{\em num} & Numero\\
+\hline
+{\em res} & Retorna 0 se nao o encontrar, retorna 1 se o encontrars\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se a lista for nula, retorna o numero do tipo lista\+Inteiros se o numero for encontrado
+\end{DoxyReturn}
+\Hypertarget{_header_8h_ac75f7b702fcbf9cf8a5b3a310f08d73e}\label{_header_8h_ac75f7b702fcbf9cf8a5b3a310f08d73e} 
+\index{Header.h@{Header.h}!EncontrarUltimoNumeroListaInteiros@{EncontrarUltimoNumeroListaInteiros}}
+\index{EncontrarUltimoNumeroListaInteiros@{EncontrarUltimoNumeroListaInteiros}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{EncontrarUltimoNumeroListaInteiros()}{EncontrarUltimoNumeroListaInteiros()}}
+{\footnotesize\ttfamily int Encontrar\+Ultimo\+Numero\+Lista\+Inteiros (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*}}]{lista }\end{DoxyParamCaption})}
+
+
+
+Encontra o ultimo numero (Encontrar o top da stack) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stack} & Stack lista de inteiros\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna 0 se a lista de inteiros for nula, retorna o ultimo numero da lista
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a39bcaf46dca003e5b2b9efc53f6b5cb3}\label{_header_8h_a39bcaf46dca003e5b2b9efc53f6b5cb3} 
+\index{Header.h@{Header.h}!EncontrarVertice@{EncontrarVertice}}
+\index{EncontrarVertice@{EncontrarVertice}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{EncontrarVertice()}{EncontrarVertice()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} Encontrar\+Vertice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{vertices,  }\item[{int}]{id,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Encontra um vertice dentro de uma lista de vertices e retorna o mesmo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertices} & Lista de vertices\\
+\hline
+{\em id} & Id do vertice\\
+\hline
+{\em res} & Retorna -\/1 se a lista de vertices for nula, retorna 0 se nao encontrar o vertice, retorna 1 se encontrar e retornar o vertice\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se nao encontrar o vertice ou se a lista de vertices for nula, retorna o vertice se o mesmo for encontrado
+\end{DoxyReturn}
+\Hypertarget{_header_8h_adea90575efd3c8192c0cb407c2433cc4}\label{_header_8h_adea90575efd3c8192c0cb407c2433cc4} 
+\index{Header.h@{Header.h}!EncontrarVerticeDistancia@{EncontrarVerticeDistancia}}
+\index{EncontrarVerticeDistancia@{EncontrarVerticeDistancia}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{EncontrarVerticeDistancia()}{EncontrarVerticeDistancia()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} Encontrar\+Vertice\+Distancia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}}]{vertice\+Distancias,  }\item[{int}]{id,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Encontra um vertice distancias a partir do seu ID e retorna o mesmo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice\+Distancias} & Lista de vertice distancias\\
+\hline
+{\em id} & Id\\
+\hline
+{\em res} & Retorna 0 se nao for encontrado, retorna 1 se for encontrado\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se a lista de vertice distancias for nulo, retorna o vertice distancia se o mesmo existir
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a3202effc47cc0a7faa6aed75184c1967}\label{_header_8h_a3202effc47cc0a7faa6aed75184c1967} 
+\index{Header.h@{Header.h}!EncontrarVerticeGrafo@{EncontrarVerticeGrafo}}
+\index{EncontrarVerticeGrafo@{EncontrarVerticeGrafo}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{EncontrarVerticeGrafo()}{EncontrarVerticeGrafo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} Encontrar\+Vertice\+Grafo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{grafo,  }\item[{int}]{id,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Encontra um vertice dentro de um grafo e retorna o mesmo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grafo} & \doxylink{struct_grafo}{Grafo}\\
+\hline
+{\em id} & Id do vertice\\
+\hline
+{\em res} & Retorna -\/2 se o grafo for nulo, retorna -\/1 se nao exitir vertices no grafo,retorna 0 se nao encontrar o vertice, retorna 1 se encontrar e retornar o vertice\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se nao encontrar o vertice, se o encontrar retorna o vertice.
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a9092f87bf7d6e248caac2438d3ce2559}\label{_header_8h_a9092f87bf7d6e248caac2438d3ce2559} 
+\index{Header.h@{Header.h}!GrafoParaListaInteiros@{GrafoParaListaInteiros}}
+\index{GrafoParaListaInteiros@{GrafoParaListaInteiros}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{GrafoParaListaInteiros()}{GrafoParaListaInteiros()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*} Grafo\+Para\+Lista\+Inteiros (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{grafo,  }\item[{\mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*}}]{lista,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Carrega os dados do grafo para uma lista de inteiros. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grafo} & \doxylink{struct_grafo}{Grafo}\\
+\hline
+{\em lista} & Lista de inteiros\\
+\hline
+{\em res} & Retorna 0 se os dados nao forem carregados para lista de inteiros, retorna 1 se os dados forem carregados para lista de inteiros\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se o grafo ou lista de inteiros for nula, retorna a lista de inteiros com os dados do grafo se o carregamento for bem sucedido
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a9f8d0c6b299e4eb729eae63b32db81df}\label{_header_8h_a9f8d0c6b299e4eb729eae63b32db81df} 
+\index{Header.h@{Header.h}!GuardarGrafoBin@{GuardarGrafoBin}}
+\index{GuardarGrafoBin@{GuardarGrafoBin}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{GuardarGrafoBin()}{GuardarGrafoBin()}}
+{\footnotesize\ttfamily int Guardar\+Grafo\+Bin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*}}]{lista,  }\item[{char}]{ficheiro\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Guarda os dados do grafo carregados na lista de inteiros. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista} & Lista de inteiros\\
+\hline
+{\em ficheiro} & Nome do ficheiro binario\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna 0 se o ficheiro nao for guardado, retorna 1 se o ficheiro nao for guardado
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a6d25564c9d73a7997b49780ee7ad27ba}\label{_header_8h_a6d25564c9d73a7997b49780ee7ad27ba} 
+\index{Header.h@{Header.h}!LerGrafoBin@{LerGrafoBin}}
+\index{LerGrafoBin@{LerGrafoBin}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{LerGrafoBin()}{LerGrafoBin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*} Ler\+Grafo\+Bin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*}}]{lista,  }\item[{char}]{ficheiro\mbox{[}$\,$\mbox{]},  }\item[{int \texorpdfstring{$\ast$}{*}}]{vertices,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Carrega os dados de um grafo presentes num ficheiro binario para uma lista de inteiros. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista} & Lista de inteiros\\
+\hline
+{\em ficheiro} & Nome do ficheiro binario\\
+\hline
+{\em res} & Retorna 0 se os dados do grafo nao forem carregados e retorna 1 se forem carregados\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se a lista for nula ou o nome do ficheiro for invalido, retorna a lista de inteiros com os dados do grafo se o carregamento for bem sucedido
+\end{DoxyReturn}
+\Hypertarget{_header_8h_aece7db61a47b49b72c1e8ced6629638d}\label{_header_8h_aece7db61a47b49b72c1e8ced6629638d} 
+\index{Header.h@{Header.h}!LerGrafoTxt@{LerGrafoTxt}}
+\index{LerGrafoTxt@{LerGrafoTxt}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{LerGrafoTxt()}{LerGrafoTxt()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*} Ler\+Grafo\+Txt (\begin{DoxyParamCaption}\item[{char}]{ficheiro\mbox{[}$\,$\mbox{]},  }\item[{int \texorpdfstring{$\ast$}{*}}]{num\+Vertices,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Lê um grafo (matriz de adjacencias) presente num ficheiro.\+txt para uma lista de inteiros. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ficheiro} & Nome do ficheiro\\
+\hline
+{\em num\+Vertices} & Retorna o numero de vertices no grafo\\
+\hline
+{\em res} & Retorna 0 se o grafo nao for lido, retorna 1 se o grafo for lido\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se o nome do ficheiro for invalido ou se o ficheiro nao for aberto e retorna a lista de inteiros com os dados do grafo se o mesmo for lido
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a85c02d54509e115f15a2a83d31afc47a}\label{_header_8h_a85c02d54509e115f15a2a83d31afc47a} 
+\index{Header.h@{Header.h}!MostrarGrafo@{MostrarGrafo}}
+\index{MostrarGrafo@{MostrarGrafo}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{MostrarGrafo()}{MostrarGrafo()}}
+{\footnotesize\ttfamily int Mostrar\+Grafo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{grafo }\end{DoxyParamCaption})}
+
+
+
+Mostra o grafo no terminal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grafo} & \doxylink{struct_grafo}{Grafo}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna 0 se o grafo for nulo, retorna 1 se o grafo for mostrado no terminal
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a895bd19519005098113b590a388562b1}\label{_header_8h_a895bd19519005098113b590a388562b1} 
+\index{Header.h@{Header.h}!ProcessarCaminho@{ProcessarCaminho}}
+\index{ProcessarCaminho@{ProcessarCaminho}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{ProcessarCaminho()}{ProcessarCaminho()}}
+{\footnotesize\ttfamily int Processar\+Caminho (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}}]{vertice\+Distancas,  }\item[{int}]{destino }\end{DoxyParamCaption})}
+
+
+
+Mostra o caminho no terminal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice\+Distancas} & Lista de vertice distancas\\
+\hline
+{\em destino} & ID do destino\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{_header_8h_af0dc10c4e18eb2df229f0845ceaa21a1}\label{_header_8h_af0dc10c4e18eb2df229f0845ceaa21a1} 
+\index{Header.h@{Header.h}!ProcessarVertice@{ProcessarVertice}}
+\index{ProcessarVertice@{ProcessarVertice}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{ProcessarVertice()}{ProcessarVertice()}}
+{\footnotesize\ttfamily int Processar\+Vertice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{vertice }\end{DoxyParamCaption})}
+
+
+
+Processa o vertice mostrando o no terminal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice} & \doxylink{struct_vertice}{Vertice}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna 0 se nao for mostrado no terminal, retorna 1 se for mostrado no terminal
+\end{DoxyReturn}
+\Hypertarget{_header_8h_aff21cd7fafb39764e710417465cbe5c5}\label{_header_8h_aff21cd7fafb39764e710417465cbe5c5} 
+\index{Header.h@{Header.h}!RemoveAdjacenteVertices@{RemoveAdjacenteVertices}}
+\index{RemoveAdjacenteVertices@{RemoveAdjacenteVertices}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{RemoveAdjacenteVertices()}{RemoveAdjacenteVertices()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} Remove\+Adjacente\+Vertices (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{vertices,  }\item[{int}]{vertice,  }\item[{int}]{adjacente,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Remove o vertice adjacente de um vertice presente na lista de vertices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertices} & Lista de vertice\\
+\hline
+{\em vertice} & Id do \doxylink{struct_vertice}{Vertice}\\
+\hline
+{\em adjacente} & Id do adjacente\\
+\hline
+{\em res} & Retorna 0 se a adjacencia nao for removida dos vertices, retorna 1 se a adjacencia foi removida dos vertices\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se a lista de vertices for nula, retorna a lista de vertices sem o adjacente removido se o vertice nao existir, retorna a lista de vertices com o adjacente removido se o mesmo for removido
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a879ece945ea7e4f0b41e413ee0ed37b3}\label{_header_8h_a879ece945ea7e4f0b41e413ee0ed37b3} 
+\index{Header.h@{Header.h}!RemoverAdjacente@{RemoverAdjacente}}
+\index{RemoverAdjacente@{RemoverAdjacente}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{RemoverAdjacente()}{RemoverAdjacente()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*} Remover\+Adjacente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}}]{adjacentes,  }\item[{int}]{id,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Remove um adjacente de uma lista de adjacentes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em adjacentes} & Lista de adjacentes\\
+\hline
+{\em id} & Id do vertice\\
+\hline
+{\em res} & Retorna 0 se a adjacencia nao for removida, retorna 1 se a ajdacencia foi removida ou se a adjacencia nao existe\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se a lista de adjacentes for nula, retorna a lista de adjacentes sem o adjacente removido se o mesmo nao existir , retorna a lista de adjacencias com o adjacente removido se o mesmo for removido.
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a89ea1556fcd555eb406da321ef01a84c}\label{_header_8h_a89ea1556fcd555eb406da321ef01a84c} 
+\index{Header.h@{Header.h}!RemoverAdjacenteGrafo@{RemoverAdjacenteGrafo}}
+\index{RemoverAdjacenteGrafo@{RemoverAdjacenteGrafo}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{RemoverAdjacenteGrafo()}{RemoverAdjacenteGrafo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*} Remover\+Adjacente\+Grafo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{grafo,  }\item[{int}]{vertice,  }\item[{int}]{adjacente,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Remove o vertice adjacente de um vertice presente no grafo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grafo} & \doxylink{struct_grafo}{Grafo}\\
+\hline
+{\em vertice} & Id do vertice\\
+\hline
+{\em adjacente} & Id do adjacente\\
+\hline
+{\em res} & Retorna 0 se o adjacente nao for removido do grafo, retorna 1 se o adjacente for removido do grafo.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se o grafo for nulo, retorna o grafo se o adjacente for removido
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a4b9cda27dd2c44fcba89d0ef81263f06}\label{_header_8h_a4b9cda27dd2c44fcba89d0ef81263f06} 
+\index{Header.h@{Header.h}!RemoverAdjacenteTodosVertices@{RemoverAdjacenteTodosVertices}}
+\index{RemoverAdjacenteTodosVertices@{RemoverAdjacenteTodosVertices}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{RemoverAdjacenteTodosVertices()}{RemoverAdjacenteTodosVertices()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} Remover\+Adjacente\+Todos\+Vertices (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{vertices,  }\item[{int}]{id,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Remove o vertice adjacente de todos vertices presentes na lista de vertices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertices} & Lista de vertices\\
+\hline
+{\em id} & Id do vertice\\
+\hline
+{\em res} & Retorna 0 se o vertice nao for removido, retorna 1 se o vertice for removido ou se o vertice nao existe.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se a lista de vertices for nula, retorna 
+\end{DoxyReturn}
+\Hypertarget{_header_8h_aa49f53c6832be0ee95bd6188604927dc}\label{_header_8h_aa49f53c6832be0ee95bd6188604927dc} 
+\index{Header.h@{Header.h}!RemoverAdjacenteTodosVerticesGrafo@{RemoverAdjacenteTodosVerticesGrafo}}
+\index{RemoverAdjacenteTodosVerticesGrafo@{RemoverAdjacenteTodosVerticesGrafo}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{RemoverAdjacenteTodosVerticesGrafo()}{RemoverAdjacenteTodosVerticesGrafo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*} Remover\+Adjacente\+Todos\+Vertices\+Grafo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{grafo,  }\item[{int}]{id,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Remove o vertice adjacente de todas adjacencias presentes no grafo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grafo} & \doxylink{struct_grafo}{Grafo}\\
+\hline
+{\em id} & Id do adjacente\\
+\hline
+{\em res} & Retorna 0 se nao for removido o adjacente, retorna 1 se for removido o adjacente\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se o adjacente nao for removido do grafo, retorna o grafo se for removido o adjacente do mesmo
+\end{DoxyReturn}
+\Hypertarget{_header_8h_ad59a697826a68970fa554303cff0679f}\label{_header_8h_ad59a697826a68970fa554303cff0679f} 
+\index{Header.h@{Header.h}!RemoverNumeroListaInteiros@{RemoverNumeroListaInteiros}}
+\index{RemoverNumeroListaInteiros@{RemoverNumeroListaInteiros}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{RemoverNumeroListaInteiros()}{RemoverNumeroListaInteiros()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*} Remover\+Numero\+Lista\+Inteiros (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*}}]{lista,  }\item[{int}]{num,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Remove um numero de uma lista de inteiros. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista} & Lista de inteiros\\
+\hline
+{\em num} & Numero a remover da lista de inteiros\\
+\hline
+{\em top} & Posicao do ultimo numero da lista\\
+\hline
+{\em res} & Retorna 0 se nao for removido, retorna 1 se for removido\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a602e0d16186ec375b614f618cdda90e7}\label{_header_8h_a602e0d16186ec375b614f618cdda90e7} 
+\index{Header.h@{Header.h}!RemoverNumeroListaInteirosComTop@{RemoverNumeroListaInteirosComTop}}
+\index{RemoverNumeroListaInteirosComTop@{RemoverNumeroListaInteirosComTop}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{RemoverNumeroListaInteirosComTop()}{RemoverNumeroListaInteirosComTop()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*} Remover\+Numero\+Lista\+Inteiros\+Com\+Top (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*}}]{lista,  }\item[{int}]{num,  }\item[{int \texorpdfstring{$\ast$}{*}}]{top,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Remove um numero de uma lista de inteiros, retornando com um parametro o numero que esta a cima da lista. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista} & Lista de inteiros\\
+\hline
+{\em num} & Numero a remover da lista de inteiros\\
+\hline
+{\em top} & Posicao do ultimo numero da lista\\
+\hline
+{\em res} & Retorna 0 se nao for removido, retorna 1 se for removido\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a4cfb04584deeb018191c28ccbbb07b6e}\label{_header_8h_a4cfb04584deeb018191c28ccbbb07b6e} 
+\index{Header.h@{Header.h}!RemoverTodosAdjacentes@{RemoverTodosAdjacentes}}
+\index{RemoverTodosAdjacentes@{RemoverTodosAdjacentes}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{RemoverTodosAdjacentes()}{RemoverTodosAdjacentes()}}
+{\footnotesize\ttfamily int Remover\+Todos\+Adjacentes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}}]{adjacentes }\end{DoxyParamCaption})}
+
+
+
+Remove todas as adjacencias de uma lista de adjacencias. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em adjacentes} & Lista de adjacentes\\
+\hline
+{\em res} & Retorna -\/1 se a lista de adjacentes for nula, \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna 0 se a lista de adjacencias nao for removida, retorna 1 se a lista de adjacencias for removida
+\end{DoxyReturn}
+\Hypertarget{_header_8h_ae146441213bbe2fb8c358359d9c4250d}\label{_header_8h_ae146441213bbe2fb8c358359d9c4250d} 
+\index{Header.h@{Header.h}!RemoverTodosAdjacentesGrafo@{RemoverTodosAdjacentesGrafo}}
+\index{RemoverTodosAdjacentesGrafo@{RemoverTodosAdjacentesGrafo}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{RemoverTodosAdjacentesGrafo()}{RemoverTodosAdjacentesGrafo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*} Remover\+Todos\+Adjacentes\+Grafo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{grafo,  }\item[{int}]{id,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Remove todos os vertices adjacentes de um vertice dentro de um grafo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grafo} & \doxylink{struct_grafo}{Grafo}\\
+\hline
+{\em id} & Id do vertice a remover os adjacentes\\
+\hline
+{\em res} & Retorna 0 se os adjacentes nao forem removidos, retorna 1 se os adjacentes forem removidos\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se o grafo for nulo, retorna o grafo sem os adjacentes serem removidos se o grafo nao tiver vertices, retorna o grafo com os adjacentes removidos se os mesmos forem removidos
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a08b87e4f4f8dbecaf278e6efb1acd003}\label{_header_8h_a08b87e4f4f8dbecaf278e6efb1acd003} 
+\index{Header.h@{Header.h}!RemoverTodosAdjacentesVertice@{RemoverTodosAdjacentesVertice}}
+\index{RemoverTodosAdjacentesVertice@{RemoverTodosAdjacentesVertice}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{RemoverTodosAdjacentesVertice()}{RemoverTodosAdjacentesVertice()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} Remover\+Todos\+Adjacentes\+Vertice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{vertices,  }\item[{int}]{id,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Remove todos os vertices adjacentes de um vertice dentro de uma lista de vertice. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \doxylink{struct_vertice}{Vertice}} & \doxylink{struct_vertice}{Vertice}\\
+\hline
+{\em id} & Id do vertice a remover os adjacentes\\
+\hline
+{\em res} & Retorna 0 se os adjacentes nao forem removidos, retorna 1 se os adjacentes forem removidos, ou se o vertice nao existe\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se a lista for for nula, retorna a lista de vertices sem os adjacentes serem removidos se a lista de vertices nao tiver vertices, retorna a lista de vertices com os adjacentes removidos se os mesmos forem removidos
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a992255c3a3c99bad823be217cfd844a2}\label{_header_8h_a992255c3a3c99bad823be217cfd844a2} 
+\index{Header.h@{Header.h}!RemoverVertice@{RemoverVertice}}
+\index{RemoverVertice@{RemoverVertice}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{RemoverVertice()}{RemoverVertice()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} Remover\+Vertice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{vertices,  }\item[{int}]{id,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Remove um vertice de uma lista de vertices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertices} & Lista de vertices\\
+\hline
+\end{DoxyParams}
++ 
+\begin{DoxyParams}{Parameters}
+{\em id} & Id do vertice\\
+\hline
+{\em res} & Retorna 0 se o vertice nao for removido, retorna 1 se o vertice for removido ou se o vertice nao existir\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se a lista de vertices for nula, retorna a lista de vertices sem fazer nada se o vertice nao exisitr, retorna a lista de vertices com o vertice removido se o mesmo for removido.
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a18c0bb50d8cefe2751bec3c54067cb93}\label{_header_8h_a18c0bb50d8cefe2751bec3c54067cb93} 
+\index{Header.h@{Header.h}!RemoverVerticeDistacia@{RemoverVerticeDistacia}}
+\index{RemoverVerticeDistacia@{RemoverVerticeDistacia}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{RemoverVerticeDistacia()}{RemoverVerticeDistacia()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} Remover\+Vertice\+Distacia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}}]{vertice\+Distancias,  }\item[{int}]{id,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Remove um vertice dentro de uma lista de vertice distancias. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice\+Distancias} & Lista de vertice distancias\\
+\hline
+{\em id} & Id do vertice\\
+\hline
+{\em res} & Retorna 0 se nao for removido, retorna 1 se for removido\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se a lista de vertice distancias for nula, retorna a lista de vertice distancias sem o vertice removido se o mesmo nao existir e retorn lista de vertices distancias com o vertice removido
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a2625232d8972e6e03e72813d12375244}\label{_header_8h_a2625232d8972e6e03e72813d12375244} 
+\index{Header.h@{Header.h}!RemoverVerticeGrafo@{RemoverVerticeGrafo}}
+\index{RemoverVerticeGrafo@{RemoverVerticeGrafo}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{RemoverVerticeGrafo()}{RemoverVerticeGrafo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*} Remover\+Vertice\+Grafo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{grafo,  }\item[{int}]{id,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Remove um vertice de um grafo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grafo} & \doxylink{struct_grafo}{Grafo}\\
+\hline
+{\em id} & Id do vertice\\
+\hline
+{\em res} & Retorna 0 se o vertice nao for removido, retorna 1 se o vertice for removido\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se o grafo for nulo, retorna o grafo sem o vertice se o mesmo for eliminado
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a8b1b5066e284ab4326db1852e660175b}\label{_header_8h_a8b1b5066e284ab4326db1852e660175b} 
+\index{Header.h@{Header.h}!SomarDistanciaListaVerticeDistancia@{SomarDistanciaListaVerticeDistancia}}
+\index{SomarDistanciaListaVerticeDistancia@{SomarDistanciaListaVerticeDistancia}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{SomarDistanciaListaVerticeDistancia()}{SomarDistanciaListaVerticeDistancia()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} Somar\+Distancia\+Lista\+Vertice\+Distancia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}}]{vertice\+Distancias,  }\item[{int}]{id,  }\item[{int}]{valor,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Soma a uma distancia de um id presente numa lista de vertices distania um valor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice\+Distancia} & Lista de \doxylink{struct_vertice}{Vertice} distancia\\
+\hline
+{\em id} & Id\\
+\hline
+{\em valor} & Valor\\
+\hline
+{\em res} & Retorna 0 se nao for somado, retorna 1 se for somado\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo e o vertice distancia for nulo, retorna o vertice distancia se for feita a soma
+\end{DoxyReturn}
+\Hypertarget{_header_8h_ab9f935c0206515b653ce090ab7b30cd1}\label{_header_8h_ab9f935c0206515b653ce090ab7b30cd1} 
+\index{Header.h@{Header.h}!SomarDistanciaListaVerticeDistancia2@{SomarDistanciaListaVerticeDistancia2}}
+\index{SomarDistanciaListaVerticeDistancia2@{SomarDistanciaListaVerticeDistancia2}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{SomarDistanciaListaVerticeDistancia2()}{SomarDistanciaListaVerticeDistancia2()}}
+{\footnotesize\ttfamily int Somar\+Distancia\+Lista\+Vertice\+Distancia2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}}]{vertice\+Distancias,  }\item[{int}]{id,  }\item[{int}]{valor,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Retorna uma soma de uma distancia de um id presente numa lista de vertices distancia um valor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice\+Distancia} & Lista de \doxylink{struct_vertice}{Vertice} distancia\\
+\hline
+{\em id} & Id\\
+\hline
+{\em valor} & Valor\\
+\hline
+{\em res} & Retorna 0 se nao for somado, retorna 1 se for somado\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo e o vertice distancia for nulo, retorna o vertice distancia se for feita a soma
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a16917b140a1ba33842ea7d9ae25a6075}\label{_header_8h_a16917b140a1ba33842ea7d9ae25a6075} 
+\index{Header.h@{Header.h}!SomarDistanciasVerticeDistancia@{SomarDistanciasVerticeDistancia}}
+\index{SomarDistanciasVerticeDistancia@{SomarDistanciasVerticeDistancia}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{SomarDistanciasVerticeDistancia()}{SomarDistanciasVerticeDistancia()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*} Somar\+Distancias\+Vertice\+Distancia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}}]{vertice\+Distancia,  }\item[{int}]{valor,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Soma a uma distancia do "{}vertice distania"{} um valor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice\+Distancia} & \doxylink{struct_vertice}{Vertice} distancia\\
+\hline
+{\em valor} & Valor\\
+\hline
+{\em res} & Retorna 0 se nao for somado, retorna 1 se for somado\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo e o vertice distancia for nulo, retorna o vertice distancia se for feita a soma
+\end{DoxyReturn}
+\Hypertarget{_header_8h_aeccd9fba213ed231fcf972effee94460}\label{_header_8h_aeccd9fba213ed231fcf972effee94460} 
+\index{Header.h@{Header.h}!SomarDistanciasVerticeDistancia2@{SomarDistanciasVerticeDistancia2}}
+\index{SomarDistanciasVerticeDistancia2@{SomarDistanciasVerticeDistancia2}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{SomarDistanciasVerticeDistancia2()}{SomarDistanciasVerticeDistancia2()}}
+{\footnotesize\ttfamily int Somar\+Distancias\+Vertice\+Distancia2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}}]{vertice\+Distancia,  }\item[{int}]{valor,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Retorna a soma de uma distancia do "{}vertice distania"{} um valor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice\+Distancia} & \doxylink{struct_vertice}{Vertice} distancia\\
+\hline
+{\em valor} & Valor\\
+\hline
+{\em res} & Retorna 0 se nao for somado, retorna 1 se for somado\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo e o vertice distancia for nulo, retorna o vertice distancia se for feita a soma
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a48e3dc136a09cd1d821fa7851a00f257}\label{_header_8h_a48e3dc136a09cd1d821fa7851a00f257} 
+\index{Header.h@{Header.h}!SomarTodasDistanciasListaVerticeDistancia@{SomarTodasDistanciasListaVerticeDistancia}}
+\index{SomarTodasDistanciasListaVerticeDistancia@{SomarTodasDistanciasListaVerticeDistancia}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{SomarTodasDistanciasListaVerticeDistancia()}{SomarTodasDistanciasListaVerticeDistancia()}}
+{\footnotesize\ttfamily int Somar\+Todas\+Distancias\+Lista\+Vertice\+Distancia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{vertice\+Distancias }\end{DoxyParamCaption})}
+
+
+
+Soma todas as distancias presentes na lista de vertices (caminho) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice\+Distancias} & Lista de vertice distancias\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna -\/1 se a lista for nula, retorna a soma
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a1d39203b843667dba1a9230712d6e1cb}\label{_header_8h_a1d39203b843667dba1a9230712d6e1cb} 
+\index{Header.h@{Header.h}!VerificarAdjacencia@{VerificarAdjacencia}}
+\index{VerificarAdjacencia@{VerificarAdjacencia}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{VerificarAdjacencia()}{VerificarAdjacencia()}}
+{\footnotesize\ttfamily int Verificar\+Adjacencia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}}]{adjacentes,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Verifica se existe o adjacente dentro de uma lista de adjacencias. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em adjacentes} & Lista de adjacente\\
+\hline
+{\em id} & Id do adjacente\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna 0 se nao existir adjacente e retorna 1 se existir
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a7049e0d5b9b0a5579bab56648e163116}\label{_header_8h_a7049e0d5b9b0a5579bab56648e163116} 
+\index{Header.h@{Header.h}!VerificarAdjacenciaVertice@{VerificarAdjacenciaVertice}}
+\index{VerificarAdjacenciaVertice@{VerificarAdjacenciaVertice}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{VerificarAdjacenciaVertice()}{VerificarAdjacenciaVertice()}}
+{\footnotesize\ttfamily int Verificar\+Adjacencia\+Vertice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{vertices,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Verifica se existe alguem vertice adjacente dentro de uma lista de vertices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertices} & Lista de vertices\\
+\hline
+{\em vertice} & Id do vertice\\
+\hline
+{\em adjacente} & Id do vertice adjacente\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna 0 se nao existir e retorna 1 se existir
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a6124ddf5ef08b1d4d1d69c970e3a5cf8}\label{_header_8h_a6124ddf5ef08b1d4d1d69c970e3a5cf8} 
+\index{Header.h@{Header.h}!VerificarAdjacenciaVerticeGrafo@{VerificarAdjacenciaVerticeGrafo}}
+\index{VerificarAdjacenciaVerticeGrafo@{VerificarAdjacenciaVerticeGrafo}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{VerificarAdjacenciaVerticeGrafo()}{VerificarAdjacenciaVerticeGrafo()}}
+{\footnotesize\ttfamily int Verificar\+Adjacencia\+Vertice\+Grafo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{grafo,  }\item[{int}]{vertice,  }\item[{int}]{adjacente }\end{DoxyParamCaption})}
+
+
+
+Verifica se existe alguem vertice adjacente a um vertice dentro de um grafo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grafo} & \doxylink{struct_grafo}{Grafo}\\
+\hline
+{\em vertice} & Id do vertice\\
+\hline
+{\em adjacente} & Id do vertice adjacente\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna 0 se nao existir e retorna 1 se existir
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a24da3d2538fcf84684aae2a9408bf1e2}\label{_header_8h_a24da3d2538fcf84684aae2a9408bf1e2} 
+\index{Header.h@{Header.h}!VerificarListaInteirosVazia@{VerificarListaInteirosVazia}}
+\index{VerificarListaInteirosVazia@{VerificarListaInteirosVazia}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{VerificarListaInteirosVazia()}{VerificarListaInteirosVazia()}}
+{\footnotesize\ttfamily int Verificar\+Lista\+Inteiros\+Vazia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*}}]{lista }\end{DoxyParamCaption})}
+
+
+
+Vertifica se existe algum numero dentro da lista de numeros. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista} & Lista de numeros\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna 0 nao existe nenhum numero, retorna 1 se existe algum numero
+\end{DoxyReturn}
+\Hypertarget{_header_8h_ab9d2a560a88b34d7e3ae93ff85ff9d87}\label{_header_8h_ab9d2a560a88b34d7e3ae93ff85ff9d87} 
+\index{Header.h@{Header.h}!VerificarNumeroListaInteiros@{VerificarNumeroListaInteiros}}
+\index{VerificarNumeroListaInteiros@{VerificarNumeroListaInteiros}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{VerificarNumeroListaInteiros()}{VerificarNumeroListaInteiros()}}
+{\footnotesize\ttfamily int Verificar\+Numero\+Lista\+Inteiros (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*}}]{lista,  }\item[{int}]{num }\end{DoxyParamCaption})}
+
+
+
+Verifica se existe o numero na lista de inteiros. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista} & Lista de inteiros\\
+\hline
+{\em num} & Numero\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna 0 se a lista for nula ou se nao existir o numero, retorna 1 se existir o numero
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a1d9a6830167ffb1240b89c1bfa111fbb}\label{_header_8h_a1d9a6830167ffb1240b89c1bfa111fbb} 
+\index{Header.h@{Header.h}!VerificarVertice@{VerificarVertice}}
+\index{VerificarVertice@{VerificarVertice}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{VerificarVertice()}{VerificarVertice()}}
+{\footnotesize\ttfamily int Verificar\+Vertice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{vertices,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Verifica a existencia de um vertice numa lista de vertices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertices} & Lista de vertices\\
+\hline
+{\em id} & Id do vertice\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna -\/1 se o vertice for nulo,retorna 0 se o vertice nao existir retorna 1 se o vertice existir 
+\end{DoxyReturn}
+\Hypertarget{_header_8h_acfc3fae4524666ac42bba85aad2aacbe}\label{_header_8h_acfc3fae4524666ac42bba85aad2aacbe} 
+\index{Header.h@{Header.h}!VerificarVerticeDistancia@{VerificarVerticeDistancia}}
+\index{VerificarVerticeDistancia@{VerificarVerticeDistancia}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{VerificarVerticeDistancia()}{VerificarVerticeDistancia()}}
+{\footnotesize\ttfamily int Verificar\+Vertice\+Distancia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice_distancia}{Vertice\+Distancia}} \texorpdfstring{$\ast$}{*}}]{vertice\+Distancias,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Verificam se existe um vertice dentro de uma lista de vertice distancias. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice\+Distancias} & Lista de vertice distancias\\
+\hline
+{\em id} & Id do vertice\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna 0 se nao existir, retorna 1 se existir
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a1bcdf61dab5e992b5a1bf30ee3a6e6a3}\label{_header_8h_a1bcdf61dab5e992b5a1bf30ee3a6e6a3} 
+\index{Header.h@{Header.h}!VerificarVerticeGrafo@{VerificarVerticeGrafo}}
+\index{VerificarVerticeGrafo@{VerificarVerticeGrafo}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{VerificarVerticeGrafo()}{VerificarVerticeGrafo()}}
+{\footnotesize\ttfamily int Verificar\+Vertice\+Grafo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{grafo,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Verifica a existencia de um vertice num grafo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grafo} & \doxylink{struct_grafo}{Grafo}\\
+\hline
+{\em id} & Id do vertice\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna -\/2 se o grafo for nulo, retorna -\/1 se nao existir vertices no grafo, retorna 0 se o vertice nao existir, retorna 1 se o vertice existir
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a3c61fa7902c59b8cd882c90f7d2bc9c7}\label{_header_8h_a3c61fa7902c59b8cd882c90f7d2bc9c7} 
+\index{Header.h@{Header.h}!VerificarVerticesAdjacentesVisitados@{VerificarVerticesAdjacentesVisitados}}
+\index{VerificarVerticesAdjacentesVisitados@{VerificarVerticesAdjacentesVisitados}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{VerificarVerticesAdjacentesVisitados()}{VerificarVerticesAdjacentesVisitados()}}
+{\footnotesize\ttfamily int Verificar\+Vertices\+Adjacentes\+Visitados (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{vertices,  }\item[{\mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}}]{adjacentes }\end{DoxyParamCaption})}
+
+
+
+Verifica se os vertices adjacentes de uma lista de adjacentes foram visitados. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertices} & Lista de vertices\\
+\hline
+{\em adjacentes} & Lista de adjacentes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna o id do vertice adjacente for visitar, retorna 1 se todos os vertices adjacentes forem visitados 
+\end{DoxyReturn}
+\Hypertarget{_header_8h_a3a65d34ba6ee54fd4df6c87fee07eddf}\label{_header_8h_a3a65d34ba6ee54fd4df6c87fee07eddf} 
+\index{Header.h@{Header.h}!VerificarVerticeVisitado@{VerificarVerticeVisitado}}
+\index{VerificarVerticeVisitado@{VerificarVerticeVisitado}!Header.h@{Header.h}}
+\doxysubsubsection{\texorpdfstring{VerificarVerticeVisitado()}{VerificarVerticeVisitado()}}
+{\footnotesize\ttfamily int Verificar\+Vertice\+Visitado (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{vertices,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Verifica se o vertice foi visitado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertices} & Lista de vertices\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna 0 se o vertice nao foi visitado, retorna 1 se o vertice foi visitado
+\end{DoxyReturn}

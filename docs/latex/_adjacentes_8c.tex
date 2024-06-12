@@ -1,0 +1,233 @@
+\doxysection{Adjacentes.\+c File Reference}
+\hypertarget{_adjacentes_8c}{}\label{_adjacentes_8c}\index{Adjacentes.c@{Adjacentes.c}}
+
+
+Ficheiro C com as funcoes relacionadas com os vertices adjacentes.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$malloc.\+h$>$}\newline
+{\ttfamily \#include "{}Header.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_adjacentes_8c_a5d0cd34874cd459c0bc8fd377300bb4b}{Criar\+Adjacente}} ()
+\begin{DoxyCompactList}\small\item\em Cria um vertice adjacente. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_adjacentes_8c_a9a71bd022b9fb88c96beaaba8e29f2a9}{Adicionar\+Dados\+Adjacente}} (\mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}adjacente, int id, int peso, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Cria um vertice adjacente. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_adjacentes_8c_a7097e1a4ac98918f2080583aaafb6e49}{Adicionar\+Adjacencia}} (\mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}adjacentes, \mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}adjacente, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Adiciona uma adjacencia dentro de uma lista de adjacentes. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_adjacentes_8c_a879ece945ea7e4f0b41e413ee0ed37b3}{Remover\+Adjacente}} (\mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}adjacentes, int id, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Remove um adjacente de uma lista de adjacentes. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_adjacentes_8c_a4cfb04584deeb018191c28ccbbb07b6e}{Remover\+Todos\+Adjacentes}} (\mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}adjacentes)
+\begin{DoxyCompactList}\small\item\em Remove todas as adjacencias de uma lista de adjacencias. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_adjacentes_8c_a3c61fa7902c59b8cd882c90f7d2bc9c7}{Verificar\+Vertices\+Adjacentes\+Visitados}} (\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}vertices, \mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}adjacentes)
+\begin{DoxyCompactList}\small\item\em Verifica se os vertices adjacentes de uma lista de adjacentes foram visitados. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_adjacentes_8c_a1d39203b843667dba1a9230712d6e1cb}{Verificar\+Adjacencia}} (\mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}adjacentes, int id)
+\begin{DoxyCompactList}\small\item\em Verifica se existe o adjacente dentro de uma lista de adjacencias. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_adjacentes_8c_a28f410d57a7e96abccb17f1aba5d073b}{Comparar\+Pesos\+Adjacente}} (\mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}adjacente, int valor)
+\begin{DoxyCompactList}\small\item\em Compara o peso de um adjacente e um valor. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_adjacentes_8c_a34a37374c175d1fa153385684fac84e0}{Encontrar\+Id\+Menor\+Adjacente}} (\mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}adjacentes)
+\begin{DoxyCompactList}\small\item\em Encontra o id do adjacente que possui o menor peso. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_adjacentes_8c_a076107910642e50c1353c7dcc09ea1d5}{Encontrar\+Id\+Menor\+Adjacente\+Nao\+Visitado}} (\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}vertices, \mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}adjacentes, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Encontra o id do adjacente que possui o menor peso e nao foi visitado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Ficheiro C com as funcoes relacionadas com os vertices adjacentes. 
+
+\begin{DoxyAuthor}{Author}
+David Carvalho 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+May 2024 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_adjacentes_8c_a7097e1a4ac98918f2080583aaafb6e49}\label{_adjacentes_8c_a7097e1a4ac98918f2080583aaafb6e49} 
+\index{Adjacentes.c@{Adjacentes.c}!AdicionarAdjacencia@{AdicionarAdjacencia}}
+\index{AdicionarAdjacencia@{AdicionarAdjacencia}!Adjacentes.c@{Adjacentes.c}}
+\doxysubsubsection{\texorpdfstring{AdicionarAdjacencia()}{AdicionarAdjacencia()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*} Adicionar\+Adjacencia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}}]{adjacentes,  }\item[{\mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}}]{adjacente,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Adiciona uma adjacencia dentro de uma lista de adjacentes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em adjacentes} & Lista de adjacentes\\
+\hline
+{\em adjacente} & \doxylink{struct_adjacente}{Adjacente}\\
+\hline
+\end{DoxyParams}
+\texorpdfstring{$<$}{<}param name="{}res"{}Retorna 0 se o adjacente nao for adicionado, retorna 1 se o adjacente for adicionado ou se a adjacencia ja existe
+
+\begin{DoxyReturn}{Returns}
+Retorna nulo se se a lista de adjacentes for nula, retorna a lista de adjacentes sem o adjacente adicionado se o mesmo for nulo, e retorna a lista de adjacentes com o adjacente adicionado se o mesmo for adicionado
+\end{DoxyReturn}
+\Hypertarget{_adjacentes_8c_a9a71bd022b9fb88c96beaaba8e29f2a9}\label{_adjacentes_8c_a9a71bd022b9fb88c96beaaba8e29f2a9} 
+\index{Adjacentes.c@{Adjacentes.c}!AdicionarDadosAdjacente@{AdicionarDadosAdjacente}}
+\index{AdicionarDadosAdjacente@{AdicionarDadosAdjacente}!Adjacentes.c@{Adjacentes.c}}
+\doxysubsubsection{\texorpdfstring{AdicionarDadosAdjacente()}{AdicionarDadosAdjacente()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*} Adicionar\+Dados\+Adjacente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}}]{adjacente,  }\item[{int}]{id,  }\item[{int}]{peso,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Cria um vertice adjacente. 
+
+\begin{DoxyReturn}{Returns}
+Retorna vertice adjacente criado
+\end{DoxyReturn}
+\Hypertarget{_adjacentes_8c_a28f410d57a7e96abccb17f1aba5d073b}\label{_adjacentes_8c_a28f410d57a7e96abccb17f1aba5d073b} 
+\index{Adjacentes.c@{Adjacentes.c}!CompararPesosAdjacente@{CompararPesosAdjacente}}
+\index{CompararPesosAdjacente@{CompararPesosAdjacente}!Adjacentes.c@{Adjacentes.c}}
+\doxysubsubsection{\texorpdfstring{CompararPesosAdjacente()}{CompararPesosAdjacente()}}
+{\footnotesize\ttfamily int Comparar\+Pesos\+Adjacente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}}]{adjacente,  }\item[{int}]{valor }\end{DoxyParamCaption})}
+
+
+
+Compara o peso de um adjacente e um valor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em adjacente} & \\
+\hline
+{\em valor} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna -\/1 se o adjacente for nulo, retorna 0 se o peso for maior que o valor, retorna 1 se o peso for menor que o falor, retorna 2 se for igual
+\end{DoxyReturn}
+\Hypertarget{_adjacentes_8c_a5d0cd34874cd459c0bc8fd377300bb4b}\label{_adjacentes_8c_a5d0cd34874cd459c0bc8fd377300bb4b} 
+\index{Adjacentes.c@{Adjacentes.c}!CriarAdjacente@{CriarAdjacente}}
+\index{CriarAdjacente@{CriarAdjacente}!Adjacentes.c@{Adjacentes.c}}
+\doxysubsubsection{\texorpdfstring{CriarAdjacente()}{CriarAdjacente()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*} Criar\+Adjacente (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Cria um vertice adjacente. 
+
+\begin{DoxyReturn}{Returns}
+Retorna vertice adjacente criado
+\end{DoxyReturn}
+\Hypertarget{_adjacentes_8c_a34a37374c175d1fa153385684fac84e0}\label{_adjacentes_8c_a34a37374c175d1fa153385684fac84e0} 
+\index{Adjacentes.c@{Adjacentes.c}!EncontrarIdMenorAdjacente@{EncontrarIdMenorAdjacente}}
+\index{EncontrarIdMenorAdjacente@{EncontrarIdMenorAdjacente}!Adjacentes.c@{Adjacentes.c}}
+\doxysubsubsection{\texorpdfstring{EncontrarIdMenorAdjacente()}{EncontrarIdMenorAdjacente()}}
+{\footnotesize\ttfamily int Encontrar\+Id\+Menor\+Adjacente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}}]{adjacentes }\end{DoxyParamCaption})}
+
+
+
+Encontra o id do adjacente que possui o menor peso. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em adjacentes} & Lista de adjacentes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna -\/1 se a lista de adjacentes for nula, retorna o menor adjacente
+\end{DoxyReturn}
+\Hypertarget{_adjacentes_8c_a076107910642e50c1353c7dcc09ea1d5}\label{_adjacentes_8c_a076107910642e50c1353c7dcc09ea1d5} 
+\index{Adjacentes.c@{Adjacentes.c}!EncontrarIdMenorAdjacenteNaoVisitado@{EncontrarIdMenorAdjacenteNaoVisitado}}
+\index{EncontrarIdMenorAdjacenteNaoVisitado@{EncontrarIdMenorAdjacenteNaoVisitado}!Adjacentes.c@{Adjacentes.c}}
+\doxysubsubsection{\texorpdfstring{EncontrarIdMenorAdjacenteNaoVisitado()}{EncontrarIdMenorAdjacenteNaoVisitado()}}
+{\footnotesize\ttfamily int Encontrar\+Id\+Menor\+Adjacente\+Nao\+Visitado (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{vertices,  }\item[{\mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}}]{adjacentes,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Encontra o id do adjacente que possui o menor peso e nao foi visitado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em adjacentes} & Lista de adjacentes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna -\/1 se a lista de adjacentes for nula, retorna o menor adjacente ou retorna -\/2 se nao exitir nenhum adjacente sem estar por visitar
+\end{DoxyReturn}
+\Hypertarget{_adjacentes_8c_a879ece945ea7e4f0b41e413ee0ed37b3}\label{_adjacentes_8c_a879ece945ea7e4f0b41e413ee0ed37b3} 
+\index{Adjacentes.c@{Adjacentes.c}!RemoverAdjacente@{RemoverAdjacente}}
+\index{RemoverAdjacente@{RemoverAdjacente}!Adjacentes.c@{Adjacentes.c}}
+\doxysubsubsection{\texorpdfstring{RemoverAdjacente()}{RemoverAdjacente()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*} Remover\+Adjacente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}}]{adjacentes,  }\item[{int}]{id,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Remove um adjacente de uma lista de adjacentes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em adjacentes} & Lista de adjacentes\\
+\hline
+{\em id} & Id do vertice\\
+\hline
+{\em res} & Retorna 0 se a adjacencia nao for removida, retorna 1 se a ajdacencia foi removida ou se a adjacencia nao existe\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se a lista de adjacentes for nula, retorna a lista de adjacentes sem o adjacente removido se o mesmo nao existir , retorna a lista de adjacencias com o adjacente removido se o mesmo for removido.
+\end{DoxyReturn}
+\Hypertarget{_adjacentes_8c_a4cfb04584deeb018191c28ccbbb07b6e}\label{_adjacentes_8c_a4cfb04584deeb018191c28ccbbb07b6e} 
+\index{Adjacentes.c@{Adjacentes.c}!RemoverTodosAdjacentes@{RemoverTodosAdjacentes}}
+\index{RemoverTodosAdjacentes@{RemoverTodosAdjacentes}!Adjacentes.c@{Adjacentes.c}}
+\doxysubsubsection{\texorpdfstring{RemoverTodosAdjacentes()}{RemoverTodosAdjacentes()}}
+{\footnotesize\ttfamily int Remover\+Todos\+Adjacentes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}}]{adjacentes }\end{DoxyParamCaption})}
+
+
+
+Remove todas as adjacencias de uma lista de adjacencias. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em adjacentes} & Lista de adjacentes\\
+\hline
+{\em res} & Retorna -\/1 se a lista de adjacentes for nula, \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna 0 se a lista de adjacencias nao for removida, retorna 1 se a lista de adjacencias for removida
+\end{DoxyReturn}
+\Hypertarget{_adjacentes_8c_a1d39203b843667dba1a9230712d6e1cb}\label{_adjacentes_8c_a1d39203b843667dba1a9230712d6e1cb} 
+\index{Adjacentes.c@{Adjacentes.c}!VerificarAdjacencia@{VerificarAdjacencia}}
+\index{VerificarAdjacencia@{VerificarAdjacencia}!Adjacentes.c@{Adjacentes.c}}
+\doxysubsubsection{\texorpdfstring{VerificarAdjacencia()}{VerificarAdjacencia()}}
+{\footnotesize\ttfamily int Verificar\+Adjacencia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}}]{adjacentes,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Verifica se existe o adjacente dentro de uma lista de adjacencias. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em adjacentes} & Lista de adjacente\\
+\hline
+{\em id} & Id do adjacente\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna 0 se nao existir adjacente e retorna 1 se existir
+\end{DoxyReturn}
+\Hypertarget{_adjacentes_8c_a3c61fa7902c59b8cd882c90f7d2bc9c7}\label{_adjacentes_8c_a3c61fa7902c59b8cd882c90f7d2bc9c7} 
+\index{Adjacentes.c@{Adjacentes.c}!VerificarVerticesAdjacentesVisitados@{VerificarVerticesAdjacentesVisitados}}
+\index{VerificarVerticesAdjacentesVisitados@{VerificarVerticesAdjacentesVisitados}!Adjacentes.c@{Adjacentes.c}}
+\doxysubsubsection{\texorpdfstring{VerificarVerticesAdjacentesVisitados()}{VerificarVerticesAdjacentesVisitados()}}
+{\footnotesize\ttfamily int Verificar\+Vertices\+Adjacentes\+Visitados (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{vertices,  }\item[{\mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}}]{adjacentes }\end{DoxyParamCaption})}
+
+
+
+Verifica se os vertices adjacentes de uma lista de adjacentes foram visitados. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertices} & Lista de vertices\\
+\hline
+{\em adjacentes} & Lista de adjacentes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna o id do vertice adjacente for visitar, retorna 1 se todos os vertices adjacentes forem visitados 
+\end{DoxyReturn}

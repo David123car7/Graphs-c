@@ -1,0 +1,218 @@
+\doxysection{Header.\+h}
+\hypertarget{_header_8h_source}{}\label{_header_8h_source}\mbox{\hyperlink{_header_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*****************************************************************/}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <stdbool.h>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#define\ INFINITO\ 9999}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_grafo}{Grafo}}\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_vertice}{Vertice}}*\ \mbox{\hyperlink{struct_grafo_aca714c8307a2b3584e17b4521fba6690}{vertInicio}};}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_grafo_ae8f2640efa2f2e1875e75aee1bc7c248}{vertices}};}
+\DoxyCodeLine{00019\ \}\mbox{\hyperlink{struct_grafo}{Grafo}};}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_vertice}{Vertice}}\ \{}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_vertice_a7441ef0865bcb3db9b8064dd7375c1ea}{id}};}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_vertice_a7432ec6b760cca5a63570ce7d9f9565b}{visitado}};}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_vertice}{Vertice}}*\ \mbox{\hyperlink{struct_vertice_ad9b4647ef6419916b05903d74de34fd9}{proxVertice}};}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_adjacente}{Adjacente}}*\ \mbox{\hyperlink{struct_vertice_ad071dca77b11a47f461dcd179e6404ea}{proxAdjacente}};}
+\DoxyCodeLine{00029\ \}\mbox{\hyperlink{struct_vertice}{Vertice}};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_adjacente}{Adjacente}}\ \{}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_adjacente_a7441ef0865bcb3db9b8064dd7375c1ea}{id}};}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_adjacente_a42cd64244a918a5ac7790523e97d1181}{peso}};}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_adjacente}{Adjacente}}*\ \mbox{\hyperlink{struct_adjacente_ad071dca77b11a47f461dcd179e6404ea}{proxAdjacente}};}
+\DoxyCodeLine{00038\ \}\mbox{\hyperlink{struct_adjacente}{Adjacente}};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00043\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_lista_inteiros}{ListaInteiros}}\ \{}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_lista_inteiros_a86cf672daa4e0ad11ad10efc894d19c8}{num}};}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_lista_inteiros}{ListaInteiros}}*\ \mbox{\hyperlink{struct_lista_inteiros_a9f368fa9dd16749629ccd95b791ee5b7}{proxInteiro}};}
+\DoxyCodeLine{00046\ \}\mbox{\hyperlink{struct_lista_inteiros}{ListaInteiros}};}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00051\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_vertice_distancia}{VerticeDistancia}}\ \{}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_vertice_distancia_a7441ef0865bcb3db9b8064dd7375c1ea}{id}};}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_vertice_distancia_aa952313856d65c9cc80751918b71223f}{distancia}};}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_vertice_distancia}{VerticeDistancia}}*\ \mbox{\hyperlink{struct_vertice_distancia_ab6b9a4d75b0576e4ee39ef64df5b7cb7}{proxVerDist}};}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_vertice_distancia}{VerticeDistancia}}*\ \mbox{\hyperlink{struct_vertice_distancia_a0d91048b6b3d832e3af48bbf1588f485}{antVerDist}};}
+\DoxyCodeLine{00056\ \}\mbox{\hyperlink{struct_vertice_distancia}{VerticeDistancia}};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \textcolor{preprocessor}{\#pragma\ region\ Vertices}}
+\DoxyCodeLine{00059\ \mbox{\hyperlink{struct_vertice}{Vertice}}*\ \mbox{\hyperlink{_header_8h_aab4c09ffb2140be8dbe1c41041b43fa9}{CriarVertice}}();}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \textcolor{preprocessor}{\#pragma\ region\ Adicionar/Alterar}}
+\DoxyCodeLine{00062\ \mbox{\hyperlink{struct_vertice}{Vertice}}*\ \mbox{\hyperlink{_header_8h_acef0486f7e66738e6c33a3331bde81a3}{AdicionarDadosVertice}}(\mbox{\hyperlink{struct_vertice}{Vertice}}*\ vertice,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{bool}\ visitado,\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00063\ \mbox{\hyperlink{struct_vertice}{Vertice}}*\ \mbox{\hyperlink{_header_8h_a13a1716f777b56764a4f81c306420e86}{AdicionarVertice}}(\mbox{\hyperlink{struct_vertice}{Vertice}}*\ vertices,\ \mbox{\hyperlink{struct_vertice}{Vertice}}*\ vertice,\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00064\ \mbox{\hyperlink{struct_vertice}{Vertice}}*\ \mbox{\hyperlink{_header_8h_af1ca00def62c8ae45f0322af7f3bfed4}{AdicionarAdjacenciaVertices}}(\mbox{\hyperlink{struct_vertice}{Vertice}}*\ vertices,\ \textcolor{keywordtype}{int}\ origem,\ \mbox{\hyperlink{struct_adjacente}{Adjacente}}*\ adjacente,\ \textcolor{keywordtype}{int}\ verificar,\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00065\ \mbox{\hyperlink{struct_vertice}{Vertice}}*\ \mbox{\hyperlink{_header_8h_af1ebd076c6f6ba11456e28ba4e4e39b1}{AlterarEstadoVerticeVisitado}}(\mbox{\hyperlink{struct_vertice}{Vertice}}*\ vertice,\ \textcolor{keywordtype}{bool}\ estado,\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00066\ \mbox{\hyperlink{struct_vertice}{Vertice}}*\ \mbox{\hyperlink{_header_8h_a8a1f69d319d73ccd1f9e68afb7a7e49b}{AlterarEstadoVerticeVisitadoVertices}}(\mbox{\hyperlink{struct_vertice}{Vertice}}*\ vertices,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{bool}\ estado,\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00067\ \mbox{\hyperlink{struct_vertice}{Vertice}}*\ \mbox{\hyperlink{_header_8h_a0cfa0b78b791ca5db934f1a789c1c2ab}{AlterarEstadoVisitadoTodosVertices}}(\mbox{\hyperlink{struct_vertice}{Vertice}}*\ vertices,\ \textcolor{keywordtype}{bool}\ estado,\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00068\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \textcolor{preprocessor}{\#pragma\ region\ Remover}}
+\DoxyCodeLine{00071\ \mbox{\hyperlink{struct_vertice}{Vertice}}*\ \mbox{\hyperlink{_header_8h_a992255c3a3c99bad823be217cfd844a2}{RemoverVertice}}(\mbox{\hyperlink{struct_vertice}{Vertice}}*\ vertices,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00072\ \mbox{\hyperlink{struct_vertice}{Vertice}}*\ \mbox{\hyperlink{_header_8h_aff21cd7fafb39764e710417465cbe5c5}{RemoveAdjacenteVertices}}(\mbox{\hyperlink{struct_vertice}{Vertice}}*\ vertices,\ \textcolor{keywordtype}{int}\ vertice,\ \textcolor{keywordtype}{int}\ adjacente,\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00073\ \mbox{\hyperlink{struct_vertice}{Vertice}}*\ \mbox{\hyperlink{_header_8h_a4b9cda27dd2c44fcba89d0ef81263f06}{RemoverAdjacenteTodosVertices}}(\mbox{\hyperlink{struct_vertice}{Vertice}}*\ vertices,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00074\ \mbox{\hyperlink{struct_vertice}{Vertice}}*\ \mbox{\hyperlink{_header_8h_a08b87e4f4f8dbecaf278e6efb1acd003}{RemoverTodosAdjacentesVertice}}(\mbox{\hyperlink{struct_vertice}{Vertice}}*\ vertices,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00075\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \textcolor{preprocessor}{\#pragma\ region\ Verificacoes}}
+\DoxyCodeLine{00078\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_header_8h_a1d9a6830167ffb1240b89c1bfa111fbb}{VerificarVertice}}(\mbox{\hyperlink{struct_vertice}{Vertice}}*\ vertices,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00079\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_header_8h_a1bcdf61dab5e992b5a1bf30ee3a6e6a3}{VerificarVerticeGrafo}}(\mbox{\hyperlink{struct_grafo}{Grafo}}*\ grafo,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00080\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_header_8h_a1d39203b843667dba1a9230712d6e1cb}{VerificarAdjacencia}}(\mbox{\hyperlink{struct_adjacente}{Adjacente}}*\ adjacentes,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00081\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_header_8h_a7049e0d5b9b0a5579bab56648e163116}{VerificarAdjacenciaVertice}}(\mbox{\hyperlink{struct_vertice}{Vertice}}*\ vertices,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00082\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_header_8h_a6124ddf5ef08b1d4d1d69c970e3a5cf8}{VerificarAdjacenciaVerticeGrafo}}(\mbox{\hyperlink{struct_grafo}{Grafo}}*\ grafo,\ \textcolor{keywordtype}{int}\ vertice,\ \textcolor{keywordtype}{int}\ adjacente);}
+\DoxyCodeLine{00083\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_header_8h_a3a65d34ba6ee54fd4df6c87fee07eddf}{VerificarVerticeVisitado}}(\mbox{\hyperlink{struct_vertice}{Vertice}}*\ vertices,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00084\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \textcolor{preprocessor}{\#pragma\ region\ Outro}}
+\DoxyCodeLine{00087\ \mbox{\hyperlink{struct_vertice}{Vertice}}*\ \mbox{\hyperlink{_header_8h_a3202effc47cc0a7faa6aed75184c1967}{EncontrarVerticeGrafo}}(\mbox{\hyperlink{struct_grafo}{Grafo}}*\ grafo,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00088\ \mbox{\hyperlink{struct_vertice}{Vertice}}*\ \mbox{\hyperlink{_header_8h_a39bcaf46dca003e5b2b9efc53f6b5cb3}{EncontrarVertice}}(\mbox{\hyperlink{struct_vertice}{Vertice}}*\ vertices,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00089\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_header_8h_af0dc10c4e18eb2df229f0845ceaa21a1}{ProcessarVertice}}(\mbox{\hyperlink{struct_vertice}{Vertice}}*\ vertice);}
+\DoxyCodeLine{00090\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{00091\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ \textcolor{preprocessor}{\#pragma\ region\ VerticesAdjacentes}}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ \mbox{\hyperlink{struct_adjacente}{Adjacente}}*\ \mbox{\hyperlink{_header_8h_a5d0cd34874cd459c0bc8fd377300bb4b}{CriarAdjacente}}();}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00097\ \textcolor{preprocessor}{\#pragma\ region\ Adicionar}}
+\DoxyCodeLine{00098\ \mbox{\hyperlink{struct_adjacente}{Adjacente}}*\ \mbox{\hyperlink{_header_8h_a9a71bd022b9fb88c96beaaba8e29f2a9}{AdicionarDadosAdjacente}}(\mbox{\hyperlink{struct_adjacente}{Adjacente}}*\ adjacente,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{int}\ peso,\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00099\ \mbox{\hyperlink{struct_adjacente}{Adjacente}}*\ \mbox{\hyperlink{_header_8h_a7097e1a4ac98918f2080583aaafb6e49}{AdicionarAdjacencia}}(\mbox{\hyperlink{struct_adjacente}{Adjacente}}*\ adjacentes,\ \mbox{\hyperlink{struct_adjacente}{Adjacente}}*\ adjacente,\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00100\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00102\ \textcolor{preprocessor}{\#pragma\ region\ Remover}}
+\DoxyCodeLine{00103\ \mbox{\hyperlink{struct_adjacente}{Adjacente}}*\ \mbox{\hyperlink{_header_8h_a879ece945ea7e4f0b41e413ee0ed37b3}{RemoverAdjacente}}(\mbox{\hyperlink{struct_adjacente}{Adjacente}}*\ adjacentes,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00104\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_header_8h_a4cfb04584deeb018191c28ccbbb07b6e}{RemoverTodosAdjacentes}}(\mbox{\hyperlink{struct_adjacente}{Adjacente}}*\ adjacentes);}
+\DoxyCodeLine{00105\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00107\ \textcolor{preprocessor}{\#pragma\ region\ Verificar}}
+\DoxyCodeLine{00108\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_header_8h_a3c61fa7902c59b8cd882c90f7d2bc9c7}{VerificarVerticesAdjacentesVisitados}}(\mbox{\hyperlink{struct_vertice}{Vertice}}*\ vertices,\ \mbox{\hyperlink{struct_adjacente}{Adjacente}}*\ adjacentes);}
+\DoxyCodeLine{00109\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_header_8h_a1d39203b843667dba1a9230712d6e1cb}{VerificarAdjacencia}}(\mbox{\hyperlink{struct_adjacente}{Adjacente}}*\ adjacentes,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00110\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{00111\ }
+\DoxyCodeLine{00112\ \textcolor{preprocessor}{\#pragma\ region\ Operacoes}}
+\DoxyCodeLine{00113\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_header_8h_a28f410d57a7e96abccb17f1aba5d073b}{CompararPesosAdjacente}}(\mbox{\hyperlink{struct_adjacente}{Adjacente}}*\ adjacente,\ \textcolor{keywordtype}{int}\ valor);}
+\DoxyCodeLine{00114\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00116\ \textcolor{preprocessor}{\#pragma\ region\ Outro}}
+\DoxyCodeLine{00117\ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_header_8h_a34a37374c175d1fa153385684fac84e0}{EncontrarIdMenorAdjacente}}(\mbox{\hyperlink{struct_adjacente}{Adjacente}}*\ adjacentes);}
+\DoxyCodeLine{00118\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_header_8h_a076107910642e50c1353c7dcc09ea1d5}{EncontrarIdMenorAdjacenteNaoVisitado}}(\mbox{\hyperlink{struct_vertice}{Vertice}}*\ vertices,\ \mbox{\hyperlink{struct_adjacente}{Adjacente}}*\ adjacentes,\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00119\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00121\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00123\ \textcolor{preprocessor}{\#pragma\ region\ Grafo}}
+\DoxyCodeLine{00124\ }
+\DoxyCodeLine{00125\ \mbox{\hyperlink{struct_grafo}{Grafo}}*\ \mbox{\hyperlink{_header_8h_ae9280ded3460e9db71c42aaa245cf2fa}{CriarGrafo}}();}
+\DoxyCodeLine{00126\ }
+\DoxyCodeLine{00127\ \textcolor{preprocessor}{\#pragma\ region\ Adicionar}}
+\DoxyCodeLine{00128\ \mbox{\hyperlink{struct_grafo}{Grafo}}*\ \mbox{\hyperlink{_header_8h_a5b565440538303c3076f4852ef56449e}{AdicionarVerticeGrafo}}(\mbox{\hyperlink{struct_grafo}{Grafo}}*\ grafo,\ \mbox{\hyperlink{struct_vertice}{Vertice}}*\ vertice,\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00129\ \mbox{\hyperlink{struct_grafo}{Grafo}}*\ \mbox{\hyperlink{_header_8h_a16687bbebe0a30de6d6a724bc6a3d558}{AdicionarAdjacenciaGrafo}}(\mbox{\hyperlink{struct_grafo}{Grafo}}*\ grafo,\ \textcolor{keywordtype}{int}\ origem,\ \mbox{\hyperlink{struct_adjacente}{Adjacente}}*\ adjacente,\ \textcolor{keywordtype}{int}\ verificar,\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00130\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{00131\ }
+\DoxyCodeLine{00132\ \textcolor{preprocessor}{\#pragma\ region\ Remover}}
+\DoxyCodeLine{00133\ \mbox{\hyperlink{struct_grafo}{Grafo}}*\ \mbox{\hyperlink{_header_8h_ae146441213bbe2fb8c358359d9c4250d}{RemoverTodosAdjacentesGrafo}}(\mbox{\hyperlink{struct_grafo}{Grafo}}*\ grafo,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00134\ \mbox{\hyperlink{struct_grafo}{Grafo}}*\ \mbox{\hyperlink{_header_8h_aa49f53c6832be0ee95bd6188604927dc}{RemoverAdjacenteTodosVerticesGrafo}}(\mbox{\hyperlink{struct_grafo}{Grafo}}*\ grafo,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00135\ \mbox{\hyperlink{struct_grafo}{Grafo}}*\ \mbox{\hyperlink{_header_8h_a89ea1556fcd555eb406da321ef01a84c}{RemoverAdjacenteGrafo}}(\mbox{\hyperlink{struct_grafo}{Grafo}}*\ grafo,\ \textcolor{keywordtype}{int}\ vertice,\ \textcolor{keywordtype}{int}\ adjacente,\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00136\ \mbox{\hyperlink{struct_grafo}{Grafo}}*\ \mbox{\hyperlink{_header_8h_a2625232d8972e6e03e72813d12375244}{RemoverVerticeGrafo}}(\mbox{\hyperlink{struct_grafo}{Grafo}}*\ grafo,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00137\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{00138\ }
+\DoxyCodeLine{00139\ \textcolor{preprocessor}{\#pragma\ region\ Algoritmos}}
+\DoxyCodeLine{00140\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_header_8h_ae212458d99f53f19ea448570986e0019}{DepthFirstTraversal}}(\mbox{\hyperlink{struct_grafo}{Grafo}}*\ grafo,\ \textcolor{keywordtype}{int}\ inicioId);}
+\DoxyCodeLine{00141\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_header_8h_a67debeee34a18d668f0dc32d4388503e}{BreadthFirstTraversal}}(\mbox{\hyperlink{struct_grafo}{Grafo}}*\ grafo,\ \textcolor{keywordtype}{int}\ inicioId);}
+\DoxyCodeLine{00142\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_header_8h_a6856097da15234c0a7fbdff345c06432}{DeterminarMaiorCaminhoGrafo}}(\mbox{\hyperlink{struct_grafo}{Grafo}}*\ grafo,\ \textcolor{keywordtype}{int}\ inicioId,\ \textcolor{keywordtype}{int}\ destinoId,\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00143\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{00144\ }
+\DoxyCodeLine{00145\ \textcolor{preprocessor}{\#pragma\ region\ Outro}}
+\DoxyCodeLine{00146\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_header_8h_a85c02d54509e115f15a2a83d31afc47a}{MostrarGrafo}}(\mbox{\hyperlink{struct_grafo}{Grafo}}*\ grafo);}
+\DoxyCodeLine{00147\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{00148\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{00149\ }
+\DoxyCodeLine{00150\ \textcolor{preprocessor}{\#pragma\ region\ Ficheiros}}
+\DoxyCodeLine{00151\ \mbox{\hyperlink{struct_lista_inteiros}{ListaInteiros}}*\ \mbox{\hyperlink{_header_8h_a9092f87bf7d6e248caac2438d3ce2559}{GrafoParaListaInteiros}}(\mbox{\hyperlink{struct_grafo}{Grafo}}*\ grafo,\ \mbox{\hyperlink{struct_lista_inteiros}{ListaInteiros}}*\ lista,\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00152\ \mbox{\hyperlink{struct_grafo}{Grafo}}*\ \mbox{\hyperlink{_header_8h_a833797293559178703ce16d116d45f9f}{CarregarGrafo}}(\mbox{\hyperlink{struct_lista_inteiros}{ListaInteiros}}*\ lista,\ \textcolor{keywordtype}{int}*\ vertices,\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00153\ \mbox{\hyperlink{struct_lista_inteiros}{ListaInteiros}}*\ \mbox{\hyperlink{_header_8h_aece7db61a47b49b72c1e8ced6629638d}{LerGrafoTxt}}(\textcolor{keywordtype}{char}\ ficheiro[],\ \textcolor{keywordtype}{int}*\ numVertices,\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00154\ \mbox{\hyperlink{struct_lista_inteiros}{ListaInteiros}}*\ \mbox{\hyperlink{_header_8h_a6d25564c9d73a7997b49780ee7ad27ba}{LerGrafoBin}}(\mbox{\hyperlink{struct_lista_inteiros}{ListaInteiros}}*\ lista,\ \textcolor{keywordtype}{char}\ ficheiro[],\ \textcolor{keywordtype}{int}*\ vertices,\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00155\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_header_8h_a9f8d0c6b299e4eb729eae63b32db81df}{GuardarGrafoBin}}(\mbox{\hyperlink{struct_lista_inteiros}{ListaInteiros}}*\ lista,\ \textcolor{keywordtype}{char}\ ficheiro[]);}
+\DoxyCodeLine{00156\ \mbox{\hyperlink{struct_grafo}{Grafo}}*\ \mbox{\hyperlink{_header_8h_aeb31f5ad664aa3dce7bacdb34fb4c8ce}{ArrancarPrograma}}(\textcolor{keywordtype}{char}\ ficheiroTxt[],\ \textcolor{keywordtype}{char}\ ficheiroBin[],\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00157\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{00158\ }
+\DoxyCodeLine{00159\ \textcolor{preprocessor}{\#pragma\ region\ ListaInteiros}}
+\DoxyCodeLine{00160\ \mbox{\hyperlink{struct_lista_inteiros}{ListaInteiros}}*\ \mbox{\hyperlink{_header_8h_ab4913222b05a54317e78eb99f1b5064e}{CriarListaInteiros}}();}
+\DoxyCodeLine{00161\ \mbox{\hyperlink{struct_lista_inteiros}{ListaInteiros}}*\ \mbox{\hyperlink{_header_8h_a8e808cde29ae47adccc1f557d739e8a6}{CriarListasInteiros}}(\textcolor{keywordtype}{int}\ tam,\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00162\ }
+\DoxyCodeLine{00163\ \textcolor{preprocessor}{\#pragma\ region\ Adicionar}}
+\DoxyCodeLine{00164\ \mbox{\hyperlink{struct_lista_inteiros}{ListaInteiros}}*\ \mbox{\hyperlink{_header_8h_aeecc341e2f0c453e7ca90bc9c8e74a66}{AdiconarDadosListaInteiros}}(\mbox{\hyperlink{struct_lista_inteiros}{ListaInteiros}}*\ lista,\ \textcolor{keywordtype}{int}\ num,\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00165\ \mbox{\hyperlink{struct_lista_inteiros}{ListaInteiros}}*\ \mbox{\hyperlink{_header_8h_a4c242d3082397755f972df3f05e1c579}{AdicionarNumeroListaInteirosInicio}}(\mbox{\hyperlink{struct_lista_inteiros}{ListaInteiros}}*\ lista,\ \mbox{\hyperlink{struct_lista_inteiros}{ListaInteiros}}*\ numero,\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00166\ \mbox{\hyperlink{struct_lista_inteiros}{ListaInteiros}}*\ \mbox{\hyperlink{_header_8h_aa6324a708e2c6f09de47b8db9bef0773}{AdicionarNumeroListaInteirosFim}}(\mbox{\hyperlink{struct_lista_inteiros}{ListaInteiros}}*\ lista,\ \mbox{\hyperlink{struct_lista_inteiros}{ListaInteiros}}*\ numero,\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00167\ \mbox{\hyperlink{struct_lista_inteiros}{ListaInteiros}}*\ \mbox{\hyperlink{_header_8h_a47aa2a2a6cb075867fa53848da214316}{AdicionarVerticeIdListaInteiros}}(\mbox{\hyperlink{struct_lista_inteiros}{ListaInteiros}}*\ lista,\ \mbox{\hyperlink{struct_vertice}{Vertice}}*\ vertices,\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00168\ \mbox{\hyperlink{struct_lista_inteiros}{ListaInteiros}}*\ \mbox{\hyperlink{_header_8h_a8b3835c0d404104b0fce8423cdb67fe2}{CriarAdicionarNumeroListaInteirosInicio}}(\mbox{\hyperlink{struct_lista_inteiros}{ListaInteiros}}*\ lista,\ \textcolor{keywordtype}{int}\ num,\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00169\ \mbox{\hyperlink{struct_lista_inteiros}{ListaInteiros}}*\ \mbox{\hyperlink{_header_8h_a156a8089f99e425aee2ce3e1719598ca}{CriarAdicionarNumeroListaInteirosFim}}(\mbox{\hyperlink{struct_lista_inteiros}{ListaInteiros}}*\ lista,\ \textcolor{keywordtype}{int}\ num,\ \textcolor{keywordtype}{int}*\ top,\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00170\ \mbox{\hyperlink{struct_lista_inteiros}{ListaInteiros}}*\ \mbox{\hyperlink{_header_8h_a14323251264c0a1566e5ed3e4c84d7db}{CriarAdicionarNumeroListaInteirosFim2}}(\mbox{\hyperlink{struct_lista_inteiros}{ListaInteiros}}*\ lista,\ \textcolor{keywordtype}{int}\ num,\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00171\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{00172\ }
+\DoxyCodeLine{00173\ \textcolor{preprocessor}{\#pragma\ region\ Operacoes}}
+\DoxyCodeLine{00174\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_header_8h_a9adfb9c1c644734b7208a06e0cc88cec}{CompararDistanciaVerticeDistancia}}(\mbox{\hyperlink{struct_vertice_distancia}{VerticeDistancia}}*\ verticeDistancia,\ \textcolor{keywordtype}{int}\ valor);}
+\DoxyCodeLine{00175\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_header_8h_a929bddde1c63f00fb707bf6d659e1494}{ComparaDistanciaListaVerticeDistancia}}(\mbox{\hyperlink{struct_vertice_distancia}{VerticeDistancia}}*\ verticeDistancia,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{int}\ valor);}
+\DoxyCodeLine{00176\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{00177\ }
+\DoxyCodeLine{00178\ \textcolor{preprocessor}{\#pragma\ region\ Remover}}
+\DoxyCodeLine{00179\ \mbox{\hyperlink{struct_lista_inteiros}{ListaInteiros}}*\ \mbox{\hyperlink{_header_8h_ad59a697826a68970fa554303cff0679f}{RemoverNumeroListaInteiros}}(\mbox{\hyperlink{struct_lista_inteiros}{ListaInteiros}}*\ lista,\ \textcolor{keywordtype}{int}\ num,\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00180\ \mbox{\hyperlink{struct_lista_inteiros}{ListaInteiros}}*\ \mbox{\hyperlink{_header_8h_a602e0d16186ec375b614f618cdda90e7}{RemoverNumeroListaInteirosComTop}}(\mbox{\hyperlink{struct_lista_inteiros}{ListaInteiros}}*\ lista,\ \textcolor{keywordtype}{int}\ num,\ \textcolor{keywordtype}{int}*\ top,\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00181\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{00182\ }
+\DoxyCodeLine{00183\ \textcolor{preprocessor}{\#pragma\ region\ Verificar}}
+\DoxyCodeLine{00184\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_header_8h_a24da3d2538fcf84684aae2a9408bf1e2}{VerificarListaInteirosVazia}}(\mbox{\hyperlink{struct_lista_inteiros}{ListaInteiros}}*\ lista);}
+\DoxyCodeLine{00185\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_header_8h_ab9d2a560a88b34d7e3ae93ff85ff9d87}{VerificarNumeroListaInteiros}}(\mbox{\hyperlink{struct_lista_inteiros}{ListaInteiros}}*\ lista,\ \textcolor{keywordtype}{int}\ num);}
+\DoxyCodeLine{00186\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{00187\ }
+\DoxyCodeLine{00188\ \textcolor{preprocessor}{\#pragma\ region\ Outro}}
+\DoxyCodeLine{00189\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_header_8h_ac75f7b702fcbf9cf8a5b3a310f08d73e}{EncontrarUltimoNumeroListaInteiros}}(\mbox{\hyperlink{struct_lista_inteiros}{ListaInteiros}}*\ lista);}
+\DoxyCodeLine{00190\ \mbox{\hyperlink{struct_lista_inteiros}{ListaInteiros}}*\ \mbox{\hyperlink{_header_8h_a95fc53f9ac5310a7846cc63580faee21}{EncontrarNumeroListaInteiros}}(\mbox{\hyperlink{struct_lista_inteiros}{ListaInteiros}}*\ lista,\ \textcolor{keywordtype}{int}\ num,\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00191\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{00192\ }
+\DoxyCodeLine{00193\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{00194\ }
+\DoxyCodeLine{00195\ \textcolor{preprocessor}{\#pragma\ region\ VerticeDistancias}}
+\DoxyCodeLine{00196\ \mbox{\hyperlink{struct_vertice_distancia}{VerticeDistancia}}*\ \mbox{\hyperlink{_header_8h_a93cb9acede2bc9d10b2ec436576ebe03}{CriarVerticeDistancia}}();}
+\DoxyCodeLine{00197\ \mbox{\hyperlink{struct_vertice_distancia}{VerticeDistancia}}*\ \mbox{\hyperlink{_header_8h_a35ac5c7079e437143fe12e1d00b37291}{CriarVerticesDistancia}}(\textcolor{keywordtype}{int}\ tamanho,\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00198\ }
+\DoxyCodeLine{00199\ \textcolor{preprocessor}{\#pragma\ region\ Adicionar}}
+\DoxyCodeLine{00200\ \mbox{\hyperlink{struct_vertice_distancia}{VerticeDistancia}}*\ \mbox{\hyperlink{_header_8h_a6edb1c05a7768978d361089aa8b9bd57}{AdicionarDadosVerticeDistancia}}(\mbox{\hyperlink{struct_vertice_distancia}{VerticeDistancia}}*\ verticeDistancia,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_vertice_distancia_aa952313856d65c9cc80751918b71223f}{distancia}},\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00201\ \mbox{\hyperlink{struct_vertice_distancia}{VerticeDistancia}}*\ \mbox{\hyperlink{_header_8h_a449d4ca4ef1c5220c3a29a2ac0088062}{AdicionarIdVerticeDistancia}}(\mbox{\hyperlink{struct_vertice_distancia}{VerticeDistancia}}*\ verticeDistancia,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00202\ \mbox{\hyperlink{struct_vertice_distancia}{VerticeDistancia}}*\ \mbox{\hyperlink{_header_8h_ad0c67ef200525d7c22d05e7906736ea7}{AdicionarDistanciaVerticeDistancia}}(\mbox{\hyperlink{struct_vertice_distancia}{VerticeDistancia}}*\ verticeDistancia,\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_vertice_distancia_aa952313856d65c9cc80751918b71223f}{distancia}},\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00203\ \mbox{\hyperlink{struct_vertice_distancia}{VerticeDistancia}}*\ \mbox{\hyperlink{_header_8h_a421a718c399878300104e584a2dfff72}{AdicionarDistanciaListaVerticeDistancia}}(\mbox{\hyperlink{struct_vertice_distancia}{VerticeDistancia}}*\ verticeDistancia,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_vertice_distancia_aa952313856d65c9cc80751918b71223f}{distancia}},\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00204\ \mbox{\hyperlink{struct_vertice_distancia}{VerticeDistancia}}*\ \mbox{\hyperlink{_header_8h_a5cc285bc7588f437f6c294f15050a8f9}{AdicionarTodosIdVerticesDistancia}}(\mbox{\hyperlink{struct_vertice_distancia}{VerticeDistancia}}*\ verticeDistancias,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00205\ \mbox{\hyperlink{struct_vertice_distancia}{VerticeDistancia}}*\ \mbox{\hyperlink{_header_8h_abbf0da3e26b5ca3311dd0714ef4ea625}{AdicionarTodosVerticesIdVerticesDistancia}}(\mbox{\hyperlink{struct_vertice_distancia}{VerticeDistancia}}*\ verticeDistancias,\ \mbox{\hyperlink{struct_vertice}{Vertice}}*\ vertices,\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00206\ \mbox{\hyperlink{struct_vertice_distancia}{VerticeDistancia}}*\ \mbox{\hyperlink{_header_8h_a9690f87675b214cc1042b186bc851ff1}{AdicionarTodosDistanciaVerticesDistancia}}(\mbox{\hyperlink{struct_vertice_distancia}{VerticeDistancia}}*\ verticeDistancias,\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_vertice_distancia_aa952313856d65c9cc80751918b71223f}{distancia}},\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00207\ \mbox{\hyperlink{struct_vertice_distancia}{VerticeDistancia}}*\ \mbox{\hyperlink{_header_8h_a32b4598ffb50167f091779b0b557951b}{AdicionarVerticeDistancia}}(\mbox{\hyperlink{struct_vertice_distancia}{VerticeDistancia}}*\ verticeDistancias,\ \mbox{\hyperlink{struct_vertice_distancia}{VerticeDistancia}}*\ verticeDist,\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00208\ }
+\DoxyCodeLine{00209\ \mbox{\hyperlink{struct_vertice_distancia}{VerticeDistancia}}*\ \mbox{\hyperlink{_header_8h_af630bb67a575a4bf6e7eabca159b06fc}{AtribuirVerticeDistanciaAnterior}}(\mbox{\hyperlink{struct_vertice_distancia}{VerticeDistancia}}*\ verticeDistancia,\ \mbox{\hyperlink{struct_vertice_distancia}{VerticeDistancia}}*\ anterior,\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00210\ \mbox{\hyperlink{struct_vertice_distancia}{VerticeDistancia}}*\ \mbox{\hyperlink{_header_8h_aeb509281a53b221eaa80f4d6830170fe}{AtribuirListaVerticeDistanciaAnterior}}(\mbox{\hyperlink{struct_vertice_distancia}{VerticeDistancia}}*\ verticeDistancias,\ \mbox{\hyperlink{struct_vertice_distancia}{VerticeDistancia}}*\ anterior,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00211\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{00212\ }
+\DoxyCodeLine{00213\ \textcolor{preprocessor}{\#pragma\ region\ Remover}}
+\DoxyCodeLine{00214\ \mbox{\hyperlink{struct_vertice_distancia}{VerticeDistancia}}*\ \mbox{\hyperlink{_header_8h_a18c0bb50d8cefe2751bec3c54067cb93}{RemoverVerticeDistacia}}(\mbox{\hyperlink{struct_vertice_distancia}{VerticeDistancia}}*\ verticeDistancias,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00215\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{00216\ }
+\DoxyCodeLine{00217\ \textcolor{preprocessor}{\#pragma\ region\ Operacoes}}
+\DoxyCodeLine{00218\ \mbox{\hyperlink{struct_vertice_distancia}{VerticeDistancia}}*\ \mbox{\hyperlink{_header_8h_a16917b140a1ba33842ea7d9ae25a6075}{SomarDistanciasVerticeDistancia}}(\mbox{\hyperlink{struct_vertice_distancia}{VerticeDistancia}}*\ verticeDistancia,\ \textcolor{keywordtype}{int}\ valor,\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00219\ \mbox{\hyperlink{struct_vertice_distancia}{VerticeDistancia}}*\ \mbox{\hyperlink{_header_8h_a8b1b5066e284ab4326db1852e660175b}{SomarDistanciaListaVerticeDistancia}}(\mbox{\hyperlink{struct_vertice_distancia}{VerticeDistancia}}*\ verticeDistancias,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{int}\ valor,\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00220\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_header_8h_aeccd9fba213ed231fcf972effee94460}{SomarDistanciasVerticeDistancia2}}(\mbox{\hyperlink{struct_vertice_distancia}{VerticeDistancia}}*\ verticeDistancia,\ \textcolor{keywordtype}{int}\ valor,\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00221\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_header_8h_ab9f935c0206515b653ce090ab7b30cd1}{SomarDistanciaListaVerticeDistancia2}}(\mbox{\hyperlink{struct_vertice_distancia}{VerticeDistancia}}*\ verticeDistancias,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{int}\ valor,\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00222\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_header_8h_a48e3dc136a09cd1d821fa7851a00f257}{SomarTodasDistanciasListaVerticeDistancia}}(\mbox{\hyperlink{struct_vertice}{Vertice}}*\ verticeDistancias);}
+\DoxyCodeLine{00223\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{00224\ }
+\DoxyCodeLine{00225\ \textcolor{preprocessor}{\#pragma\ region\ Verificar}}
+\DoxyCodeLine{00226\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_header_8h_acfc3fae4524666ac42bba85aad2aacbe}{VerificarVerticeDistancia}}(\mbox{\hyperlink{struct_vertice_distancia}{VerticeDistancia}}*\ verticeDistancias,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00227\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{00228\ }
+\DoxyCodeLine{00229\ \textcolor{preprocessor}{\#pragma\ region\ Outro}}
+\DoxyCodeLine{00230\ \mbox{\hyperlink{struct_vertice_distancia}{VerticeDistancia}}*\ \mbox{\hyperlink{_header_8h_adea90575efd3c8192c0cb407c2433cc4}{EncontrarVerticeDistancia}}(\mbox{\hyperlink{struct_vertice_distancia}{VerticeDistancia}}*\ verticeDistancias,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00231\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_header_8h_a56ed64e97acd4c18fcc806570105631b}{EncontrarIdAnteriorVerticeDistancia}}(\mbox{\hyperlink{struct_vertice_distancia}{VerticeDistancia}}*\ verticeDistancias,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00232\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_header_8h_a895bd19519005098113b590a388562b1}{ProcessarCaminho}}(\mbox{\hyperlink{struct_vertice_distancia}{VerticeDistancia}}*\ verticeDistancas,\ \textcolor{keywordtype}{int}\ destino);}
+\DoxyCodeLine{00233\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{00234\ }
+\DoxyCodeLine{00235\ \textcolor{preprocessor}{\#pragma\ endregion}}
+
+\end{DoxyCode}

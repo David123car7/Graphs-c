@@ -1,0 +1,84 @@
+\doxysection{Funcoes\+Abandonadas.\+c File Reference}
+\hypertarget{_funcoes_abandonadas_8c}{}\label{_funcoes_abandonadas_8c}\index{FuncoesAbandonadas.c@{FuncoesAbandonadas.c}}
+
+
+Ficheiro C com as funcoes criadas para o trabalho mas que acabaram por ser abandonadas por ter feito melhores versoes das mesmas.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include "{}Header.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_funcoes_abandonadas_8c_a32f21f76af1167be7097fe93c81cd662}{Depth\+First\+Traversal\+Antigo}} (\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*}grafo, \mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*}lista, int inicio\+Id)
+\begin{DoxyCompactList}\small\item\em Funcao de Depth\+First\+Traversal abandonada. Foi a minha primeira tentativa, é funcional mas o codigo nao é eficiente. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_funcoes_abandonadas_8c_a8f284d4ac35f49be897db3774899863b}{Guardar\+Grafo\+Ficheiro\+Antigo}} (\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*}grafo, char ficheiro\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Guarda o grafo num ficheiro.\+txt. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_funcoes_abandonadas_8c_a055bd9c3d4e9cfadea95c71ba8ee74a6}{Remover\+Vertice\+Antigo}} (\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}vertices, int id, int \texorpdfstring{$\ast$}{*}res)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Ficheiro C com as funcoes criadas para o trabalho mas que acabaram por ser abandonadas por ter feito melhores versoes das mesmas. 
+
+\begin{DoxyAuthor}{Author}
+David Carvalho 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+May 2024 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_funcoes_abandonadas_8c_a32f21f76af1167be7097fe93c81cd662}\label{_funcoes_abandonadas_8c_a32f21f76af1167be7097fe93c81cd662} 
+\index{FuncoesAbandonadas.c@{FuncoesAbandonadas.c}!DepthFirstTraversalAntigo@{DepthFirstTraversalAntigo}}
+\index{DepthFirstTraversalAntigo@{DepthFirstTraversalAntigo}!FuncoesAbandonadas.c@{FuncoesAbandonadas.c}}
+\doxysubsubsection{\texorpdfstring{DepthFirstTraversalAntigo()}{DepthFirstTraversalAntigo()}}
+{\footnotesize\ttfamily int Depth\+First\+Traversal\+Antigo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{grafo,  }\item[{\mbox{\hyperlink{struct_lista_inteiros}{Lista\+Inteiros}} \texorpdfstring{$\ast$}{*}}]{lista,  }\item[{int}]{inicio\+Id }\end{DoxyParamCaption})}
+
+
+
+Funcao de Depth\+First\+Traversal abandonada. Foi a minha primeira tentativa, é funcional mas o codigo nao é eficiente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grafo} & \doxylink{struct_grafo}{Grafo}\\
+\hline
+{\em stack} & Lista de inteiros\\
+\hline
+{\em inicio\+Id} & Id do inicio\\
+\hline
+{\em res} & Retorna 0 se nao foi feito o Depth\+First\+Traversal retorna 1 se for feito o Depth\+First\+Traversal\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ret
+\end{DoxyReturn}
+\Hypertarget{_funcoes_abandonadas_8c_a8f284d4ac35f49be897db3774899863b}\label{_funcoes_abandonadas_8c_a8f284d4ac35f49be897db3774899863b} 
+\index{FuncoesAbandonadas.c@{FuncoesAbandonadas.c}!GuardarGrafoFicheiroAntigo@{GuardarGrafoFicheiroAntigo}}
+\index{GuardarGrafoFicheiroAntigo@{GuardarGrafoFicheiroAntigo}!FuncoesAbandonadas.c@{FuncoesAbandonadas.c}}
+\doxysubsubsection{\texorpdfstring{GuardarGrafoFicheiroAntigo()}{GuardarGrafoFicheiroAntigo()}}
+{\footnotesize\ttfamily int Guardar\+Grafo\+Ficheiro\+Antigo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{grafo,  }\item[{char}]{ficheiro\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Guarda o grafo num ficheiro.\+txt. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grafo} & \doxylink{struct_grafo}{Grafo}\\
+\hline
+{\em ficheiro} & Nome do ficheiro\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna 0 se o grafo nao for guardado, retorna 1 se o ficheiro for guardado
+\end{DoxyReturn}
+\Hypertarget{_funcoes_abandonadas_8c_a055bd9c3d4e9cfadea95c71ba8ee74a6}\label{_funcoes_abandonadas_8c_a055bd9c3d4e9cfadea95c71ba8ee74a6} 
+\index{FuncoesAbandonadas.c@{FuncoesAbandonadas.c}!RemoverVerticeAntigo@{RemoverVerticeAntigo}}
+\index{RemoverVerticeAntigo@{RemoverVerticeAntigo}!FuncoesAbandonadas.c@{FuncoesAbandonadas.c}}
+\doxysubsubsection{\texorpdfstring{RemoverVerticeAntigo()}{RemoverVerticeAntigo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} Remover\+Vertice\+Antigo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{vertices,  }\item[{int}]{id,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+

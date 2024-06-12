@@ -1,0 +1,475 @@
+\doxysection{Vertices.\+c File Reference}
+\hypertarget{_vertices_8c}{}\label{_vertices_8c}\index{Vertices.c@{Vertices.c}}
+
+
+Ficheiro C com as funcoes relacionadas com os vertices.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$malloc.\+h$>$}\newline
+{\ttfamily \#include "{}Header.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_vertices_8c_aab4c09ffb2140be8dbe1c41041b43fa9}{Criar\+Vertice}} ()
+\begin{DoxyCompactList}\small\item\em Cria um vertice. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_vertices_8c_a13a1716f777b56764a4f81c306420e86}{Adicionar\+Vertice}} (\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}vertices, \mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}vertice, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Adiciona um vertice a uma lista de vertices. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_vertices_8c_af1ca00def62c8ae45f0322af7f3bfed4}{Adicionar\+Adjacencia\+Vertices}} (\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}vertices, int origem, \mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}adjacente, int verificar, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Adiciona uma adjacencia dentro de uma lista de adjacentes. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_vertices_8c_af1ebd076c6f6ba11456e28ba4e4e39b1}{Alterar\+Estado\+Vertice\+Visitado}} (\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}vertice, bool estado, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Altera o estado da variabel boleana visitado de um vertice. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_vertices_8c_acef0486f7e66738e6c33a3331bde81a3}{Adicionar\+Dados\+Vertice}} (\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}vertice, int id, bool visitado, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Adiciona dados a um vertice. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_vertices_8c_a8a1f69d319d73ccd1f9e68afb7a7e49b}{Alterar\+Estado\+Vertice\+Visitado\+Vertices}} (\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}vertices, int id, bool estado, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Altera o estado da variavel boleana visitado de um vertice dentro de uma lista de vertices. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_vertices_8c_a0cfa0b78b791ca5db934f1a789c1c2ab}{Alterar\+Estado\+Visitado\+Todos\+Vertices}} (\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}vertices, bool estado, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Altera o estado da variabel boleana visitado de todos os vertices dentro de uma lista de vertices. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_vertices_8c_a992255c3a3c99bad823be217cfd844a2}{Remover\+Vertice}} (\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}vertices, int id, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Remove um vertice de uma lista de vertices. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_vertices_8c_a4b9cda27dd2c44fcba89d0ef81263f06}{Remover\+Adjacente\+Todos\+Vertices}} (\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}vertices, int id, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Remove o vertice adjacente de todos vertices presentes na lista de vertices. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_vertices_8c_aff21cd7fafb39764e710417465cbe5c5}{Remove\+Adjacente\+Vertices}} (\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}vertices, int vertice, int adjacente, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Remove o vertice adjacente de um vertice presente na lista de vertices. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_vertices_8c_a08b87e4f4f8dbecaf278e6efb1acd003}{Remover\+Todos\+Adjacentes\+Vertice}} (\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}vertices, int id, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Remove todos os vertices adjacentes de um vertice dentro de uma lista de vertice. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_vertices_8c_a3a65d34ba6ee54fd4df6c87fee07eddf}{Verificar\+Vertice\+Visitado}} (\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}vertices, int id)
+\begin{DoxyCompactList}\small\item\em Verifica se o vertice foi visitado. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_vertices_8c_a1d9a6830167ffb1240b89c1bfa111fbb}{Verificar\+Vertice}} (\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}vertices, int id)
+\begin{DoxyCompactList}\small\item\em Verifica a existencia de um vertice numa lista de vertices. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_vertices_8c_a1bcdf61dab5e992b5a1bf30ee3a6e6a3}{Verificar\+Vertice\+Grafo}} (\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*}grafo, int id)
+\begin{DoxyCompactList}\small\item\em Verifica a existencia de um vertice num grafo. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_vertices_8c_a7049e0d5b9b0a5579bab56648e163116}{Verificar\+Adjacencia\+Vertice}} (\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}vertices, int id)
+\begin{DoxyCompactList}\small\item\em Verifica se existe alguem vertice adjacente dentro de uma lista de vertices. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_vertices_8c_a6124ddf5ef08b1d4d1d69c970e3a5cf8}{Verificar\+Adjacencia\+Vertice\+Grafo}} (\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*}grafo, int vertice, int adjacente)
+\begin{DoxyCompactList}\small\item\em Verifica se existe alguem vertice adjacente a um vertice dentro de um grafo. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_vertices_8c_a39bcaf46dca003e5b2b9efc53f6b5cb3}{Encontrar\+Vertice}} (\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}vertices, int id, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Encontra um vertice dentro de uma lista de vertices e retorna o mesmo. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_vertices_8c_a3202effc47cc0a7faa6aed75184c1967}{Encontrar\+Vertice\+Grafo}} (\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*}grafo, int id, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Encontra um vertice dentro de um grafo e retorna o mesmo. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_vertices_8c_af0dc10c4e18eb2df229f0845ceaa21a1}{Processar\+Vertice}} (\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}vertice)
+\begin{DoxyCompactList}\small\item\em Processa o vertice mostrando o no terminal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Ficheiro C com as funcoes relacionadas com os vertices. 
+
+\begin{DoxyAuthor}{Author}
+David Carvalho 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+May 2024 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_vertices_8c_af1ca00def62c8ae45f0322af7f3bfed4}\label{_vertices_8c_af1ca00def62c8ae45f0322af7f3bfed4} 
+\index{Vertices.c@{Vertices.c}!AdicionarAdjacenciaVertices@{AdicionarAdjacenciaVertices}}
+\index{AdicionarAdjacenciaVertices@{AdicionarAdjacenciaVertices}!Vertices.c@{Vertices.c}}
+\doxysubsubsection{\texorpdfstring{AdicionarAdjacenciaVertices()}{AdicionarAdjacenciaVertices()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} Adicionar\+Adjacencia\+Vertices (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{vertices,  }\item[{int}]{origem,  }\item[{\mbox{\hyperlink{struct_adjacente}{Adjacente}} \texorpdfstring{$\ast$}{*}}]{adjacente,  }\item[{int}]{verificar,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Adiciona uma adjacencia dentro de uma lista de adjacentes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em adjacentes} & Lista de adjacentes\\
+\hline
+{\em adjacente} & \doxylink{struct_adjacente}{Adjacente}\\
+\hline
+{\em verificar} & Colocar 0 para nao verificar vertice, colocar 1 para verificar vertice\\
+\hline
+{\em res} & Retorna 0 se o adjacente nao for adicionado, retorna 1 se o adjacente for adicionado\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se a lista de vertices for nula, retorna a lista de vertices sem o adjacente adicionado se o mesmo for nulo, e retorna a lista de vertices com o adjacente adicionado se o mesmo for adicionado
+\end{DoxyReturn}
+\Hypertarget{_vertices_8c_acef0486f7e66738e6c33a3331bde81a3}\label{_vertices_8c_acef0486f7e66738e6c33a3331bde81a3} 
+\index{Vertices.c@{Vertices.c}!AdicionarDadosVertice@{AdicionarDadosVertice}}
+\index{AdicionarDadosVertice@{AdicionarDadosVertice}!Vertices.c@{Vertices.c}}
+\doxysubsubsection{\texorpdfstring{AdicionarDadosVertice()}{AdicionarDadosVertice()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} Adicionar\+Dados\+Vertice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{vertice,  }\item[{int}]{id,  }\item[{bool}]{visitado,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Adiciona dados a um vertice. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice} & \doxylink{struct_vertice}{Vertice} a serem adicionados os dados\\
+\hline
+{\em id} & Id do vertice\\
+\hline
+{\em num} & Numero do vertice\\
+\hline
+{\em visitado} & Bool visitado ou nao\\
+\hline
+{\em res} & retorna 0 se nao forem adicionados os dados ao vertice, retorna 1 se forem adicionados os dados ao vertice\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se o vertice for nulo, retorna o vertice se os dados forem adicionados ao vertice
+\end{DoxyReturn}
+\Hypertarget{_vertices_8c_a13a1716f777b56764a4f81c306420e86}\label{_vertices_8c_a13a1716f777b56764a4f81c306420e86} 
+\index{Vertices.c@{Vertices.c}!AdicionarVertice@{AdicionarVertice}}
+\index{AdicionarVertice@{AdicionarVertice}!Vertices.c@{Vertices.c}}
+\doxysubsubsection{\texorpdfstring{AdicionarVertice()}{AdicionarVertice()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} Adicionar\+Vertice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{vertices,  }\item[{\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{vertice,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Adiciona um vertice a uma lista de vertices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertices} & Lista de vertices\\
+\hline
+{\em vertice} & \doxylink{struct_vertice}{Vertice} a ser adicionado\\
+\hline
+{\em res} & Retorna 0 se o vertice nao for adicionado, retorna 1 se o vertice foi adicionado\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se a lista de vertices for nula, retorna a lista de vertices sem o vertice adicionado se o mesmo for nulo e retorna a lista de vertices se o vertice for adicionado
+\end{DoxyReturn}
+\Hypertarget{_vertices_8c_af1ebd076c6f6ba11456e28ba4e4e39b1}\label{_vertices_8c_af1ebd076c6f6ba11456e28ba4e4e39b1} 
+\index{Vertices.c@{Vertices.c}!AlterarEstadoVerticeVisitado@{AlterarEstadoVerticeVisitado}}
+\index{AlterarEstadoVerticeVisitado@{AlterarEstadoVerticeVisitado}!Vertices.c@{Vertices.c}}
+\doxysubsubsection{\texorpdfstring{AlterarEstadoVerticeVisitado()}{AlterarEstadoVerticeVisitado()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} Alterar\+Estado\+Vertice\+Visitado (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{vertice,  }\item[{bool}]{estado,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Altera o estado da variabel boleana visitado de um vertice. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice} & \doxylink{struct_vertice}{Vertice}\\
+\hline
+{\em estado} & Estado da variavel boleana\\
+\hline
+{\em res} & Retorna 0 se o vertice for nulo, retorna o vertice com a variavel alterada\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se o vertice for nulo, retorna o vertice com a variavel alterada
+\end{DoxyReturn}
+\Hypertarget{_vertices_8c_a8a1f69d319d73ccd1f9e68afb7a7e49b}\label{_vertices_8c_a8a1f69d319d73ccd1f9e68afb7a7e49b} 
+\index{Vertices.c@{Vertices.c}!AlterarEstadoVerticeVisitadoVertices@{AlterarEstadoVerticeVisitadoVertices}}
+\index{AlterarEstadoVerticeVisitadoVertices@{AlterarEstadoVerticeVisitadoVertices}!Vertices.c@{Vertices.c}}
+\doxysubsubsection{\texorpdfstring{AlterarEstadoVerticeVisitadoVertices()}{AlterarEstadoVerticeVisitadoVertices()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} Alterar\+Estado\+Vertice\+Visitado\+Vertices (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{vertices,  }\item[{int}]{id,  }\item[{bool}]{estado,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Altera o estado da variavel boleana visitado de um vertice dentro de uma lista de vertices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertices} & Lista de vertices\\
+\hline
+{\em id} & Id do vertice\\
+\hline
+{\em estado} & Estado da variavel\\
+\hline
+{\em res} & Retorna 0 se o estado nao for modificado, retorna 1 se o estado for modificado\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se a lista de vertices for nula, retorna a lista de vertices sem ser feita a alteracao se o vertice nao existir retorna a lista de vertices com a alteracao feita se a mesma for feita
+\end{DoxyReturn}
+\Hypertarget{_vertices_8c_a0cfa0b78b791ca5db934f1a789c1c2ab}\label{_vertices_8c_a0cfa0b78b791ca5db934f1a789c1c2ab} 
+\index{Vertices.c@{Vertices.c}!AlterarEstadoVisitadoTodosVertices@{AlterarEstadoVisitadoTodosVertices}}
+\index{AlterarEstadoVisitadoTodosVertices@{AlterarEstadoVisitadoTodosVertices}!Vertices.c@{Vertices.c}}
+\doxysubsubsection{\texorpdfstring{AlterarEstadoVisitadoTodosVertices()}{AlterarEstadoVisitadoTodosVertices()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} Alterar\+Estado\+Visitado\+Todos\+Vertices (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{vertices,  }\item[{bool}]{estado,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Altera o estado da variabel boleana visitado de todos os vertices dentro de uma lista de vertices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertices} & Lista de vertices\\
+\hline
+{\em estado} & Estado\\
+\hline
+{\em res} & Retorna 0 se a alteracao nao for feita, retorna 1 se a alteracao for feita\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se a lista de vertices for nula, retorna a lista de vertices com a alteracao feita se a mesma for feita
+\end{DoxyReturn}
+\Hypertarget{_vertices_8c_aab4c09ffb2140be8dbe1c41041b43fa9}\label{_vertices_8c_aab4c09ffb2140be8dbe1c41041b43fa9} 
+\index{Vertices.c@{Vertices.c}!CriarVertice@{CriarVertice}}
+\index{CriarVertice@{CriarVertice}!Vertices.c@{Vertices.c}}
+\doxysubsubsection{\texorpdfstring{CriarVertice()}{CriarVertice()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} Criar\+Vertice (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Cria um vertice. 
+
+\begin{DoxyReturn}{Returns}
+Retorna o vertice criado
+\end{DoxyReturn}
+\Hypertarget{_vertices_8c_a39bcaf46dca003e5b2b9efc53f6b5cb3}\label{_vertices_8c_a39bcaf46dca003e5b2b9efc53f6b5cb3} 
+\index{Vertices.c@{Vertices.c}!EncontrarVertice@{EncontrarVertice}}
+\index{EncontrarVertice@{EncontrarVertice}!Vertices.c@{Vertices.c}}
+\doxysubsubsection{\texorpdfstring{EncontrarVertice()}{EncontrarVertice()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} Encontrar\+Vertice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{vertices,  }\item[{int}]{id,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Encontra um vertice dentro de uma lista de vertices e retorna o mesmo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertices} & Lista de vertices\\
+\hline
+{\em id} & Id do vertice\\
+\hline
+{\em res} & Retorna -\/1 se a lista de vertices for nula, retorna 0 se nao encontrar o vertice, retorna 1 se encontrar e retornar o vertice\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se nao encontrar o vertice ou se a lista de vertices for nula, retorna o vertice se o mesmo for encontrado
+\end{DoxyReturn}
+\Hypertarget{_vertices_8c_a3202effc47cc0a7faa6aed75184c1967}\label{_vertices_8c_a3202effc47cc0a7faa6aed75184c1967} 
+\index{Vertices.c@{Vertices.c}!EncontrarVerticeGrafo@{EncontrarVerticeGrafo}}
+\index{EncontrarVerticeGrafo@{EncontrarVerticeGrafo}!Vertices.c@{Vertices.c}}
+\doxysubsubsection{\texorpdfstring{EncontrarVerticeGrafo()}{EncontrarVerticeGrafo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} Encontrar\+Vertice\+Grafo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{grafo,  }\item[{int}]{id,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Encontra um vertice dentro de um grafo e retorna o mesmo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grafo} & \doxylink{struct_grafo}{Grafo}\\
+\hline
+{\em id} & Id do vertice\\
+\hline
+{\em res} & Retorna -\/2 se o grafo for nulo, retorna -\/1 se nao exitir vertices no grafo,retorna 0 se nao encontrar o vertice, retorna 1 se encontrar e retornar o vertice\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se nao encontrar o vertice, se o encontrar retorna o vertice.
+\end{DoxyReturn}
+\Hypertarget{_vertices_8c_af0dc10c4e18eb2df229f0845ceaa21a1}\label{_vertices_8c_af0dc10c4e18eb2df229f0845ceaa21a1} 
+\index{Vertices.c@{Vertices.c}!ProcessarVertice@{ProcessarVertice}}
+\index{ProcessarVertice@{ProcessarVertice}!Vertices.c@{Vertices.c}}
+\doxysubsubsection{\texorpdfstring{ProcessarVertice()}{ProcessarVertice()}}
+{\footnotesize\ttfamily int Processar\+Vertice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{vertice }\end{DoxyParamCaption})}
+
+
+
+Processa o vertice mostrando o no terminal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertice} & \doxylink{struct_vertice}{Vertice}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna 0 se nao for mostrado no terminal, retorna 1 se for mostrado no terminal
+\end{DoxyReturn}
+\Hypertarget{_vertices_8c_aff21cd7fafb39764e710417465cbe5c5}\label{_vertices_8c_aff21cd7fafb39764e710417465cbe5c5} 
+\index{Vertices.c@{Vertices.c}!RemoveAdjacenteVertices@{RemoveAdjacenteVertices}}
+\index{RemoveAdjacenteVertices@{RemoveAdjacenteVertices}!Vertices.c@{Vertices.c}}
+\doxysubsubsection{\texorpdfstring{RemoveAdjacenteVertices()}{RemoveAdjacenteVertices()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} Remove\+Adjacente\+Vertices (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{vertices,  }\item[{int}]{vertice,  }\item[{int}]{adjacente,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Remove o vertice adjacente de um vertice presente na lista de vertices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertices} & Lista de vertice\\
+\hline
+{\em vertice} & Id do \doxylink{struct_vertice}{Vertice}\\
+\hline
+{\em adjacente} & Id do adjacente\\
+\hline
+{\em res} & Retorna 0 se a adjacencia nao for removida dos vertices, retorna 1 se a adjacencia foi removida dos vertices\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se a lista de vertices for nula, retorna a lista de vertices sem o adjacente removido se o vertice nao existir, retorna a lista de vertices com o adjacente removido se o mesmo for removido
+\end{DoxyReturn}
+\Hypertarget{_vertices_8c_a4b9cda27dd2c44fcba89d0ef81263f06}\label{_vertices_8c_a4b9cda27dd2c44fcba89d0ef81263f06} 
+\index{Vertices.c@{Vertices.c}!RemoverAdjacenteTodosVertices@{RemoverAdjacenteTodosVertices}}
+\index{RemoverAdjacenteTodosVertices@{RemoverAdjacenteTodosVertices}!Vertices.c@{Vertices.c}}
+\doxysubsubsection{\texorpdfstring{RemoverAdjacenteTodosVertices()}{RemoverAdjacenteTodosVertices()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} Remover\+Adjacente\+Todos\+Vertices (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{vertices,  }\item[{int}]{id,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Remove o vertice adjacente de todos vertices presentes na lista de vertices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertices} & Lista de vertices\\
+\hline
+{\em id} & Id do vertice\\
+\hline
+{\em res} & Retorna 0 se o vertice nao for removido, retorna 1 se o vertice for removido ou se o vertice nao existe.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se a lista de vertices for nula, retorna 
+\end{DoxyReturn}
+\Hypertarget{_vertices_8c_a08b87e4f4f8dbecaf278e6efb1acd003}\label{_vertices_8c_a08b87e4f4f8dbecaf278e6efb1acd003} 
+\index{Vertices.c@{Vertices.c}!RemoverTodosAdjacentesVertice@{RemoverTodosAdjacentesVertice}}
+\index{RemoverTodosAdjacentesVertice@{RemoverTodosAdjacentesVertice}!Vertices.c@{Vertices.c}}
+\doxysubsubsection{\texorpdfstring{RemoverTodosAdjacentesVertice()}{RemoverTodosAdjacentesVertice()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} Remover\+Todos\+Adjacentes\+Vertice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{vertices,  }\item[{int}]{id,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Remove todos os vertices adjacentes de um vertice dentro de uma lista de vertice. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \doxylink{struct_vertice}{Vertice}} & \doxylink{struct_vertice}{Vertice}\\
+\hline
+{\em id} & Id do vertice a remover os adjacentes\\
+\hline
+{\em res} & Retorna 0 se os adjacentes nao forem removidos, retorna 1 se os adjacentes forem removidos, ou se o vertice nao existe\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se a lista for for nula, retorna a lista de vertices sem os adjacentes serem removidos se a lista de vertices nao tiver vertices, retorna a lista de vertices com os adjacentes removidos se os mesmos forem removidos
+\end{DoxyReturn}
+\Hypertarget{_vertices_8c_a992255c3a3c99bad823be217cfd844a2}\label{_vertices_8c_a992255c3a3c99bad823be217cfd844a2} 
+\index{Vertices.c@{Vertices.c}!RemoverVertice@{RemoverVertice}}
+\index{RemoverVertice@{RemoverVertice}!Vertices.c@{Vertices.c}}
+\doxysubsubsection{\texorpdfstring{RemoverVertice()}{RemoverVertice()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*} Remover\+Vertice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{vertices,  }\item[{int}]{id,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Remove um vertice de uma lista de vertices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertices} & Lista de vertices\\
+\hline
+\end{DoxyParams}
++ 
+\begin{DoxyParams}{Parameters}
+{\em id} & Id do vertice\\
+\hline
+{\em res} & Retorna 0 se o vertice nao for removido, retorna 1 se o vertice for removido ou se o vertice nao existir\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna nulo se a lista de vertices for nula, retorna a lista de vertices sem fazer nada se o vertice nao exisitr, retorna a lista de vertices com o vertice removido se o mesmo for removido.
+\end{DoxyReturn}
+\Hypertarget{_vertices_8c_a7049e0d5b9b0a5579bab56648e163116}\label{_vertices_8c_a7049e0d5b9b0a5579bab56648e163116} 
+\index{Vertices.c@{Vertices.c}!VerificarAdjacenciaVertice@{VerificarAdjacenciaVertice}}
+\index{VerificarAdjacenciaVertice@{VerificarAdjacenciaVertice}!Vertices.c@{Vertices.c}}
+\doxysubsubsection{\texorpdfstring{VerificarAdjacenciaVertice()}{VerificarAdjacenciaVertice()}}
+{\footnotesize\ttfamily int Verificar\+Adjacencia\+Vertice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{vertices,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Verifica se existe alguem vertice adjacente dentro de uma lista de vertices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertices} & Lista de vertices\\
+\hline
+{\em vertice} & Id do vertice\\
+\hline
+{\em adjacente} & Id do vertice adjacente\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna 0 se nao existir e retorna 1 se existir
+\end{DoxyReturn}
+\Hypertarget{_vertices_8c_a6124ddf5ef08b1d4d1d69c970e3a5cf8}\label{_vertices_8c_a6124ddf5ef08b1d4d1d69c970e3a5cf8} 
+\index{Vertices.c@{Vertices.c}!VerificarAdjacenciaVerticeGrafo@{VerificarAdjacenciaVerticeGrafo}}
+\index{VerificarAdjacenciaVerticeGrafo@{VerificarAdjacenciaVerticeGrafo}!Vertices.c@{Vertices.c}}
+\doxysubsubsection{\texorpdfstring{VerificarAdjacenciaVerticeGrafo()}{VerificarAdjacenciaVerticeGrafo()}}
+{\footnotesize\ttfamily int Verificar\+Adjacencia\+Vertice\+Grafo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{grafo,  }\item[{int}]{vertice,  }\item[{int}]{adjacente }\end{DoxyParamCaption})}
+
+
+
+Verifica se existe alguem vertice adjacente a um vertice dentro de um grafo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grafo} & \doxylink{struct_grafo}{Grafo}\\
+\hline
+{\em vertice} & Id do vertice\\
+\hline
+{\em adjacente} & Id do vertice adjacente\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna 0 se nao existir e retorna 1 se existir
+\end{DoxyReturn}
+\Hypertarget{_vertices_8c_a1d9a6830167ffb1240b89c1bfa111fbb}\label{_vertices_8c_a1d9a6830167ffb1240b89c1bfa111fbb} 
+\index{Vertices.c@{Vertices.c}!VerificarVertice@{VerificarVertice}}
+\index{VerificarVertice@{VerificarVertice}!Vertices.c@{Vertices.c}}
+\doxysubsubsection{\texorpdfstring{VerificarVertice()}{VerificarVertice()}}
+{\footnotesize\ttfamily int Verificar\+Vertice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{vertices,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Verifica a existencia de um vertice numa lista de vertices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertices} & Lista de vertices\\
+\hline
+{\em id} & Id do vertice\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna -\/1 se o vertice for nulo,retorna 0 se o vertice nao existir retorna 1 se o vertice existir 
+\end{DoxyReturn}
+\Hypertarget{_vertices_8c_a1bcdf61dab5e992b5a1bf30ee3a6e6a3}\label{_vertices_8c_a1bcdf61dab5e992b5a1bf30ee3a6e6a3} 
+\index{Vertices.c@{Vertices.c}!VerificarVerticeGrafo@{VerificarVerticeGrafo}}
+\index{VerificarVerticeGrafo@{VerificarVerticeGrafo}!Vertices.c@{Vertices.c}}
+\doxysubsubsection{\texorpdfstring{VerificarVerticeGrafo()}{VerificarVerticeGrafo()}}
+{\footnotesize\ttfamily int Verificar\+Vertice\+Grafo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_grafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{grafo,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Verifica a existencia de um vertice num grafo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grafo} & \doxylink{struct_grafo}{Grafo}\\
+\hline
+{\em id} & Id do vertice\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna -\/2 se o grafo for nulo, retorna -\/1 se nao existir vertices no grafo, retorna 0 se o vertice nao existir, retorna 1 se o vertice existir
+\end{DoxyReturn}
+\Hypertarget{_vertices_8c_a3a65d34ba6ee54fd4df6c87fee07eddf}\label{_vertices_8c_a3a65d34ba6ee54fd4df6c87fee07eddf} 
+\index{Vertices.c@{Vertices.c}!VerificarVerticeVisitado@{VerificarVerticeVisitado}}
+\index{VerificarVerticeVisitado@{VerificarVerticeVisitado}!Vertices.c@{Vertices.c}}
+\doxysubsubsection{\texorpdfstring{VerificarVerticeVisitado()}{VerificarVerticeVisitado()}}
+{\footnotesize\ttfamily int Verificar\+Vertice\+Visitado (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{vertices,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Verifica se o vertice foi visitado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertices} & Lista de vertices\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna 0 se o vertice nao foi visitado, retorna 1 se o vertice foi visitado
+\end{DoxyReturn}
